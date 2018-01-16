@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.css">
+    <script src="{JS_PATH}jquery.min.js"></script>
+</head>
+<style>
+    body{
+        background: #F5F5FA;
+    }
+</style>
+<body>
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=index&f=category&a=addlanmu">
+    <div class="form-group">
+        <select class="form-control" style="width: 120px" name="ids">
+            {$option}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1"></label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="title" placeholder="请输入栏目名称">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">图片</label>
+        <input type="file" id="exampleInputFile" name="file[]" multiple>
+        <!--        <p class="help-block">Example block-level help text here.</p>-->
+    </div>
+
+    <button type="submit" class="btn btn-default">提交</button>
+    <!--    <input type="hidden" name="id" value="--><!--">-->
+</form>
+</body>
+</html>

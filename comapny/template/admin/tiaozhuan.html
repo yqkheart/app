@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0;
+    }
+    .box{
+        width: 500px;
+        height: 400px;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        text-align: center;
+
+    }
+    .topBox{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        line-height: 300px;
+    }
+    .color{
+        color: red;
+    }
+    .beijing{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #F3F5F8;
+        /*background: red;*/
+        /*background: url("../static/img/1464083856.png") no-repeat center;*/
+        background-size: cover;
+    }
+</style>
+<body>
+<div class="beijing">
+    <div class="box">
+        <h2 class="topBox">{$mess}</h2>
+        <span class="color">3</span>秒后跳转，点击 <a href="{$url}">立即跳转</a>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var span=document.querySelector("span");
+    var a=document.querySelector("a")
+    var t=setInterval(function () {
+        span.innerHTML--;
+        if (span.innerHTML==0){
+            clearInterval(t);
+            location.href=a.href;
+        }
+    },1000)
+</script>
