@@ -11,7 +11,7 @@ class db{
     private $host="localhost";
     private $uname="root";
     private $pass="";
-    private $dbname="class2016";
+    private $dbname="engagement";
     private $port="3306";
     private $table="";
     public function __construct($table)

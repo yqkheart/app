@@ -86,7 +86,6 @@
                         <div id="subPages" class="collapse ">
                             <ul class="nav">
                                 <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima">栏目展示</a></li>
-                                <li><a href="index.php?m=admin&f=category&a=addcategory" class="" target="mima">栏目添加</a></li>
                             </ul>
                         </div>
                     </li>

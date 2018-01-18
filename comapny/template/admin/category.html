@@ -56,9 +56,8 @@
                         <tr>
                             <th>id</th>
                             <th>Name</th>
-                            <th>图片</th>
-                            <th>上级ID</th>
-                            <th>操作</th>
+                            <th>price</th>
+                            <th>adress</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -74,24 +73,5 @@
 </div>
 </body>
 </html>
-<script>
-    $('tbody').on('click','.btn-danger',function () {
-        let id=$(this).attr('id');
-        let par=$(this).closest('tr')
-        console.log(this)
-        $.ajax({
-            url:"index.php?m=index&f=category&a=dellanmu",
-            data:{ id },
-            type:"post",
-            success:function (res) {
-//                console.log(res)
-                if (res==1){
-                    par.html(" ");
-                }else {
-                    alert("删除失败")
-                }
-            }
-        })
-    })
-</script>
+
 

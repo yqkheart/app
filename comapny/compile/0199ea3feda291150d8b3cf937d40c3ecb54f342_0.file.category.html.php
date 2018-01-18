@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:27:43
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 08:31:02
   from 'D:\quanzhan\app\comapny\template\admin\category.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a5ff80f40c823_83242745',
+  'unifunc' => 'content_5a604d36c6bae6_60154021',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0199ea3feda291150d8b3cf937d40c3ecb54f342' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\category.html',
-      1 => 1515057606,
+      1 => 1516260656,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a5ff80f40c823_83242745 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a604d36c6bae6_60154021 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -83,9 +83,8 @@ bootstrap.css">
                         <tr>
                             <th>id</th>
                             <th>Name</th>
-                            <th>图片</th>
-                            <th>上级ID</th>
-                            <th>操作</th>
+                            <th>price</th>
+                            <th>adress</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -102,28 +101,7 @@ bootstrap.css">
 </div>
 </body>
 </html>
-<?php echo '<script'; ?>
->
-    $('tbody').on('click','.btn-danger',function () {
-        let id=$(this).attr('id');
-        let par=$(this).closest('tr')
-        console.log(this)
-        $.ajax({
-            url:"index.php?m=index&f=category&a=dellanmu",
-            data:{ id },
-            type:"post",
-            success:function (res) {
-//                console.log(res)
-                if (res==1){
-                    par.html(" ");
-                }else {
-                    alert("删除失败")
-                }
-            }
-        })
-    })
-<?php echo '</script'; ?>
->
+
 
 <?php }
 }

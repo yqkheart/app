@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 07:23:42
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 08:38:06
   from 'D:\quanzhan\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a603d6e4adc34_72788020',
+  'unifunc' => 'content_5a604ede71d358_09852902',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42eae411731eb7ba594ae03c98567ed7c2b28f42' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516256620,
+      1 => 1516261085,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a603d6e4adc34_72788020 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a604ede71d358_09852902 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -125,7 +125,6 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
                         <div id="subPages" class="collapse ">
                             <ul class="nav">
                                 <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima">栏目展示</a></li>
-                                <li><a href="index.php?m=admin&f=category&a=addcategory" class="" target="mima">栏目添加</a></li>
                             </ul>
                         </div>
                     </li>
