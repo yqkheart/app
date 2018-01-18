@@ -1,0 +1,359 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-16 16:07:42
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-18 14:25:37
+*/
+body{
+	background: #f4f4f4;
+}
+.header{
+	width: 100%;
+	height: 2.45rem;
+	background: -webkit-linear-gradient(left, #ff8c2a , #ff882f,#ff6b4e);
+	overflow: hidden;
+	box-shadow: 0.2rem 0 0.2rem 0.2rem rgba(255, 140, 42, 0.3);
+}
+.header .search-box{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 0.24rem;
+	width: 6.8rem;
+	height: 0.64rem;
+	background: transparent;
+	border: 0.015rem solid #fff;
+	box-sizing: border-box;
+	border-radius: 0.64rem;
+	font-size: 0.22rem;
+	color: #ffe4d4;
+	line-height: 0.64rem;
+	text-indent: 1.5em;
+}
+.header .search-box .search-box-input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	background: none;
+	text-indent: 1.5em;
+	color: #fff;
+}
+.header .search-box .search-box-input::-webkit-input-placeholder{
+    color: #fff;
+}
+.header .search-box .search-icon{
+	position: absolute;
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url('../img/search-img/search.png') no-repeat;
+	background-size: 100% auto;
+	right: 0.28rem;
+	top: 50%;
+	margin-top: -0.16rem
+}
+.header .header-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.36rem;
+	color: #ffff;
+	width: 100%;
+	height: 0.9rem;
+	box-sizing: border-box;
+	padding: 0 0.32rem;
+	margin-top: 0.4rem;
+}
+.header .header-top .fanhui{
+	width: 0.24rem;
+	height: 0.4rem;
+	background: url('../img/search-img/fanhui.png') no-repeat;
+	background-size: 100% auto;
+}
+.header .header-top .yuyin{
+	width: 0.32rem;
+	height: 0.5rem;
+	background: url('../img/search-img/yuyin.png') no-repeat;
+	background-size: 100% auto;
+}
+.header .header-top .title{
+	display: flex;
+	width: 20%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .header-top .title .pix1{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix2{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix3{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix4{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: #fff;
+}
+
+
+/* 主体部分开始编写 */
+.hot-search{
+	width: 100%;
+	height: 3.86rem;
+	background: #fff;
+	overflow: hidden;
+}
+.hot-search .title{
+	width: 1.94rem;
+	height: 0.64rem;
+	margin-left: 0.38rem;
+	margin-top: 0.4rem;
+	background: url('../img/search-img/hotsearch.png') no-repeat;
+	background-size: 100% auto;
+}
+.hot-search .theme{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0.38rem;
+	margin-top: 0.3rem;
+}
+/* 婚宴 */
+.hot-search .theme .theme-box1{
+	float: left;
+	margin-right: 0.27rem;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 0.1rem;
+	width: 3.23rem;
+	height: 0.88rem;
+	box-shadow: 0 0 0.15rem 0.08rem rgba(0,0,0,0.1);
+	border-radius: 0.1rem;
+}
+.hot-search .theme .theme-box1 .theme-icon{
+	width: 0.62rem;
+	height: 0.62rem;
+	background: url('../img/search-img/hunyan.png') no-repeat;
+	background-size: 100% auto;
+}
+.hot-search .theme .theme-box1 .theme-word{
+   flex: 1;
+   margin-left: 0.15rem;
+
+}
+.hot-search .theme .theme-box1 .theme-word .title-img{
+	color: #ff8c2a;
+	font-size: 0.24rem;
+}
+.hot-search .theme .theme-box1 .theme-word .subtitle{
+	color: #7a7c7d;
+	font-size: 0.16rem;
+}
+.hot-search .theme .theme-box1 .line{
+	width: 0.05rem;
+	height: 0.7rem;
+	background: #ff8c2a;
+	border-radius: 0.025rem;
+ }
+/* 策划 */
+.hot-search .theme .theme-box2{
+	float: left;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 0.1rem;
+	width: 3.23rem;
+	height: 0.88rem;
+	box-shadow: 0 0 0.15rem 0.08rem rgba(0,0,0,0.1);
+	border-radius: 0.1rem;
+}
+.hot-search .theme .theme-box2 .theme-icon{
+	width: 0.62rem;
+	height: 0.62rem;
+	background: url('../img/search-img/cehua.png') no-repeat;
+	background-size: 100% auto;
+}
+.hot-search .theme .theme-box2 .theme-word{
+   flex: 1;
+   margin-left: 0.15rem;
+
+}
+.hot-search .theme .theme-box2 .theme-word .title-img{
+	color: #7b82ee;
+	font-size: 0.24rem;
+}
+.hot-search .theme .theme-box2 .theme-word .subtitle{
+	color: #7a7c7d;
+	font-size: 0.16rem;
+}
+.hot-search .theme .theme-box2 .line{
+	width: 0.05rem;
+	height: 0.7rem;
+	background: #7b82ee;
+	border-radius: 0.025rem;
+ }
+ /* 摄影 */
+.hot-search .theme .theme-box3{
+	float: left;
+	margin-right: 0.27rem;
+	margin-top: 0.32rem;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 0.1rem;
+	width: 3.23rem;
+	height: 0.88rem;
+	box-shadow: 0 0 0.15rem 0.08rem rgba(0,0,0,0.1);
+	border-radius: 0.1rem;
+}
+.hot-search .theme .theme-box3 .theme-icon{
+	width: 0.62rem;
+	height: 0.62rem;
+	background: url('../img/search-img/sheying.png') no-repeat;
+	background-size: 100% auto;
+}
+.hot-search .theme .theme-box3 .theme-word{
+   flex: 1;
+   margin-left: 0.15rem;
+
+}
+.hot-search .theme .theme-box3 .theme-word .title-img{
+	color: #ff6a50;
+	font-size: 0.24rem;
+}
+.hot-search .theme .theme-box3 .theme-word .subtitle{
+	color: #7a7c7d;
+	font-size: 0.16rem;
+}
+.hot-search .theme .theme-box3 .line{
+	width: 0.05rem;
+	height: 0.7rem;
+	background: #ff6a50;
+	border-radius: 0.025rem;
+ }
+ /* 礼服 */
+.hot-search .theme .theme-box4{
+	float: left;
+	display: flex;
+	align-items: center;
+	margin-top: 0.32rem;
+	box-sizing: border-box;
+	padding: 0 0.1rem;
+	width: 3.23rem;
+	height: 0.88rem;
+	box-shadow: 0 0 0.15rem 0.08rem rgba(0,0,0,0.1);
+	border-radius: 0.1rem;
+}
+.hot-search .theme .theme-box4 .theme-icon{
+	width: 0.62rem;
+	height: 0.62rem;
+	background: url('../img/search-img/lifu.png') no-repeat;
+	background-size: 100% auto;
+}
+.hot-search .theme .theme-box4 .theme-word{
+   flex: 1;
+   margin-left: 0.15rem;
+
+}
+.hot-search .theme .theme-box4 .theme-word .title-img{
+	color: #37a8fc;
+	font-size: 0.24rem;
+}
+.hot-search .theme .theme-box4 .theme-word .subtitle{
+	color: #7a7c7d;
+	font-size: 0.16rem;
+}
+.hot-search .theme .theme-box4 .line{
+	width: 0.05rem;
+	height: 0.7rem;
+	background: #37a8fc;
+	border-radius: 0.025rem;
+ }
+
+ /* 历史搜索 */
+ .history-search{
+ 	width: 100%;
+ 	margin-top: 0.15rem;
+ 	background: #fff;
+ 	box-sizing: border-box;
+ 	padding: 0 0.38rem;
+ }
+  .history-search .title-box{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	width: 100%;
+  	height: 1rem;
+  }
+  .history-search .title-box .title{
+  	width: 2.42rem;
+  	height: 0.6rem;
+  	background: url('../img/search-img/historysearch.png') no-repeat;
+  	background-size: 100% auto;
+  }
+  .history-search .title-box .rabish{
+  	width: 0.4rem;
+  	height: 0.4rem;
+  	background: url('../img/search-img/rabish.png') no-repeat;
+  	background-size: 100% auto;
+  }
+  .history-search .history-list{
+  	width: 100%;
+  	padding-bottom: 0.5rem;
+  }
+  .history-search .history-list li{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: flex-end;
+  	 width: 100%;
+  	 height: 0.87rem;
+  	 border-bottom: 0.03rem dotted #d5d5d5;
+  	 box-sizing: border-box;
+  	 padding-bottom: 0.11rem
+  }
+  .history-search .history-list li:last-child{
+  	border-bottom: none;
+  }
+  .history-search .history-list li .record{
+  	font-size: 0.24rem;
+  	color: #252729;
+  }
+  .history-search .history-list li .info{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	width: 1.85rem;
+  	height: 0.3rem;
+  }
+  .history-search .history-list li .info .time-icon{
+  	display: inline-block;
+  	width: 0.2rem;
+  	height: 0.2rem;
+  	background: url('../img/search-img/time.png');
+  	background-size: 100% auto;
+  }
+  .history-search .history-list li .info .time{
+  	display: inline-block;
+  	color: #cdc8c5;
+  	font-size: 0.18rem;
+  }
+  .history-search .history-list li .info .delete{
+  	display: inline-block;
+  	width: 0.16rem;
+  	height: 0.16rem;
+  	background: url('../img/search-img/delete.png');
+  	background-size: 100% auto;
+  }
