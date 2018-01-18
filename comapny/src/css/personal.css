@@ -313,59 +313,62 @@ body{
     box-sizing: border-box;
     font-weight: 600;
 }
-
-/*-------------------------------------------底部--------------------*/
-footer{
+/* 底部table栏 */
+.tableBox{
+    width: 100%;
+    height: 1rem;
+    background: #fff;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 0.98rem;
-    background: #fff;
-
-}
-footer ul{
-    width: 100%;
-    height: 100%;
+    z-index: 2000;
     display: flex;
-    position: relative;
-
 }
-footer ul li{
-    width: calc(100% /5);
+.option{
+    width: 20%;
     height: 100%;
-    line-height: 0;
-
-
+    /* background: pink; */
+    position: relative;
+    /* border-right: 0.01rem solid #FF8C2A; */
 }
-footer ul li img{
+.shu{
+    width: 0.02rem;
+    height: 0.4rem;
+    background: #FFB579;
+    position: absolute;
+    right: 0;top: 0;bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.opp{
+    width: 0.6rem;
+    height: 0.6rem;
+    /* background: yellow; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0.04rem auto;
+    line-height: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opp img{
+    margin-top: 0.02rem;
+    width: 80%;
+    height: 80%;
+    display: block;
+}
+.character{
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.shuxian{
-
-    width: 0.01rem;
-    height: 0.34rem;
-    background: #ffcca3;
-    top: 50%;
-
-    margin-top: -0.17rem;
+    height: 0.4rem;
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    font-size: 0.12rem;
+    color: #A6A6A6;
+    text-align: center;
+    line-height: 0.4rem;
+    font-family: "PingFang SC";
 }
 
-.shuxian1{
-    position: absolute;
-    left: 20%;
-}
-.shuxian2{
-    position: absolute;
-    left: 40%;
-}
-.shuxian3{
-    position: absolute;
-    left: 60%;
-}
-.shuxian4{
-    position: absolute;
-    left: 80%;
-}
