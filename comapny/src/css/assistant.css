@@ -1,0 +1,206 @@
+@import "../../src/css/base.css";
+body{
+    background: url("../../src/img/wximg/ass_boday.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+section{
+    width: 100%;
+    height: auto;
+    background: rgba(254,159,91,0.7);
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+
+}
+.title{
+    width: 100%;
+    height: .4rem;
+    font-size: .32rem;
+    text-align: center;
+    color: white;
+    margin-top:0.64rem;
+    position: relative;
+    /*font-weight: 400;*/
+}
+.tit_right{
+    float: right;
+    width: 0.31rem;
+    height: 0.4rem;
+    background: url("../../src/img/wximg/ass_naoling.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+}
+section h1{
+    font-size: 0.3rem;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    margin-top: .6rem;
+}
+section h2{
+    font-size: 0.34rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: .05rem;
+}
+.nub_big{
+    width: 100%;
+    height: 1.02rem;
+    padding:0 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: .34rem;
+}
+.nub_small{
+    width: 0.94rem;
+    height: 100%;
+    background: url("../../src/img/wximg/ass_nub.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-size: .62rem;
+    color: #ff806b;
+    padding-top: 0.12rem;
+    text-align: center;
+}
+section h3{
+    font-size: 0.22rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: .24rem;
+}
+.bigbox{
+    width: 100%;
+    height: auto;
+    padding:0 0.3rem;
+    box-sizing: border-box;
+}
+.whitebox{
+    width: 100%;
+    height: 7.77rem;
+    box-sizing: border-box;
+    background: white;
+    padding: 0.85rem 0.42rem;
+    border-radius: 0.1rem;
+    margin-top: .42rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.singel{
+    width:calc(100% /3);
+    height:calc(100% /3);
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+.over{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.border_xy{
+    border-bottom: 0.02rem dotted #dddddd;
+    border-right:0.02rem dotted #dddddd;
+}
+.border_x{
+    border-bottom: 0.02rem dotted #dddddd;
+}
+.border_y{
+    border-right:0.02rem dotted #dddddd;
+}
+.jiao_xin{
+    position: relative;
+}
+.ass_xin{
+    width: 0.09rem;
+    height: 0.08rem;
+    background: url("../../src/img/wximg/ass_xin.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.ass_xin1{
+    position: absolute;
+    left: -0.05rem;
+    top: -0.04rem;
+}
+.ass_xin2{
+    position: absolute;
+    right: -0.05rem;
+    top: -0.04rem;
+}
+.ass_xin3{
+    position: absolute;
+    left: -0.05rem;
+    bottom: -0.04rem;
+}
+.ass_xin4{
+    position: absolute;
+    right: -0.05rem;
+    bottom: -0.04rem;
+}
+.singel img{
+    width: 100%;
+    /*height: 100%;*/
+}
+/*-------------------------------------------------------底部-------------------------------*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.98rem;
+    background: #fff;
+
+}
+footer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+}
+footer ul li{
+    width: calc(100% /5);
+    height: 100%;
+    line-height: 0;
+
+
+}
+footer ul li img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.shuxian{
+
+    width: 0.01rem;
+    height: 0.34rem;
+    background: #ffcca3;
+    top: 50%;
+
+    margin-top: -0.17rem;
+}
+
+.shuxian1{
+    position: absolute;
+    left: 20%;
+}
+.shuxian2{
+    position: absolute;
+    left: 40%;
+}
+.shuxian3{
+    position: absolute;
+    left: 60%;
+}
+.shuxian4{
+    position: absolute;
+    left: 80%;
+}
+
+

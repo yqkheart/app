@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:11:34
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 07:20:32
   from 'D:\quanzhan\app\comapny\template\admin\login2.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a5ff4466defe1_24437050',
+  'unifunc' => 'content_5a603cb09532c7_12093523',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7799a5b75d7d7036e9d5a45693a3e7ff1e7cff32' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\login2.php',
-      1 => 1516237625,
+      1 => 1516256374,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a5ff4466defe1_24437050 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a603cb09532c7_12093523 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -116,7 +116,7 @@ favicon.png">
 logo-dark.png" alt="Klorofil Logo"></div>
                             <p class="lead">Login to your blog</p>
                         </div>
-                        <form class="form-auth-small" action="index.php?m=index&a=check" id="box" method="post">
+                        <form class="form-auth-small" action="index.php?m=admin&a=check" id="box" method="post">
                             <div class="form-group">
                                 <label for="signin-email" class="control-label sr-only">账号</label>
                                 <input type="text" class="form-control" id="signin-email" placeholder="user" name="user">
@@ -128,7 +128,7 @@ logo-dark.png" alt="Klorofil Logo"></div>
                             <div class="form-group ">
                                 <label for="yam" class="control-label sr-only">验证码</label>
                                 <input type="text" class="form-control" id="yanzhengma" placeholder="验证码" name="code">
-                                <img src="index.php?m=index&a=code" onclick="this.src='index.php?m=index&a=code&'+Math.random(0,1)" alt="">
+                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=adminx&a=code&'+Math.random(0,1)" alt="">
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
                             <button type="text" id="resgiter" class="btn btn-primary btn-lg btn-block" onclick="return false">SIGN UP</button>

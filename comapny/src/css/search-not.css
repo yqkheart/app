@@ -1,0 +1,105 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-16 16:07:42
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-18 14:30:56
+*/
+body{
+	background: #f4f4f4;
+}
+.header{
+	width: 100%;
+	height: 2.45rem;
+	background: -webkit-linear-gradient(left, #ff8c2a , #ff882f,#ff6b4e);
+	overflow: hidden;
+	box-shadow: 0.2rem 0 0.2rem 0.2rem rgba(255, 140, 42, 0.3);
+}
+.header .search-box{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 0.24rem;
+	width: 6.8rem;
+	height: 0.64rem;
+	background: transparent;
+	border: 0.015rem solid #fff;
+	box-sizing: border-box;
+	border-radius: 0.64rem;
+	font-size: 0.22rem;
+	color: #ffe4d4;
+	line-height: 0.64rem;
+	text-indent: 1.5em;
+}
+.header .search-box .search-icon{
+	position: absolute;
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url('../img/search-img/search.png') no-repeat;
+	background-size: 100% auto;
+	right: 0.28rem;
+	top: 50%;
+	margin-top: -0.16rem
+}
+.header .header-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.36rem;
+	color: #ffff;
+	width: 100%;
+	height: 0.9rem;
+	box-sizing: border-box;
+	padding: 0 0.32rem;
+	margin-top: 0.4rem;
+}
+.header .header-top .fanhui{
+	width: 0.24rem;
+	height: 0.4rem;
+	background: url('../img/search-img/fanhui.png') no-repeat;
+	background-size: 100% auto;
+}
+.header .header-top .yuyin{
+	width: 0.32rem;
+	height: 0.5rem;
+	background: url('../img/search-img/yuyin.png') no-repeat;
+	background-size: 100% auto;
+}
+.header .header-top .title{
+	display: flex;
+	width: 30%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .header-top .title .pix1{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix2{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix3{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.header .header-top .title .pix4{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.big-img{
+	width: 4.6rem;
+	height: 5.85rem;
+	margin: 0 auto;
+	margin-top: 1.7rem;
+	background: url('../img/search-img/touxiang.png') no-repeat;
+	background-size: 100% auto;
+}
+
