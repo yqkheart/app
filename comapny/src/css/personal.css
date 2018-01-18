@@ -1,6 +1,6 @@
 @import "../../src/css/base.css";
 *{
-    font-family: '宋体';
+    font-family: "PingFang SC";
 }
 body{
     background-image: url("../../src/img/wximg/person_bg.png");
