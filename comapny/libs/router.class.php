@@ -13,7 +13,7 @@ class router
     private $a;
 
     function getFun(){
-        $this->m=isset($_REQUEST['m'])? $_REQUEST['m']:'index';
+        $this->m=isset($_REQUEST['m'])? $_REQUEST['m']:'admin';
         $this->f=isset($_REQUEST['f'])? $_REQUEST['f']:'index';
         $this->a=isset($_REQUEST['a'])? $_REQUEST['a']:'init';
         if (is_dir($this->m)){
