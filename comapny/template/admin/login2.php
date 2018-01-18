@@ -79,7 +79,7 @@
                             <div class="logo text-center"><img src="{IMG_PATH}logo-dark.png" alt="Klorofil Logo"></div>
                             <p class="lead">Login to your blog</p>
                         </div>
-                        <form class="form-auth-small" action="index.php?m=index&a=check" id="box" method="post">
+                        <form class="form-auth-small" action="index.php?m=admin&a=check" id="box" method="post">
                             <div class="form-group">
                                 <label for="signin-email" class="control-label sr-only">账号</label>
                                 <input type="text" class="form-control" id="signin-email" placeholder="user" name="user">
@@ -91,7 +91,7 @@
                             <div class="form-group ">
                                 <label for="yam" class="control-label sr-only">验证码</label>
                                 <input type="text" class="form-control" id="yanzhengma" placeholder="验证码" name="code">
-                                <img src="index.php?m=index&a=code" onclick="this.src='index.php?m=index&a=code&'+Math.random(0,1)" alt="">
+                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=adminx&a=code&'+Math.random(0,1)" alt="">
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
                             <button type="text" id="resgiter" class="btn btn-primary btn-lg btn-block" onclick="return false">SIGN UP</button>

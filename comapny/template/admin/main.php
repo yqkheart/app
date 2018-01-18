@@ -77,7 +77,7 @@
                 <ul class="nav">
                     <li><a href="" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
 <!--                    <li><a href="webset.php" class="" target="mima"><i class="lnr lnr-cog"></i> <span>网站设置</span></a></li>-->
-                    <li><a href="index.php?m=index&a=changepass" class="" target="mima"><i class="lnr lnr-code"></i> <span>密码修改</span></a></li>
+                    <li><a href="index.php?m=admin&a=changepass" class="" target="mima"><i class="lnr lnr-code"></i> <span>密码修改</span></a></li>
 <!--                    <li><a href="index.php?m=index&a=category" class="" target="mima"><i class="lnr lnr-chart-bars"></i> <span>栏目管理</span></a></li>-->
 <!--                    <li><a href="fenlei.php" class="" target="mima"><i class="lnr lnr-text-format"></i> <span>添加栏目</span></a></li>-->
                     <!--                    <li><a href="content.php" class="" target="mima"><i class="lnr lnr-alarm"></i> <span></span></a></li>-->
@@ -85,8 +85,8 @@
                         <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>栏目管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                         <div id="subPages" class="collapse ">
                             <ul class="nav">
-                                <li><a href="index.php?m=index&f=category&a=init" class="" target="mima">栏目展示</a></li>
-                                <li><a href="index.php?m=index&f=category&a=addcategory" class="" target="mima">栏目添加</a></li>
+                                <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima">栏目展示</a></li>
+                                <li><a href="index.php?m=admin&f=category&a=addcategory" class="" target="mima">栏目添加</a></li>
                             </ul>
                         </div>
                     </li>
@@ -94,8 +94,8 @@
                         <a href="#subPagess" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>内容管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                         <div id="subPagess" class="collapse ">
                             <ul class="nav">
-                                <li><a href="index.php?&m=index&f=content&a=init" class="" target="mima">内容展示</a></li>
-                                <li><a href="index.php?m=index&f=content&a=addcontent" class="" target="mima">内容添加</a></li>
+                                <li><a href="index.php?&m=admin&f=content&a=init" class="" target="mima">内容展示</a></li>
+                                <li><a href="index.php?m=admin&f=content&a=addcontent" class="" target="mima">内容添加</a></li>
                             </ul>
                         </div>
                     </li>
