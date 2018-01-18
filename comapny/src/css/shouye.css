@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "PingFang SC";
+    box-sizing: border-box;
+}
+body{
+    background: #F4F4F4;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 头部 */
+header{
+    width: 100%;
+    height: 1rem;
+    background: #FF8C2A;
+    
+}
+.topBox{
+    width: 100%;
+    height: 0.44rem;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.oneBox{
+    width: 0.64rem;
+    height: 0.44rem;
+    font-size: 0.2rem;
+    /* background: yellow; */
+}
+.zuanshi{
+    width: 0.44rem;
+    height: 0.44rem;
+    /* background: green; */
+}
+.cityBox{
+    width: 0.2rem;
+    height: 0.44rem;
+    /* background:pink; */
+    font-size: 0.14rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 0.44rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.beibao{
+    width: 0.44rem;
+    height: 100%;
+    /* background: red; */
+}
+.bottomBox{
+    width: 100%;
+    height: 0.32rem;
+    /* background: green; */
+    margin-top: 0.12rem;
+}
+.inputBox{
+    width:3.4rem;
+    height: 0.32rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.puts{
+    width: 100%;
+    height: 100%;
+    border: 0.01rem solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 0.32rem;
+    outline: none;
+    padding:0 0.1rem;
+    background: #FF8C2A;
+}
+.sousuo{
+    width: 0.2rem;
+    height: 0.2rem;
+    /* background: blue; */
+    position: absolute;
+    right: 0.15rem;
+    top: 0.06rem;
+}
+/* banner */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    height: 1.8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-pagination{
+    bottom: 0;
+}
+/* 方案 */
+.fangan{
+    width: 100%;
+    /* height: 6rem; */
+    background: #fff;
+    margin-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+.titleBox{
+    width: 1.58rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+    /* background: red; */
+}
+.photoBox{
+    width: 3.6rem;
+    height: 1.09rem;
+    /* background: green; */
+    margin:0 auto;
+    margin-bottom:0.2rem;
+    position: relative;
+}
+.textBox{
+    /* width: 46%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* background: blue; */
+    z-index: 1000;
+    padding-left:0.1rem;
+}
+.firstBox{
+    /* width: 1.25rem; */
+    height: 0.25rem;
+    /* background: red; */
+    margin-top: 0.2rem;
+    display: flex;
+}
+.leftBox{
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.rightBox{
+    width: 1.1rem;
+    height: 0.25rem;
+    /* background: yellow; */
+}
+.topTitle{
+    width: 100%;
+    height: 50%;
+    /* background: green; */
+    font-size: 0.12rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 0.125rem;
+    text-align: left;
+}
+.bottomEng{
+    width: 100%;
+    height: 50%;
+    /* background: greenyellow;  */
+    font-size: 0.06rem;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 0.125rem;
+}
+.dian{
+    height: 0.05rem;
+    font-size: 0.12rem;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 0.05rem;
+}
+.zhu{
+    width: 100%;
+    height: 0.12rem;
+    /* background: red; */
+    margin-top: 0.07rem;
+    font-weight: 500;
+    font-size: 0.12rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 0.12rem;
+}
+.priceBox{
+    width: 0.65rem;
+    height: 0.21rem;
+    border:0.01rem solid #fff;
+    margin-top: 0.05rem;
+    border-radius: 0.32rem;
+    font-size: 0.14rem;
+    color: #fff;
+    text-align:center;
+    line-height: 0.21rem;
+}
+.textBox1{
+    /* width: 46%; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: blue; */
+    z-index: 1000;
+    padding-right:0.1rem;
+}
+.bottomBox{
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 0.25rem;
+    /* background: red; */
+    /* margin-bottom:0.2rem; */
+    display: flex;
+    justify-content: space-around;
+}
+.xiugai{
+    width: 0.82rem;
+    height: 100%;
+    border-radius: 0.26rem;
+    border: 0.01rem solid #FFB579;
+    font-size: 0.1rem;
+    color: #FFB579;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tableBox1{
+    width: 100%;
+    height: 0.8rem;
+    background: #F4F4F4;
+}
+/* 底部table栏 */
+.tableBox{
+    width: 100%;
+    height: 0.5rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+}
+.option{
+    width: 20%;
+    height: 100%;
+    /* background: pink; */
+    position: relative;
+    /* border-right: 0.01rem solid #FF8C2A; */
+}
+.shu{
+    width: 0.01rem;
+    height: 0.2rem;
+    background: #FFB579;
+    position: absolute;
+    right: 0;top: 0;bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.opp{
+    width: 0.3rem;
+    height: 0.3rem;
+    /* background: yellow; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0.04rem auto;
+}
+.character{
+    width: 100%;
+    height: 0.2rem;
+    /* background: red; */
+    position: absolute;
+    bottom: 0;
+    font-size: 0.12rem;
+    color: #A6A6A6;
+    text-align: center;
+    line-height: 0.2rem;
+}

@@ -1,11 +1,34 @@
 <?php
-/**
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:11:34
+  from 'D:\quanzhan\app\comapny\template\admin\login2.php' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-38',
+  'unifunc' => 'content_5a5ff4466defe1_24437050',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7799a5b75d7d7036e9d5a45693a3e7ff1e7cff32' => 
+    array (
+      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\login2.php',
+      1 => 1516237625,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a5ff4466defe1_24437050 (Smarty_Internal_Template $_smarty_tpl) {
+echo '<?php
+';?>/**
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2017/12/18
  * Time: 18:36
  */
-?>
+<?php echo '?>';?>
 <!doctype html>
 <html lang="en" class="fullscreen-bg">
 <head>
@@ -14,20 +37,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!-- VENDOR CSS -->
-    <link rel="stylesheet" href="{CSS_PATH}bootstrap.css">
-    <link rel="stylesheet" href="{CSS_PATH}font-awesome.min.css">
-    <link rel="stylesheet" href="{CSS_PATH}style.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+bootstrap.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+style.css">
 <!--    js-->
-    <script src="{JS_PATH}jquery.min.js"></script>
-    <script src="{JS_PATH}jquery.validate.min.js"></script>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.validate.min.js"><?php echo '</script'; ?>
+>
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="{CSS_PATH}main.css">
-    <link rel="stylesheet" href="{CSS_PATH}demo.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+main.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+demo.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <!-- ICONS -->
-    <link rel="apple-touch-icon" sizes="76x76" href="{IMG_PATH}apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{IMG_PATH}favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo IMG_PATH;?>
+apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo IMG_PATH;?>
+favicon.png">
 </head>
 <style>
     #yanzhengma{
@@ -76,7 +112,8 @@
                 <div class="left">
                     <div class="content" style="width: 98%;">
                         <div class="header">
-                            <div class="logo text-center"><img src="{IMG_PATH}logo-dark.png" alt="Klorofil Logo"></div>
+                            <div class="logo text-center"><img src="<?php echo IMG_PATH;?>
+logo-dark.png" alt="Klorofil Logo"></div>
                             <p class="lead">Login to your blog</p>
                         </div>
                         <form class="form-auth-small" action="index.php?m=index&a=check" id="box" method="post">
@@ -103,7 +140,8 @@
                 </div>
                 <div class="right">
                     <div class="overlay">
-                        <img class="imgE" src="{IMG_PATH}login-bg.jpg" alt="">
+                        <img class="imgE" src="<?php echo IMG_PATH;?>
+login-bg.jpg" alt="">
                         <div class="coverImg"></div>
                     </div>
                     <div class="content text">
@@ -120,7 +158,8 @@
 </body>
 
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $('#box').validate({
         rules:{
             user:{
@@ -145,5 +184,8 @@
     $("#resgiter").click(function () {
         location.href="resgiter.php"
     })
-</script>
+<?php echo '</script'; ?>
+>
 
+<?php }
+}

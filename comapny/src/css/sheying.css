@@ -1,0 +1,139 @@
+@import "rest.css";
+body{
+    /* padding: 0 0.12rem; */
+    background: #F4F4F4;
+    font-family: "PingFang SC";
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 头部 */
+header{
+    width: 100%;
+    height: 0.8rem;
+    background: #FF8C2A;
+}
+.topBox{
+    width: 100%;
+    height: 50%;
+    /* background: red; */
+    position: relative;
+}
+.backBox{
+    width: 0.25rem;
+    height: 0.25em;
+    /* background: yellow; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.hunlifangan{
+    font-size: 0.18rem;
+    color: #fff;
+    /* margin: 0 auto; */
+    text-align: center;
+    line-height: 0.5rem;
+}
+.option{
+    width: 2.35rem;
+    height: 0.4rem;
+    background: #fff;
+    margin:0.2rem auto;
+    border-radius: 1rem;
+    border:0.02rem solid #FF8C2A;
+    display: flex;
+}
+.shangjia{
+    height: 80%;
+    /* margin-top: 1%; */
+    width: 45%;
+    font-size: 0.16rem;
+    color: #FF8C2A;
+    text-align: center;
+    line-height: 0.4rem;
+    margin-left: 5%;
+}
+.hunsha{
+    margin-top: 1.5%;
+    height: 80%;
+    width: 45%;
+    font-size: 0.16rem;
+    background: #FF8C2A;
+    text-align: center;
+    line-height: 0.32rem;
+    margin-right: 5%;
+    color: #fff;
+    border-radius: 0.6rem;
+    border:0.01rem solid rgba(255,255,255,0.5);
+}
+.textBox{
+    width: 100%;
+    height: auto;
+    /* background: pink; */
+    margin-top: 0.35rem;
+    /* padding: 0 0.12rem; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shangjiaBoxs{
+    width: 1.65rem;
+    height: 1.9rem;
+    background: #fff;
+    position: relative;
+    border-radius: 0.1em 0.1rem;
+    border-bottom:0.03rem solid #FF8C2A;
+    margin-bottom: 0.15rem;
+}
+.imgs{
+    width: 100%;
+    height: 1.16rem;
+    /* background: yellow; */
+
+}
+.hot{
+    width: 0.265rem;
+    height: 0.14rem;
+    background: pink;
+    position: absolute;
+    top: -0.05rem;
+    right: 0.07rem;
+}
+.huatu{
+    font-size: 0.14rem;
+    color: #3C3D3F;
+    margin-left: 0.07rem;
+    margin-top: 0.08rem;
+}
+.huatus{
+    font-size: 0.12rem;
+    color: #6C6C6C;
+    margin-left: 0.07rem;
+    margin-top: 0.02rem;
+}
+.heng{
+    width: 0.5rem;
+    height: 0.01rem;
+    background: #FCA154;
+    margin-left: 0.07rem;
+    margin-top: 0.05rem;
+}
+.zan{
+    margin-top: 0.07rem;
+    margin-left: 0.07rem;
+    display: flex;
+}
+.xing{
+    width: 0.14rem;
+    height: 0.14rem;
+}
+.wenzi{
+    font-size: 0.12rem;
+    color: #989A99;
+    margin-left: 0.02rem;
+    line-height: 0.14rem;
+}
