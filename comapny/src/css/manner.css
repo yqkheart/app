@@ -1,0 +1,214 @@
+@import "rest.css";
+
+header{
+   width: 100%;
+   height:1.75rem;
+   background: url("../img/定制流程/custom.png") center no-repeat;
+   background-size: cover;
+   overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 0.3rem;
+    /* background: red; */
+    margin-top: 0.34rem;
+    padding: 0 0.12rem;
+    box-sizing: border-box;
+}
+.header-left{
+    width: 50%;
+    height: 100%;
+    /* background: pink; */
+    float: left;
+    position: relative;
+}
+.header-left p{
+     margin-left: 0.25rem;
+}
+.header-left p.first-p{
+    font-size: 14px;
+    font-family: "苹方";
+    color: #fff;
+    font-weight: bold;
+   
+}
+.header-left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.21rem;
+    height: 0.275rem;
+}
+.header-left p:last-child{
+    font-size: 12px;
+    font-family: "San Francisco Display";
+    margin-top: 0.03rem;
+    color: #FFD5C0;
+}
+.header-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background: green; */
+    font-size: 14px;
+}
+.header-right  a{   
+    font-family: "苹方";
+    font-weight: bold; 
+    color: #fff;
+    float: right;
+}
+.header-right  a img{
+    width: 0.125rem;
+    height: 0.12rem;
+}
+.page{
+    margin-top: 0.15rem;
+    width: 100%;
+    height: 0.2rem;
+    /* background: red; */
+    font-size: 16px;
+    text-align: center;
+    padding: 0 0.12rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+/* **********header*********** */
+
+/* **********main********** */
+main{
+    width: 100%;
+    height: auto;
+    padding: 0 0.12rem;
+    box-sizing: border-box;
+}
+div.bac{
+    width: 3.1rem;
+    height: 4.1rem;
+    margin: -0.6rem  auto 0;
+    border-radius: 0.1rem;
+    transform: rotate(5deg);
+    background: #FFD452;
+}
+div.content{
+    width: 3.11rem;
+    height: 5rem;
+    background: red;
+    transform: rotate(-5deg);
+    border-radius: 0.1rem;
+    background: #fff ;
+    box-shadow: 0.05rem 0.05rem 0.5rem #F4E2D3;
+    padding: 0 0.15rem;
+    box-sizing: border-box;
+}
+section.top{
+    width: 100%;
+    height: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.shandow{
+    width: 100%;
+    height: 0.1rem;
+    box-shadow: 0 0.2rem 0.5rem #FFd5C0;
+}
+.content-top-left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.content-top-left img{
+    display: block;
+    width: 0.965rem;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.content-top-right{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.sub-next{
+    position: absolute;
+    bottom: 0;
+    width: 0.9rem;
+    height: 0.25rem;  
+    border-radius: 0.25rem;
+    background: -webkit-linear-gradient(left, #FF8A2C , #FF6852); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #FF8A2C , #FF6852); /* Opera 11.1 - 12.0 */  
+    background: -moz-linear-gradient(right, #FF8A2C , #FF6852); /* Firefox 3.6 - 15 */ 
+    background: linear-gradient(to right, #FF8A2C , #FF6852); /* 标准的语法 */ 
+    border: 0.01rem solid #fff;
+    box-shadow: 0rem 0.03rem 0.1rem #FFB57A;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 0.25rem;
+}
+section.bottom{
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0.3rem;
+}
+section.bottom ul{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+section.bottom ul li{
+    width: 0.9rem;
+    height: 0.9rem;
+    float: left;
+    margin: 0.06rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+section.bottom ul li img{
+    width: 0.91rem;
+    height: 0.895rem;
+}
+section.bottom ul li .img-zhao{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    display: none;
+}
+section.bottom ul li .img-zhao.active{
+    display: block;
+}
+section.bottom ul li .img-zhao img{
+    width: 0.2rem;
+    height: 0.19rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.sub-next1{
+    margin: 0.3rem auto 0;
+    width: 1.9rem;
+    height: 0.25rem;  
+    border-radius: 0.25rem;
+    background: -webkit-linear-gradient(left, #FF8A2C , #FF6852); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #FF8A2C , #FF6852); /* Opera 11.1 - 12.0 */  
+    background: -moz-linear-gradient(right, #FF8A2C , #FF6852); /* Firefox 3.6 - 15 */ 
+    background: linear-gradient(to right, #FF8A2C , #FF6852); /* 标准的语法 */ 
+    border: 0.01rem solid #fff;
+    box-shadow: 0rem 0.03rem 0.1rem #FFB57A;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 0.25rem;
+    position: relative;
+    z-index: 9999;
+}
