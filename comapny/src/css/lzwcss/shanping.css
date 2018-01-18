@@ -1,0 +1,102 @@
+@import url('base.css');
+html, body {
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: .18rem;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container .dian{
+    position: absolute;
+    bottom: .7rem;
+}
+/*.swiper-container .dian span{*/
+    /*width: .16rem;*/
+    /*height: .16rem;*/
+    /*background: #EFBE99;*/
+    /*border: .01rem solid #fff;*/
+/*}*/
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.swiper-slide .zi-box{
+    position: absolute;
+    width: 3.28rem;
+    height: 1.48rem;
+    /*background: red;*/
+    top: .95rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-box{
+    width: 100%;
+    height: .80rem;
+    /*background: green;*/
+    font-size: .8rem;
+    line-height: .8rem;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+.top-box1{
+    text-align: center;
+}
+.top-box img{
+    display: block;
+    width: 1.4rem;
+    height: 100%;
+}
+.tiyan-box{
+    width: 2.48rem;
+    height: .58rem;
+    position: absolute;
+    bottom: .54rem;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fff;
+    border-radius: .3rem;
+    /*z-index: 10;*/
+    border: .01rem solid #EEC9B3;
+    font-size: .22rem;
+    line-height: .58rem;
+    text-align: center;
+    color: #DC6062;
+}
+.bottom-box{
+    width: 100%;
+    height: .32rem;
+    /*background: green;*/
+    font-size: .32rem;
+    line-height: .32rem;
+    color: #fff;
+}
