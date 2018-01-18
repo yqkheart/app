@@ -1,0 +1,120 @@
+@import url("base.css");
+/*//头部开始*/
+body{
+    background: #f4f4f4;
+}
+header{
+    width: 100%;
+    height: 1.72rem;
+    background-image: url("../../src/img/qbhtbac.png");
+    background-size: cover;
+    padding: 0.25rem;
+    font-size: 0.3rem;
+    color:#fff;
+}
+header div{
+    float:left;
+}
+header div a{
+    font-size: 0.4rem;
+    line-height: 0.3rem;
+    color:#fff;
+}
+header .head-wz{
+    width: 1.2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    margin-left: 40%;
+}
+.qbht{
+    width: 100%;
+    height: auto;
+    padding: 0.05rem 0.25rem;
+    position: relative;
+}
+.qbhtyy{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background: rgba(1,1,1,0.5);
+}
+.qbht-detail{
+    width: 100%;
+    height:3.72rem ;
+    margin:0 auto;
+    border:3px  solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.1rem;
+}
+.qbht-detail img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.qbht-wz{
+    width:3.96rem ;
+    height: 1.34rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    background-image: url("../../src/img/qbht-dtbac.png");
+    background-size: cover;
+}
+.qbzt-title{
+    position: absolute;
+    width: 1.8rem;
+    top:0.2rem;
+    left:0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.25rem;
+    color:#fff;
+}
+.qbht-dz{
+    font-size: 0.2rem;
+    width: 0.8rem;
+
+    color:#fff;
+    position: absolute;
+    top:1rem;
+    left:25%;
+}
+.qbht-dzimg{
+    width: 0.38rem;
+    height: 0.35rem;
+    float:left;
+    margin-right: 0.05rem;
+}
+.qbht-dzimg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.qbht-sc{
+    font-size: 0.2rem;
+    width: 0.8rem;
+    color:#fff;
+    position: absolute;
+    top:1rem;
+    right:25%;
+}
+.qbht-scimg{
+    width: 0.38rem;
+    height: 0.35rem;
+    float:right;
+    margin-right: 0.05rem;
+}
+.qbht-scimg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

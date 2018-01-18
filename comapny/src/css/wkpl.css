@@ -1,0 +1,147 @@
+@import url("base.css");
+.bac{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url("../../src/img/plbac.png");
+    background-size: cover;
+}
+
+/*toubu*/
+header{
+    width: 100%;
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   padding:0 0.24rem;
+    z-index: 1;
+}
+header .headfh{
+    float:left;
+    width: 0.5rem;
+    line-height: 0.9rem;
+    font-size: 0.34rem;
+
+}
+header .headfh a{
+    color:#fff;
+}
+header .headtj{
+    float:right;
+    width: 1rem;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+    height: 0.5rem;
+    background: #ffd452;
+    border:1px solid #fff;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    text-align: center;
+
+}
+header .headtj a{
+    color:#fff;
+}
+header .headbox{
+    margin:0 auto;
+    width: 2.2rem;
+    /*background: red;*/
+}
+header .headbox div{
+    float:left;
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+    color:white;
+    line-height: 0.9rem;
+    font-size: 0.34rem;
+}
+header .headbox .xiaodian{
+    font-size: 0.3rem;
+    line-height: 0.85rem;
+}
+header .headbox .dadian{
+    font-size: 0.5rem;
+    line-height: 0.85rem;
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding:0.24rem;
+
+}
+main .huifnr{
+    width: 100%;
+    height: 5.3rem;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+main .huifnr textarea{
+    width: 100%;
+    height:4rem;
+    background: #fff;
+    border:0;
+}
+main .huifnr .huifbot{
+    width: 100%;
+    height: 1rem;
+    background: #f7f7f7;
+}
+.huiftpsc{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 5px;
+    background: #ff8c2a;
+    position: absolute;
+    bottom: 0.5rem;
+    left:0.55rem;
+}
+.huiftpscbc{
+    width: 0.8rem;
+    height: 0.4rem;
+    background: #ffd452;
+    border-radius: 50px;
+    margin-top: 20%;
+    margin-left: 25%;
+
+}
+.huiftpscbc a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.6rem;
+    line-height: 0.35rem;
+    text-align: center;
+    color:#fff;
+}
+.huiftpscwz{
+    width: 0.8rem;
+    margin-top: 0.15rem;
+    margin-left: 25%;
+    font-size: 0.2rem;
+    color:#fff;
+}
+.huifbot div{
+    width: 0.61rem;
+    height: 0.61rem;
+    margin-top: 0.2rem;
+    float:left;
+}
+.huifbot div a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.huifbot div.bq{
+    margin-left: 45%;
+}
+.huifbot div.gx{
+    margin-left: 0.7rem;
+}
+.huifbot div.sc{
+    margin-left: 0.2rem;
+}
