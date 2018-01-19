@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 07:57:51
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 00:45:28
   from 'G:\myobject\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a60537f7bc7f5_54482931',
+  'unifunc' => 'content_5a613fa89c7696_23115166',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '722bcfbed68fbbf288a046eeffb8e2bf6722c823' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516258928,
+      1 => 1516322726,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a60537f7bc7f5_54482931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a613fa89c7696_23115166 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -110,7 +110,7 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
     </nav>
     <!-- END NAVBAR -->
     <!-- LEFT SIDEBAR -->
-    <div id="sidebar-nav" class="sidebar">
+    <div id="sidebar-nav" class="sidebar" stye="overflow: yes;">
         <div class="sidebar-scroll">
             <nav>
                 <ul class="nav">
@@ -125,7 +125,6 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
                         <div id="subPages" class="collapse ">
                             <ul class="nav">
                                 <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima">栏目展示</a></li>
-                                <li><a href="index.php?m=admin&f=category&a=addcategory" class="" target="mima">栏目添加</a></li>
                             </ul>
                         </div>
                     </li>
