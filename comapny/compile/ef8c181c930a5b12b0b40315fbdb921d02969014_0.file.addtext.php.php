@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:27:48
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 10:48:56
   from 'D:\quanzhan\app\comapny\template\admin\addtext.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a5ff814a56df2_71353083',
+  'unifunc' => 'content_5a606d888cece8_69661951',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef8c181c930a5b12b0b40315fbdb921d02969014' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\addtext.php',
-      1 => 1515202767,
+      1 => 1516268931,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a5ff814a56df2_71353083 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a606d888cece8_69661951 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 	';?>$htmlData = '';
 	if (!empty($_POST['content1'])) {
@@ -91,31 +91,32 @@ php/file_manager_json.php',
     }
 </style>
 <body>
-<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=index&f=content&a=addcheck">
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addcheck">
     <div class="form-group">
         <label>栏目</label>
-        <select class="form-control" style="width: 120px" name="ids">
-            <?php echo $_smarty_tpl->tpl_vars['option']->value;?>
-
-        </select>
+        <input type="text" class="form-control" name="title" value="<?php echo $_smarty_tpl->tpl_vars['option']->value;?>
+" readonly>
     </div>
     <div class="form-group">
-        <label>标题</label>
-        <input type="text" class="form-control" name="title">
+        <label>名字</label>
+        <input type="text" class="form-control" name="name">
     </div>
     <div class="form-group">
-        <label>描述</label>
-        <input type="text" class="form-control" name="description">
+        <label>价格</label>
+        <input type="text" class="form-control" name="price">
     </div>
     <div class="form-group">
-        <label for="exampleInputFile">图片</label>
+        <label>简介</label>
+        <input type="text" class="form-control" name="intro">
+    </div>
+    <div class="form-group">
+        <label>地址</label>
+        <input type="text" class="form-control" name="adress">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">商家头像</label>
         <input type="file" id="exampleInputFile" name="file[]" multiple>
         <!--        <p class="help-block">Example block-level help text here.</p>-->
-    </div>
-    <div class="form-group">
-        <label>内容</label>
-
-        <textarea name="content1" style="width:700px;height:200px;visibility:hidden;"></textarea>
     </div>
     <button type="submit" class="btn btn-default">提交</button>
     <!--    <input type="hidden" name="id" value="--><?php echo '<?php ';?>//echo $id<?php echo '?>';?><!--">-->

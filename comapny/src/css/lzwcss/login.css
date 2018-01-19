@@ -17,23 +17,33 @@ section{
     height: 100%;
     background: rgba(0,0,0,.3);
 }
-.bg-img header{
+/* 头部 */
+header{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: .88rem;
-    /*background: red;*/
+    /* background: red; */
     padding: 0 .24rem;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
 }
-header > div,header > a{
-    width: auto;
+.header-zi2{
+    width: 2.1rem;
     height: 100%;
-    /*background: green;*/
+    color: #fff;
     font-size: .34rem;
     line-height: .88rem;
+    margin: 0 auto;
+    /* display: inline-block; */
+}
+.header-zi3{
+    font-size: .24rem;
+    line-height: .88rem;
     color: #fff;
+    position: absolute;
+    right: 0.24rem;
+    top: 0;
 }
 /*用户头像*/
 .yonghu-box{
@@ -81,10 +91,22 @@ header > div,header > a{
     -o-transform:skew(-30deg);
     -ms-transform:skew(-30deg);
     background-color: #fff;
+    /* position: relative; */
+}
+.login-box > ul span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: .5rem;
+    /* background: red; */
     font-size: .34rem;
-    line-height: .5rem;
-    color: #000;
+    line-height: .6rem;
     text-align: center;
+    color: #000;
 }
 .yinying{
     width: 1rem;

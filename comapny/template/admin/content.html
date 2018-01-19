@@ -58,10 +58,13 @@
                         <thead>
                         <tr>
                             <th>id</th>
-                            <th>title</th>
-                            <th>描述</th>
-                            <th>time</th>
-                            <th>栏目ID</th>
+                            <th>name</th>
+                            <th>price</th>
+                            <th>intro</th>
+                            <th>photo</th>
+                            <th>zan</th>
+                            <th>adress</th>
+                            <th>collect</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -84,7 +87,7 @@
         let par=$(this).closest('tr')
         console.log(this)
         $.ajax({
-            url:"index.php?m=index&f=content&a=del",
+            url:"index.php?m=admin&f=content&a=del",
             data:{ id },
             type:"post",
             success:function (res) {

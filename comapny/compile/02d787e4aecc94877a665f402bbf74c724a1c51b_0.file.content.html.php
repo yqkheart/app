@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:27:48
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 11:14:21
   from 'D:\quanzhan\app\comapny\template\admin\content.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a5ff814188d69_99967546',
+  'unifunc' => 'content_5a60737db1d903_03714814',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '02d787e4aecc94877a665f402bbf74c724a1c51b' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\content.html',
-      1 => 1515079594,
+      1 => 1516270451,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a5ff814188d69_99967546 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a60737db1d903_03714814 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -85,10 +85,13 @@ jquery.min.js"><?php echo '</script'; ?>
                         <thead>
                         <tr>
                             <th>id</th>
-                            <th>title</th>
-                            <th>描述</th>
-                            <th>time</th>
-                            <th>栏目ID</th>
+                            <th>name</th>
+                            <th>price</th>
+                            <th>intro</th>
+                            <th>photo</th>
+                            <th>zan</th>
+                            <th>adress</th>
+                            <th>collect</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -113,7 +116,7 @@ jquery.min.js"><?php echo '</script'; ?>
         let par=$(this).closest('tr')
         console.log(this)
         $.ajax({
-            url:"index.php?m=index&f=content&a=del",
+            url:"index.php?m=admin&f=content&a=del",
             data:{ id },
             type:"post",
             success:function (res) {
