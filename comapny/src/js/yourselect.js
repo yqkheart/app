@@ -16,7 +16,9 @@ $(function(){
             type:"post",
             success:function(res){
                 if(res==1){
-                    alert("定制成功");
+                    location.href="index.php?m=index&f=custom&a=shouye";
+                }else if(res==0){
+                    location.href = "index.php?m=index&f=custom&a=shouye";
                 }
             }
         })

@@ -68,5 +68,8 @@
             $row=$this->db->update("place='$place',cprice='$cprice',date='$date',project='$project',style='$style'","pid=1");
             echo $row;
         }
+        function shouye(){
+            $this->s->display("template/index/shouye.html");
+        }
     }
     
