@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 10:48:56
-  from 'D:\quanzhan\app\comapny\template\admin\addtext.php' */
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 16:17:35
+  from 'D:\quanzhan\app\comapny\template\admin\changetext.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a606d888cece8_69661951',
+  'unifunc' => 'content_5a60ba8f953f85_29202869',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ef8c181c930a5b12b0b40315fbdb921d02969014' => 
+    '3eae5913f474863ce6158ef2fdb805940e55650e' => 
     array (
-      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\addtext.php',
-      1 => 1516268931,
+      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\changetext.php',
+      1 => 1516288651,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a606d888cece8_69661951 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a60ba8f953f85_29202869 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
-	';?>$htmlData = '';
-	if (!empty($_POST['content1'])) {
-        if (get_magic_quotes_gpc()) {
-            $htmlData = stripslashes($_POST['content1']);
-        } else {
-            $htmlData = $_POST['content1'];
-        }
+';?>$htmlData = '';
+if (!empty($_POST['content1'])) {
+    if (get_magic_quotes_gpc()) {
+        $htmlData = stripslashes($_POST['content1']);
+    } else {
+        $htmlData = $_POST['content1'];
     }
+}
 <?php echo '?>';?>
 <!doctype html>
 <html lang="en">
@@ -61,12 +61,9 @@ plugins/code/prettify.js"><?php echo '</script'; ?>
 >
         KindEditor.ready(function(K) {
             var editor1 = K.create('textarea[name="content1"]', {
-                cssPath : '<?php echo KIND_PATH;?>
-plugins/code/prettify.css',
-                uploadJson : '<?php echo KIND_PATH;?>
-php/upload_json.php',
-                fileManagerJson : '<?php echo KIND_PATH;?>
-php/file_manager_json.php',
+                cssPath : '../plugins/code/prettify.css',
+                uploadJson : '../php/upload_json.php',
+                fileManagerJson : '../php/file_manager_json.php',
                 allowFileManager : true,
                 afterCreate : function() {
                     var self = this;
@@ -91,35 +88,35 @@ php/file_manager_json.php',
     }
 </style>
 <body>
-<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addcheck">
-    <div class="form-group">
-        <label>栏目</label>
-        <input type="text" class="form-control" name="title" value="<?php echo $_smarty_tpl->tpl_vars['option']->value;?>
-" readonly>
-    </div>
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addtext">
     <div class="form-group">
         <label>名字</label>
-        <input type="text" class="form-control" name="name">
+        <input type="text" class="form-control" name="name" value="<?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+">
     </div>
     <div class="form-group">
         <label>价格</label>
-        <input type="text" class="form-control" name="price">
+        <input type="text" class="form-control" name="price" value="<?php echo $_smarty_tpl->tpl_vars['price']->value;?>
+">
     </div>
     <div class="form-group">
         <label>简介</label>
-        <input type="text" class="form-control" name="intro">
+        <input type="text" class="form-control" name="intro" value="<?php echo $_smarty_tpl->tpl_vars['intro']->value;?>
+">
     </div>
     <div class="form-group">
         <label>地址</label>
-        <input type="text" class="form-control" name="adress">
+        <input type="text" class="form-control" name="adress" value="<?php echo $_smarty_tpl->tpl_vars['adress']->value;?>
+">
     </div>
     <div class="form-group">
-        <label for="exampleInputFile">商家头像</label>
+        <label for="exampleInputFile">图片</label>
         <input type="file" id="exampleInputFile" name="file[]" multiple>
         <!--        <p class="help-block">Example block-level help text here.</p>-->
     </div>
     <button type="submit" class="btn btn-default">提交</button>
-    <!--    <input type="hidden" name="id" value="--><?php echo '<?php ';?>//echo $id<?php echo '?>';?><!--">-->
+        <input type="hidden" name="id" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+">
 </form>
 </body>
 </html>

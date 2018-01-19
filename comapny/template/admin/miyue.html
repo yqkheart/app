@@ -59,12 +59,12 @@
                         <tr>
                             <th>id</th>
                             <th>name</th>
+                            <th>img</th>
                             <th>price</th>
-                            <th>intro</th>
-                            <th>photo</th>
-                            <th>zan</th>
-                            <th>adress</th>
-                            <th>collect</th>
+                            <th>sell</th>
+                            <th>style</th>
+                            <th>place</th>
+                            <th>tel</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -87,7 +87,7 @@
         let par=$(this).closest('tr')
         console.log(this)
         $.ajax({
-            url:"index.php?m=admin&f=content&a=del",
+            url:"index.php?m=admin&f=miyue&a=del",
             data:{ id },
             type:"post",
             success:function (res) {

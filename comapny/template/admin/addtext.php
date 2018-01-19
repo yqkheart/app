@@ -51,30 +51,31 @@
     }
 </style>
 <body>
-<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=index&f=content&a=addcheck">
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addcheck">
     <div class="form-group">
         <label>栏目</label>
-        <select class="form-control" style="width: 120px" name="ids">
-            {$option}
-        </select>
+        <input type="text" class="form-control" name="title" value="{$option}" readonly>
     </div>
     <div class="form-group">
-        <label>标题</label>
-        <input type="text" class="form-control" name="title">
+        <label>名字</label>
+        <input type="text" class="form-control" name="name">
     </div>
     <div class="form-group">
-        <label>描述</label>
-        <input type="text" class="form-control" name="description">
+        <label>价格</label>
+        <input type="text" class="form-control" name="price">
     </div>
     <div class="form-group">
-        <label for="exampleInputFile">图片</label>
+        <label>简介</label>
+        <input type="text" class="form-control" name="intro">
+    </div>
+    <div class="form-group">
+        <label>地址</label>
+        <input type="text" class="form-control" name="adress">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">商家头像</label>
         <input type="file" id="exampleInputFile" name="file[]" multiple>
         <!--        <p class="help-block">Example block-level help text here.</p>-->
-    </div>
-    <div class="form-group">
-        <label>内容</label>
-
-        <textarea name="content1" style="width:700px;height:200px;visibility:hidden;"></textarea>
     </div>
     <button type="submit" class="btn btn-default">提交</button>
     <!--    <input type="hidden" name="id" value="--><?php //echo $id?><!--">-->

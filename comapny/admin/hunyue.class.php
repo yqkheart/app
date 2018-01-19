@@ -6,7 +6,7 @@
  * Time: 20:44
  */
 
-class content extends admin
+class hunyue extends admin
 {
     public $db;
     public $brr;
@@ -14,33 +14,34 @@ class content extends admin
     function __construct()
     {
         parent::__construct();
-        $this->db=new db('photography');
+        $this->db=new db('hotel');
     }
 //    内容页面展示
     function init(){
         $this->getcontent($this->db);
         $this->s->assign('arr',$this->brr);
-        $this->s->display('template/admin/content.html');
+        $this->s->display('template/admin/hunyue.html');
     }
     function getcontent($db){
         $arr=$this->db->selAll('*');
         if ($arr){
             foreach ($arr as $item){
-                $img=explode("--","{$item['photo']}")[0];
-                $title=mb_substr($item['intro'],0,10,'utf8');
+                $img=explode("--","{$item['img']}")[0];
+                $title=mb_substr($item['style'],0,10,'utf8');
                 $this->brr.="
                   <tr>
                     <td>{$item['id']}</td>
                     <td>{$item['name']}</td>
-                    <td>{$item['price']}</td>
-                    <td>{$item['intro']}</td>
-                    <td>{$img}</td>    
-                    <td>{$item['zan']}</td>
-                    <td>{$item['adress']}</td>
-                    <td>{$item['collect']}</td>        
+                    <td>{$img}</td> 
+                    <td>{$item['price']}</td>   
+                    <td>{$item['sell']}</td>
+                    <td>{$title}</td>
+                    <td>{$item['collection']}</td>
+                    <td>{$item['place']}</td> 
+                    <td>{$item['tell']}</td> 
                     <td>
                         <button type='button' class='btn btn-danger' id='${item['id']}'>删除</button>
-                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=content&a=change&id={$item['id']}'>修改</a></button>
+                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=hunyue&a=change&id={$item['id']}'>修改</a></button>
                     </td>
                  </tr>
                 ";
@@ -52,9 +53,9 @@ class content extends admin
         $dbs=new db('category');
         $this->getoption($dbs);
         $this->s->assign('option',$this->ctr);
-        $this->s->display('template/admin/addtext.php');
+        $this->s->display('template/admin/hunyueadd.php');
     }
-    function getoption($db,$id=1){
+    function getoption($db,$id=2){
         $result=$db->selAll('*',"id=$id");
         if ($result){
             foreach ($result as $item){
@@ -65,18 +66,19 @@ class content extends admin
     function addcheck(){
         $name=$_REQUEST['name'];
         $price=$_REQUEST['price'];
-        $intro=$_REQUEST['intro'];
-        $adress=$_REQUEST['adress'];
+        $style=$_REQUEST['style'];
+        $place=$_REQUEST['place'];
+        $tel=$_REQUEST['tell'];
         //处理图片
         date_default_timezone_set("Asia/chongqing");
         $file=$_FILES['file'];
         if ($file['size'][0]==0){
             $k="";
-            $row=$this->db->insert('name,price,intro,photo,adress',"'$name','$price','$intro','$k','$adress'");
+            $row=$this->db->insert('name,price,style,place,tell,img',"'$name','$price','$style','$place','$tel','$k'");
             if($row==1){
-                $this->jump('添加成功','index.php?m=admin&f=category&a=init');
+                $this->jump('添加成功','index.php?m=admin&f=hunyue&a=init');
             }else{
-                $this->jump('添加失败','index.php?m=admin&f=category&a=init');
+                $this->jump('添加失败','index.php?m=admin&f=hunyue&a=init');
             }
             exit;
         }
@@ -93,7 +95,7 @@ class content extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=admin&f=category&a=addcategory');
+                $this->jump('请上传图片','index.php?m=admin&f=hunyue&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -112,9 +114,9 @@ class content extends admin
                 $prr.=WEB_PATH.$path."/".$names."--";
             }
         }
-        $row=$this->db->insert('name,price,intro,photo,adress',"'$name','$price','$intro','$prr','$adress'");
+        $row=$this->db->insert('name,price,style,place,tell,img',"'$name','$price','$style','$place','$tel','$prr'");
         if($row==1){
-            $this->jump('添加成功','index.php?m=admin&f=content&a=init');
+            $this->jump('添加成功','index.php?m=admin&f=hunyue&a=init');
         }else{
             echo 'bad';
         }
@@ -133,8 +135,9 @@ class content extends admin
             foreach ($result as $item){
                 $name=$item['name'];
                 $price=$item['price'];
-                $intro=$item['intro'];
-                $adress=$item['adress'];
+                $style=$item['style'];
+                $place=$item['place'];
+                $tel=$item['tell'];
             }
         }
         $dbs=new db('photography');
@@ -142,27 +145,29 @@ class content extends admin
         $this->s->assign('ctr',$this->ctr);
         $this->s->assign('name',$name);
         $this->s->assign('price',$price);
-        $this->s->assign('intro',$intro);
-        $this->s->assign('adress',$adress);
+        $this->s->assign('style',$style);
+        $this->s->assign('place',$place);
+        $this->s->assign('tel',$tel);
         $this->s->assign('id',$id);
-        $this->s->display('template/admin/changetext.php');
+        $this->s->display('template/admin/changehunyue.php');
     }
     function addtext(){
         $id=$_REQUEST['id'];
         $name=$_REQUEST['name'];
         $price=$_REQUEST['price'];
-        $intro=$_REQUEST['intro'];
-        $adress=$_REQUEST['adress'];
+        $style=$_REQUEST['style'];
+        $place=$_REQUEST['place'];
+        $tel=$_REQUEST['tel'];
         //处理图片
         date_default_timezone_set("Asia/chongqing");
         $file=$_FILES['file'];
         if ($file['size'][0]==0){
             $k="";
-            $row=$this->db->update("name='$name',price='$price',intro='$intro',photo='$k',adress='$adress'","id='$id'");
+            $row=$this->db->update("name='$name',price='$price',style='$style',img='$k',place='$place',tell='$tel'","id='$id'");
             if($row==1){
-                $this->jump('修改成功','index.php?m=admin&f=content&a=init');
+                $this->jump('添加成功','index.php?m=admin&f=hunyue&a=init');
             }else{
-                $this->jump('修改失败','index.php?m=admin&f=content&a=init');
+                $this->jump('添加失败','index.php?m=admin&f=hunyue&a=init');
             }
             exit;
         }
@@ -179,7 +184,7 @@ class content extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=index&f=content&a=addcategory');
+                $this->jump('请上传图片','index.php?m=index&f=hunyue&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -198,9 +203,9 @@ class content extends admin
                 $prr.=WEB_PATH.$path."/".$names."--";
             }
         }
-        $row=$this->db->update("name='$name',price='$price',intro='$intro',photo='$prr',adress='$adress'","id='$id'");
+        $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");
         if($row==1){
-            $this->jump('修改成功','index.php?m=admin&f=content&a=init');
+            $this->jump('修改成功','index.php?m=admin&f=hunyue&a=init');
         }else{
             echo 'bad';
         }

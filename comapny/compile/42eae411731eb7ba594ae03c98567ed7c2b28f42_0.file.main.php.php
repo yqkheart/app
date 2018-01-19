@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 08:38:06
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 03:18:42
   from 'D:\quanzhan\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a604ede71d358_09852902',
+  'unifunc' => 'content_5a61558255c0d7_45784076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42eae411731eb7ba594ae03c98567ed7c2b28f42' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516261085,
+      1 => 1516328169,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a604ede71d358_09852902 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a61558255c0d7_45784076 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -110,7 +110,7 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
     </nav>
     <!-- END NAVBAR -->
     <!-- LEFT SIDEBAR -->
-    <div id="sidebar-nav" class="sidebar">
+    <div id="sidebar-nav" class="sidebar" style="overflow:auto">
         <div class="sidebar-scroll">
             <nav>
                 <ul class="nav">
@@ -120,16 +120,9 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
 <!--                    <li><a href="index.php?m=index&a=category" class="" target="mima"><i class="lnr lnr-chart-bars"></i> <span>栏目管理</span></a></li>-->
 <!--                    <li><a href="fenlei.php" class="" target="mima"><i class="lnr lnr-text-format"></i> <span>添加栏目</span></a></li>-->
                     <!--                    <li><a href="content.php" class="" target="mima"><i class="lnr lnr-alarm"></i> <span></span></a></li>-->
+                    <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima"><i class="lnr-file-empty"></i> <span>栏目展示</span></a></li>
                     <li>
-                        <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>栏目管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                        <div id="subPages" class="collapse ">
-                            <ul class="nav">
-                                <li><a href="index.php?m=admin&f=category&a=init" class="" target="mima">栏目展示</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#subPagess" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>内容管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <a href="#subPagess" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>摄影</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                         <div id="subPagess" class="collapse ">
                             <ul class="nav">
                                 <li><a href="index.php?&m=admin&f=content&a=init" class="" target="mima">内容展示</a></li>
@@ -137,16 +130,69 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
                             </ul>
                         </div>
                     </li>
-<!--                    <li>-->
-<!--                        <a href="#subPagesa" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>图片管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>-->
-<!--                        <div id="subPagesa" class="collapse ">-->
-<!--                            <ul class="nav">-->
-<!--                                <li><a href="tupian.php" class="" target="mima">图片展示</a></li>-->
-<!--                                <li><a href="tupianadd.php" class="" target="mima">图片添加</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li><a href="pinglun.php" class="" target="mima"><i class="lnr lnr-pencil"></i> <span>评论管理</span></a></li>-->
+                    <li>
+                        <a href="#subPagesa" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>婚宴</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=hunyue&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=hunyue&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>策划</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=cehua&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=cehua&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2s" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>礼服</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2s" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=lifu&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=lifu&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2sw" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>婚车</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2sw" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=car&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=car&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2sww" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>蜜月</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2sww" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=miyue&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=miyue&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2swww" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>造型</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2swww" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=model&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=model&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagesa2swwa" data-toggle="collapse" class="collapsed"><i class="lnr lnr-dice"></i> <span>首饰</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagesa2swwa" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=jewelry&a=init" class="" target="mima">内容管理</a></li>
+                                <li><a href="index.php?m=admin&f=jewelry&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>

@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 17:07:10
+  from 'D:\quanzhan\app\comapny\template\admin\lifu.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-38',
+  'unifunc' => 'content_5a60c62e4101d2_94972801',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2e78e8e57f4f3315ec13d031e732481abe13ab3a' => 
+    array (
+      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\lifu.html',
+      1 => 1516291627,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a60c62e4101d2_94972801 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +29,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}bootstrap.css">
-    <script src="{JS_PATH}jquery.min.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+bootstrap.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.min.js"><?php echo '</script'; ?>
+>
 </head>
 <style>
     body,html{
@@ -59,17 +86,19 @@
                         <tr>
                             <th>id</th>
                             <th>name</th>
+                            <th>img</th>
                             <th>price</th>
-                            <th>intro</th>
-                            <th>photo</th>
-                            <th>zan</th>
-                            <th>adress</th>
-                            <th>collect</th>
+                            <th>sell</th>
+                            <th>style</th>
+                            <th>collection</th>
+                            <th>place</th>
+                            <th>tel</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {$arr}
+                        <?php echo $_smarty_tpl->tpl_vars['arr']->value;?>
+
                         </tbody>
                     </table>
                     <!--                    <button type="button" id="add" class="btn btn-success"style="margin-left: 45%">添加</button>-->
@@ -81,17 +110,18 @@
 </div>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $('tbody').on('click','.btn-danger',function () {
         let id=$(this).attr('id');
         let par=$(this).closest('tr')
         console.log(this)
         $.ajax({
-            url:"index.php?m=admin&f=content&a=del",
+            url:"index.php?m=admin&f=lifu&a=del",
             data:{ id },
             type:"post",
             success:function (res) {
-//                console.log(res)
+                console.log(res)
                 if (res==1){
                     par.html(" ");
                 }else {
@@ -100,4 +130,6 @@
             }
         })
     })
-</script>
+<?php echo '</script'; ?>
+><?php }
+}

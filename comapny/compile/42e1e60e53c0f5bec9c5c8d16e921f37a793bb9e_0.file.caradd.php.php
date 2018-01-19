@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 10:48:56
-  from 'D:\quanzhan\app\comapny\template\admin\addtext.php' */
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 02:07:28
+  from 'D:\quanzhan\app\comapny\template\admin\caradd.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a606d888cece8_69661951',
+  'unifunc' => 'content_5a6144d0921302_24190467',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ef8c181c930a5b12b0b40315fbdb921d02969014' => 
+    '42e1e60e53c0f5bec9c5c8d16e921f37a793bb9e' => 
     array (
-      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\addtext.php',
-      1 => 1516268931,
+      0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\caradd.php',
+      1 => 1516324045,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a606d888cece8_69661951 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6144d0921302_24190467 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
-	';?>$htmlData = '';
-	if (!empty($_POST['content1'])) {
-        if (get_magic_quotes_gpc()) {
-            $htmlData = stripslashes($_POST['content1']);
-        } else {
-            $htmlData = $_POST['content1'];
-        }
+';?>$htmlData = '';
+if (!empty($_POST['content1'])) {
+    if (get_magic_quotes_gpc()) {
+        $htmlData = stripslashes($_POST['content1']);
+    } else {
+        $htmlData = $_POST['content1'];
     }
+}
 <?php echo '?>';?>
 <!doctype html>
 <html lang="en">
@@ -91,7 +91,7 @@ php/file_manager_json.php',
     }
 </style>
 <body>
-<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addcheck">
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=car&a=addcheck">
     <div class="form-group">
         <label>栏目</label>
         <input type="text" class="form-control" name="title" value="<?php echo $_smarty_tpl->tpl_vars['option']->value;?>
@@ -106,12 +106,16 @@ php/file_manager_json.php',
         <input type="text" class="form-control" name="price">
     </div>
     <div class="form-group">
-        <label>简介</label>
-        <input type="text" class="form-control" name="intro">
+        <label>风格</label>
+        <input type="text" class="form-control" name="style">
     </div>
     <div class="form-group">
-        <label>地址</label>
-        <input type="text" class="form-control" name="adress">
+        <label>地点</label>
+        <input type="text" class="form-control" name="place">
+    </div>
+    <div class="form-group">
+        <label>电话</label>
+        <input type="text" class="form-control" name="tell">
     </div>
     <div class="form-group">
         <label for="exampleInputFile">商家头像</label>

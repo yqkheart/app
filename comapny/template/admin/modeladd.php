@@ -25,9 +25,9 @@ if (!empty($_POST['content1'])) {
     <script>
         KindEditor.ready(function(K) {
             var editor1 = K.create('textarea[name="content1"]', {
-                cssPath : '../plugins/code/prettify.css',
-                uploadJson : '../php/upload_json.php',
-                fileManagerJson : '../php/file_manager_json.php',
+                cssPath : '{KIND_PATH}plugins/code/prettify.css',
+                uploadJson : '{KIND_PATH}php/upload_json.php',
+                fileManagerJson : '{KIND_PATH}php/file_manager_json.php',
                 allowFileManager : true,
                 afterCreate : function() {
                     var self = this;
@@ -51,30 +51,38 @@ if (!empty($_POST['content1'])) {
     }
 </style>
 <body>
-<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=content&a=addtext">
+<form id="box" class="col-md-4 col-lg-4 col-sm-4 col-xs-4" method="post" enctype="multipart/form-data" action="index.php?m=admin&f=model&a=addcheck">
+    <div class="form-group">
+        <label>栏目</label>
+        <input type="text" class="form-control" name="title" value="{$option}" readonly>
+    </div>
     <div class="form-group">
         <label>名字</label>
-        <input type="text" class="form-control" name="name" value="{$name}">
+        <input type="text" class="form-control" name="name">
     </div>
     <div class="form-group">
         <label>价格</label>
-        <input type="text" class="form-control" name="price" value="{$price}">
+        <input type="text" class="form-control" name="price">
     </div>
     <div class="form-group">
-        <label>简介</label>
-        <input type="text" class="form-control" name="intro" value="{$intro}">
+        <label>风格</label>
+        <input type="text" class="form-control" name="style">
     </div>
     <div class="form-group">
-        <label>地址</label>
-        <input type="text" class="form-control" name="adress" value="{$adress}">
+        <label>地点</label>
+        <input type="text" class="form-control" name="place">
     </div>
     <div class="form-group">
-        <label for="exampleInputFile">图片</label>
+        <label>电话</label>
+        <input type="text" class="form-control" name="tell">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">商家头像</label>
         <input type="file" id="exampleInputFile" name="file[]" multiple>
         <!--        <p class="help-block">Example block-level help text here.</p>-->
     </div>
     <button type="submit" class="btn btn-default">提交</button>
-        <input type="hidden" name="id" value="{$id}">
+    <!--    <input type="hidden" name="id" value="--><?php //echo $id?><!--">-->
 </form>
 </body>
 </html>
