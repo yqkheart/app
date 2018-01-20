@@ -52,6 +52,7 @@ class db{
     //增加
     public function insert($name,$newname){
         $sql="insert into ".$this->table." ( $name ) values (" .$newname." )";
+        var_dump($sql);
         $this->db->query($sql);
         return $this->db->affected_rows;
 //        echo $sql;
