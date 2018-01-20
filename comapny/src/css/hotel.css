@@ -58,20 +58,18 @@ header{
     margin-left: 0.2rem;
     text-align: left;
     line-height: 0.4rem;
+    float: left;
 }
 .first{
     width: 100%;
     height: 0.52rem;
 }
-.xiangxi{
-    width: 3.5rem;
-    height: 1.6rem;
-    margin: 0 auto;
-}
+
 .ditu{
     width: 3.5rem;
     height: 1.65rem;
     margin:0 auto;
+    padding-bottom: 1rem;
 }
 .sad{
     width: 100%;
@@ -107,4 +105,91 @@ header{
     width: 0.8rem;
     height: 0.5rem;
     margin: auto;
+}
+.hotel_nub{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-right: 0.2rem;
+
+}
+.nub_img{
+    margin-top: 0.03rem;
+    width: 0.4rem;
+    height: 0.33rem;
+    margin-right: 0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nub_img img{
+    width: 70%;
+    height: 70%;
+}
+.hotel_nub span{
+    height: 100%;
+    font-size: 0.18rem;
+    color: white;
+    line-height: 0.4rem ;
+}
+.xq_xiangqing{
+    width: 3.51rem;
+    height: 1.7rem;
+    margin: 0 auto;
+    background:white;
+    border-radius: 0.06rem;
+    box-shadow: 0rem 0rem 0.1rem 0.02rem rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 0.13rem 0.15rem;
+}
+.xq_list{
+    width: 100%;
+    height: 0.23rem;
+    margin-bottom: 0.07rem;
+
+
+}
+.list_icon{
+    width: 0.23rem;
+    height: 100%;
+    float: left;
+
+}
+.list_icon img{
+    width: 100%;
+}
+.xq_list h1{
+    width: 0.49rem;
+    font-size: 0.12rem;
+    color: #656565;
+    line-height:0.23rem;
+    margin: 0 0.18rem 0 0.09rem;
+    float: left;
+    text-align:justify ;
+    text-align-last: justify;
+
+}
+/*.xq_list h1 span{*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+/*}*/
+.xq_list h2{
+    font-size: 0.12rem;
+    color: #a5a5a6;
+    line-height:0.23rem;
+    font-weight: normal;
+    float: left;
+
+}
+.xq_wjx{
+    width: 0.68rem;
+    height: 100%;
+    float: right;
+
+}
+.xq_wjx img{
+    width: 100%;
+    height: 100%;
 }

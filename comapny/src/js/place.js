@@ -1,22 +1,27 @@
 $(function(){
-
+    var nowplace;
+    // 点击弹出所有城市
     $(".your-city").on("click",function(){
         $(".middle ul").removeClass("active");
         getip(); 
     })
+    // 重新定位
     $(".now").on("click",".restart",function(){
         getip();
         $(this).css({ "color": "#FF8A2C"})
     })
+    // 点击当前定位 选中到所在地
     $(".now-img-place").click(function(){
-        var nowplace=$(this).html();
-        $(".your-city span").html(nowplace).css({ "color": "#FF8630"});
+        nowplace=$(this).html();
+        $(".your-city span").html(nowplace).css({ "color": "#FF8630"}).addClass("me");
         $(".your-city img").css({
             "transform" : "rotate(90deg)" 
         })
+        console.log(nowplace);
     })
+//  点击城市选中到当前定位
     $(".middle").on("click","li",function(){
-        var nowp=$(this).html();
+        var nowp=$(this).find("span").html();
         $(".now-img-place").html(nowp);
     })
 
@@ -44,7 +49,6 @@ $(function(){
         });
     }
     getip();
-
     $('.slider-input04').jRange({
         from: 0,
         to: 200000,
@@ -57,17 +61,65 @@ $(function(){
         ondragend: function () {
             let ran = $('.slider-input04').val();
             var b = ran.split(",");
-            let str1="";
+            let str1 = "";
             for(var i=0;i<b.length;i++){
                 b[i] = "￥" + b[i];
                 str1+=b[i]+"--";
                 s=str1.slice(0,-2);
             }
-            // console.log(s);
             $(".select-budget span").html(s).css({
                 "color": "#FF8C2A"
-            });
+            }).addClass("me");
         }
     });
+    /* ********发送数据   判断***** */
+    $(".sub-next").click(function(){
+        let placeval;
+        let priceval;
+        if ($(".your-city span input").hasClass("myinput") &&
+    $(".select-budget span input").hasClass("myinput")){
+
+            placeval = $(".your-city input").val();
+            priceval = $(".select-budget input").val();
+            console.log(placeval, priceval);
+
+    } else if ($(".your-city span input").hasClass("myinput") &&
+    $(".select-budget span").hasClass("me")){
+
+            placeval = $(".your-city input").val();
+            priceval = $(".select-budget span").html();
+            console.log(placeval, priceval);
+
+    } else if ($(".your-city span").hasClass("me") &&
+    $(".select-budget span input").hasClass("myinput")) {
+
+            placeval = $(".your-city span").html();
+            priceval = $(".select-budget input").val();
+            console.log(placeval, priceval);
+
+    } else if ($(".your-city span").hasClass("me") &&
+    $(".select-budget span ").hasClass("me")) {
+
+            placeval = $(".your-city span").html();
+            priceval = $(".select-budget span").html();
+            console.log(placeval, priceval);
+
+    }
+        console.log(placeval, priceval);
+        $.ajax({
+            url:"index.php?m=index&f=custom&a=getplace",
+            data: {placeval,priceval},
+            type: "post",
+            success:function(res){
+                console.log(res);
+                if(res==1){
+                    location.href="index.php?m=index&f=custom&a=date";
+                }else if(res==0){
+                    location.href = "index.php?m=index&f=custom&a=date";
+                }
+            }
+        })
+    })
+
 
 })
