@@ -37,6 +37,34 @@ header{
     text-align: center;
     line-height: 0.5rem;
 }
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	bottom: 48px;
+	left: 0;
+    width: 100%;
+    height:0.5rem;
+	overflow: hidden;
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: auto;
+}
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+#scroller li {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 0.5rem;
+}
 .bottomBox{
     width: 100%;
     height: 50%;
@@ -54,7 +82,17 @@ header{
     position: relative;
 }
 .bottomBox > li > a{
-    color: #fff
+    color: #fff;
+}
+.bottomBox .mao{
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
 }
 .shu{
     position: absolute;
@@ -87,10 +125,11 @@ header{
     margin-bottom: 0.2rem;
 }
 .hotel{
-    width:3.51rem;
+    width:100%;
     height: 2.58rem; 
     /* margin-bottom: 0.2rem; */
     /* background: pink; */
+    margin: 0 auto;
 }
 .hotelTitle{
     width: 100%;

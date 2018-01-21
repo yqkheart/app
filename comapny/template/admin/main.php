@@ -71,11 +71,7 @@
     </nav>
     <!-- END NAVBAR -->
     <!-- LEFT SIDEBAR -->
-<<<<<<< HEAD
-    <div id="sidebar-nav" class="sidebar" stye="overflow: yes;">
-=======
     <div id="sidebar-nav" class="sidebar" style="overflow:auto">
->>>>>>> 2ee34c4353e6396927a5c8d1c97aaed40753732d
         <div class="sidebar-scroll">
             <nav>
                 <ul class="nav">
@@ -196,7 +192,7 @@
 </html>
 <script>
     $('#exitBox').click(function () {
-        location.href="index.php?m=index&a=exits";
+        location.href="index.php?m=admin&a=exits";
     })
 </script>
 

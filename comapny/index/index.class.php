@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 
 
 class index extends indexmain
@@ -52,7 +52,4 @@ class index extends indexmain
         $this->s->display("xinxi.html");
     }
 }
-=======
-    
-    
->>>>>>> 02947fcb51a722f114f36991ba254026ab6d28f1
+

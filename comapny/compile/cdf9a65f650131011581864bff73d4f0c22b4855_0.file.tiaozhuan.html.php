@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 02:14:19
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 14:54:37
   from 'D:\quanzhan\app\comapny\template\admin\tiaozhuan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a5ff4eb068e20_37148277',
+  'unifunc' => 'content_5a64392de13a06_31898183',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdf9a65f650131011581864bff73d4f0c22b4855' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\tiaozhuan.html',
-      1 => 1515123286,
+      1 => 1516517655,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a5ff4eb068e20_37148277 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a64392de13a06_31898183 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

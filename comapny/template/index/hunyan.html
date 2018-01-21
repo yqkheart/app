@@ -12,7 +12,7 @@
 <body>
 	<header class="header">
 		<div class="header-top">
-			<a href="shouye.html"><div class="fanhui"></div></a>
+			<a href="index.php?m="><div class="fanhui"></div></a>
 			<div class="title">
 				<span class="pix1"></span>
 				<span class="pix2"></span>
@@ -23,38 +23,37 @@
 			<div></div>
 		</div>
 		<div class="select-type">
-			<div class="title-type title">类型 - 中式<img src="../../src/img/search-img/xiala.png" alt=""></div>
-			<div class="title-area title">区域 - 不限<img src="../../src/img/search-img/xiala.png" alt=""></div>
-			<div class="title-other title">筛选 - 不限<img src="../../src/img/search-img/xiala.png" alt=""></div>
+			<div class="title-type title">类型 - 中式<img src="{IMG_PATH}search-img/xiala.png" alt=""></div>
+			<div class="title-area title">区域 - 不限<img src="{IMG_PATH}search-img/xiala.png" alt=""></div>
+			<div class="title-other title">筛选 - 不限<img src="{IMG_PATH}search-img/xiala.png" alt=""></div>
 		</div>
 	</header>
 	<main class="search-result-box">
+		{foreach $arr $s}
 		<section class="search-result">
 			<div class="search-result-top">
 				<div class="search-result-top-img">
-					<img src="../../src/img/search-img/jiudian.png" alt="">
+					<img src="{$s['img']}" alt="">
 				</div>
 				<div class="background1"></div>
 				<div class="background2"></div>
 				<div class="search-result-top-right">
 					<div class="info-title">
-						<span class="title">金峰庄园</span>
-						<span class="img-box"><img src="../../src/img/search-img/wujiaoxing.png" alt=""></span>
+						<span class="title">{$s['name']}</span>
+						<span class="img-box"><img src="{IMG_PATH}search-img/wujiaoxing.png" alt=""></span>
 					</div>
 					<div class="line"></div>
 					<div class="desc-box">
-						<span class="desc1">#婚礼会所</span>
-						<span class="desc2">#超高人气</span>
-						<span class="desc3">#中式风格</span>
+						<span class="desc1">#{$s['style']}</span>
 					</div>
 					<div class="price-info">
 						<div class="price">
 							<div class="danwei">RMB</div>
-							<div class="amount">2999起</div>
+							<div class="amount">{$s['price']}起</div>
 						</div>
 						<div class="sell-count">
 							<span class="biao">已售：</span>
-							<span class="count">123</span>
+							<span class="count">{$s['sell']}</span>
 						</div>
 					</div>
 				</div>
@@ -63,120 +62,22 @@
 			</div>
 			<div class="other-info">
 				<div class="shoucang son">
-					<span class="img-box"><img src="../../src/img/search-img/shoucang.png" alt=""></span>
+					<span class="img-box"><img src="{IMG_PATH}search-img/shoucang.png" alt=""></span>
 					<span class="store">收藏</span>
-					<span class="store-count">1314</span>
+					<span class="store-count">{$s['collection']}</span>
 				</div>
 				<div class="time son">
-					<span class="img-box"><img src="../../src/img/search-img/time.png" alt=""></span>
+					<span class="img-box"><img src="{IMG_PATH}search-img/time.png" alt=""></span>
 					<span class="store">8:00-10：00</span>
 				</div>
 				<div class="address son">
-					<span class="img-box"><img src="../../src/img/search-img/dizhi.png" alt=""></span>
-					<span class="store">小店区</span>
-					<span class="store-count">5km</span>
-				</div>
-			</div>
-
-		</section>
-		<section class="search-result">
-			<div class="search-result-top">
-				<div class="search-result-top-img">
-					<img src="../../src/img/search-img/jiudian.png" alt="">
-				</div>
-				<div class="background1"></div>
-				<div class="background2"></div>
-				<div class="search-result-top-right">
-					<div class="info-title">
-						<span class="title">金峰庄园</span>
-						<span class="img-box"><img src="../../src/img/search-img/wujiaoxing.png" alt=""></span>
-					</div>
-					<div class="line"></div>
-					<div class="desc-box">
-						<span class="desc1">#婚礼会所</span>
-						<span class="desc2">#超高人气</span>
-						<span class="desc3">#中式风格</span>
-					</div>
-					<div class="price-info">
-						<div class="price">
-							<div class="danwei">RMB</div>
-							<div class="amount">2999起</div>
-						</div>
-						<div class="sell-count">
-							<span class="biao">已售：</span>
-							<span class="count">123</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fenjie">
-			</div>
-			<div class="other-info">
-				<div class="shoucang son">
-					<span class="img-box"><img src="../../src/img/search-img/shoucang.png" alt=""></span>
-					<span class="store">收藏</span>
-					<span class="store-count">1314</span>
-				</div>
-				<div class="time son">
-					<span class="img-box"><img src="../../src/img/search-img/time.png" alt=""></span>
-					<span class="store">8:00-10：00</span>
-				</div>
-				<div class="address son">
-					<span class="img-box"><img src="../../src/img/search-img/dizhi.png" alt=""></span>
-					<span class="store">小店区</span>
-					<span class="store-count">5km</span>
+					<span class="img-box"><img src="{IMG_PATH}search-img/dizhi.png" alt=""></span>
+					<span class="store">{$s['place']}</span>
+					<span class="store-count">{$s['juli']}</span>
 				</div>
 			</div>
 		</section>
-		<section class="search-result">
-			<div class="search-result-top">
-				<div class="search-result-top-img">
-					<img src="../../src/img/search-img/jiudian.png" alt="">
-				</div>
-				<div class="background1"></div>
-				<div class="background2"></div>
-				<div class="search-result-top-right">
-					<div class="info-title">
-						<span class="title">金峰庄园</span>
-						<span class="img-box"><img src="../../src/img/search-img/wujiaoxing.png" alt=""></span>
-					</div>
-					<div class="line"></div>
-					<div class="desc-box">
-						<span class="desc1">#婚礼会所</span>
-						<span class="desc2">#超高人气</span>
-						<span class="desc3">#中式风格</span>
-					</div>
-					<div class="price-info">
-						<div class="price">
-							<div class="danwei">RMB</div>
-							<div class="amount">2999起</div>
-						</div>
-						<div class="sell-count">
-							<span class="biao">已售：</span>
-							<span class="count">123</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fenjie">
-			</div>
-			<div class="other-info">
-				<div class="shoucang son">
-					<span class="img-box"><img src="../../src/img/search-img/shoucang.png" alt=""></span>
-					<span class="store">收藏</span>
-					<span class="store-count">1314</span>
-				</div>
-				<div class="time son">
-					<span class="img-box"><img src="../../src/img/search-img/time.png" alt=""></span>
-					<span class="store">8:00-10：00</span>
-				</div>
-				<div class="address son">
-					<span class="img-box"><img src="../../src/img/search-img/dizhi.png" alt=""></span>
-					<span class="store">小店区</span>
-					<span class="store-count">5km</span>
-				</div>
-			</div>
-		</section>
+		{/foreach}
 	</main>
 </body>
 </html>

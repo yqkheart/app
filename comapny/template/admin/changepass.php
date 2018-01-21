@@ -108,7 +108,7 @@
         },
         submitHandler:function () {
             $.ajax({
-                url:"index.php?m=index&a=updatepass",
+                url:"index.php?m=admin&a=updatepass",
                 type:"post",
                 data:$("#boxs").serialize(),
                 success:function (res) {
