@@ -88,6 +88,10 @@ $(function(){
 
             placeval = $(".your-city input").val();
             priceval = $(".select-budget span").html();
+            var arr=priceval.split("--");
+            var aprice = parseInt(arr[1].slice(1)) - parseInt(arr[0].slice(1)) ;
+            console.log(aprice);
+            priceval=aprice;
             console.log(placeval, priceval);
 
     } else if ($(".your-city span").hasClass("me") &&
@@ -102,9 +106,14 @@ $(function(){
 
             placeval = $(".your-city span").html();
             priceval = $(".select-budget span").html();
+            var arr = priceval.split("--");
+            var aprice = parseInt(arr[1].slice(1)) - parseInt(arr[0].slice(1));
+            console.log(aprice);
+            priceval = aprice;
             console.log(placeval, priceval);
 
     }
+    
         console.log(placeval, priceval);
         $.ajax({
             url:"index.php?m=index&f=custom&a=getplace",

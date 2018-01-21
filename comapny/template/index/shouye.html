@@ -51,69 +51,32 @@
     <!-- 方案 -->
     <div class="fangan">
             <div class="titleBox"><img src="{IMG_PATH}/首页/biaoti.png" alt=""></div>
+            <input class="mypid" type="hidden" value="{$pid}">
+            {foreach $arr as $item}
             <div class="photoBox">
-                <img src="{IMG_PATH}/首页/组9@2x.png" alt="">
+                <img src="{IMG_PATH}/首页/{$item[0]}" alt="">
                 <div class="textBox">
                     <div class="firstBox">
-                        <div class="leftBox"><img src="{IMG_PATH}/首页/矢量智能对象@2x的副本 6.png" alt=""></div>
+                        <div class="leftBox">
+                            <img src="{IMG_PATH}/首页/矢量智能对象@2x的副本 6.png" alt="">
+                        </div>
                         <div class="rightBox">
-                            <div class="topTitle">婚宴</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
+                            <div class="topTitle" style=" margin-left: 0.04rem;">{$item[0]}</div>
+                            <div class="bottomEng">
+                                <span style="color:rgba(255,255,255,0.7); margin-left: 0.04rem;">priceBox</span> BANQUET</div>
                         </div>
                     </div>
                     <div class="dian">...........................................</div>
                     <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox">￥2999</div>
+                    <div class="priceBox">￥{$item[1]}</div>
                 </div>
             </div>
-            <div class="photoBox">
-                <img src="{IMG_PATH}/首页/组12@2x.png" alt="">
-                <div class="textBox1">
-                    <div class="firstBox">
-                        <div class="rightBox">
-                            <div class="topTitle" style="text-align:right">礼服</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                        </div>
-                        <div class="leftBox"><img src="{IMG_PATH}/首页/矢量智能对象@2x的副本 5.png" alt=""></div>
-                    </div>
-                    <div class="dian">...........................................</div>
-                    <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox" style="margin-left:50%">￥2999</div>
-                </div>
-            </div>
-            <div class="photoBox">
-                <img src="{IMG_PATH}/首页/组11@2x.png" alt="">
-                <div class="textBox">
-                    <div class="firstBox">
-                        <div class="leftBox"><img src="{IMG_PATH}/首页/矢量智能对象@2x的副本 7.png" alt=""></div>
-                        <div class="rightBox">
-                            <div class="topTitle">策划</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                        </div>
-                    </div>
-                    <div class="dian">...........................................</div>
-                    <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox">￥2999</div>
-                </div>
-            </div>
-            <div class="photoBox">
-                    <a href="sheying.html"><img src="{IMG_PATH}/首页/组13@2x.png" alt=""></a>
-                    <div class="textBox1">
-                        <div class="firstBox">
-                            <div class="rightBox">
-                                <div class="topTitle" style="text-align:right">摄影</div>
-                                <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                            </div>
-                            <div class="leftBox"><img src="{IMG_PATH}/首页/矢量智能对象@2x的副本 8.png" alt=""></div>
-                        </div>
-                        <div class="dian">...........................................</div>
-                        <div class="zhu">注：该价格为每桌单价</div>
-                        <div class="priceBox" style="margin-left:50%">￥2999</div>
-                    </div>
-            </div>
+            {/foreach}
             <div class="bottomBox">
                 <div class="xiugai" style="margin-left:14%">修改项目</div>
-                <div class="xiugai" style="margin-right:14%;background:#FF8C2A;"><a style="color: #fff" href="hunlifangan.html">方案管理</a></div>
+                <a href=""></a><div class="xiugai guanli" style="margin-right:14%;background:#FF8C2A; "> 
+                    <a href="index.php?m=index&f=custom&a=guanli&pid={$pid}" style="color: #fff;">方案管理</a> 
+                </div>
             </div>
     </div>
     <div class="tableBox1"></div>
@@ -175,12 +138,7 @@
 </body>
 </html>
 <!-- Swiper JS -->
+<script src="{JS_PATH}jquery.min.js"></script>
 <script src="{JS_PATH}swiper.min.js"></script>
+<script src="{JS_PATH}shouye.js"></script>
 <!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-</script>
