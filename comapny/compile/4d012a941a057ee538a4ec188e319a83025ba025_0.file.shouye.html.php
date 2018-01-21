@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 08:33:04
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 03:38:24
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a61ad40671258_35215128',
+  'unifunc' => 'content_5a640b30aeb105_17202957',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516350782,
+      1 => 1516505903,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a61ad40671258_35215128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a640b30aeb105_17202957 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,77 +87,46 @@ swiper.min.css">
     <div class="fangan">
             <div class="titleBox"><img src="<?php echo IMG_PATH;?>
 /首页/biaoti.png" alt=""></div>
+            <input class="mypid" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['pid']->value;?>
+">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
             <div class="photoBox">
                 <img src="<?php echo IMG_PATH;?>
-/首页/组9@2x.png" alt="">
+/首页/<?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
+" alt="">
                 <div class="textBox">
                     <div class="firstBox">
-                        <div class="leftBox"><img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x的副本 6.png" alt=""></div>
+                        <div class="leftBox">
+                            <img src="<?php echo IMG_PATH;?>
+/首页/矢量智能对象@2x的副本 6.png" alt="">
+                        </div>
                         <div class="rightBox">
-                            <div class="topTitle">婚宴</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
+                            <div class="topTitle" style=" margin-left: 0.04rem;"><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
+</div>
+                            <div class="bottomEng">
+                                <span style="color:rgba(255,255,255,0.7); margin-left: 0.04rem;">priceBox</span> BANQUET</div>
                         </div>
                     </div>
                     <div class="dian">...........................................</div>
                     <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox">￥2999</div>
+                    <div class="priceBox">￥<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
+</div>
                 </div>
             </div>
-            <div class="photoBox">
-                <img src="<?php echo IMG_PATH;?>
-/首页/组12@2x.png" alt="">
-                <div class="textBox1">
-                    <div class="firstBox">
-                        <div class="rightBox">
-                            <div class="topTitle" style="text-align:right">礼服</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                        </div>
-                        <div class="leftBox"><img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x的副本 5.png" alt=""></div>
-                    </div>
-                    <div class="dian">...........................................</div>
-                    <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox" style="margin-left:50%">￥2999</div>
-                </div>
-            </div>
-            <div class="photoBox">
-                <img src="<?php echo IMG_PATH;?>
-/首页/组11@2x.png" alt="">
-                <div class="textBox">
-                    <div class="firstBox">
-                        <div class="leftBox"><img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x的副本 7.png" alt=""></div>
-                        <div class="rightBox">
-                            <div class="topTitle">策划</div>
-                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                        </div>
-                    </div>
-                    <div class="dian">...........................................</div>
-                    <div class="zhu">注：该价格为每桌单价</div>
-                    <div class="priceBox">￥2999</div>
-                </div>
-            </div>
-            <div class="photoBox">
-                    <a href="sheying.html"><img src="<?php echo IMG_PATH;?>
-/首页/组13@2x.png" alt=""></a>
-                    <div class="textBox1">
-                        <div class="firstBox">
-                            <div class="rightBox">
-                                <div class="topTitle" style="text-align:right">摄影</div>
-                                <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
-                            </div>
-                            <div class="leftBox"><img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x的副本 8.png" alt=""></div>
-                        </div>
-                        <div class="dian">...........................................</div>
-                        <div class="zhu">注：该价格为每桌单价</div>
-                        <div class="priceBox" style="margin-left:50%">￥2999</div>
-                    </div>
-            </div>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="bottomBox">
                 <div class="xiugai" style="margin-left:14%">修改项目</div>
-                <div class="xiugai" style="margin-right:14%;background:#FF8C2A;"><a style="color: #fff" href="hunlifangan.html">方案管理</a></div>
+                <a href=""></a><div class="xiugai guanli" style="margin-right:14%;background:#FF8C2A; "> 
+                    <a href="index.php?m=index&f=custom&a=guanli&pid=<?php echo $_smarty_tpl->tpl_vars['pid']->value;?>
+" style="color: #fff;">方案管理</a> 
+                </div>
             </div>
     </div>
     <div class="tableBox1"></div>
@@ -226,16 +195,16 @@ swiper.min.css">
 <!-- Swiper JS -->
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
+jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
 swiper.min.js"><?php echo '</script'; ?>
 >
-<!-- Initialize Swiper -->
 <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+shouye.js"><?php echo '</script'; ?>
 >
-  var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-<?php echo '</script'; ?>
-><?php }
+<!-- Initialize Swiper -->
+<?php }
 }

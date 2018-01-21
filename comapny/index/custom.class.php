@@ -69,7 +69,38 @@
             echo $row;
         }
         function shouye(){
+            $row0=$this->db->selOne("project,pid","pid=1");
+            $row1=explode(" ",$row0['project']);
+            $row2=array_slice($row1,0,count($row1)-1);
+            $shouyearr=array();
+            foreach ($row2 as $key => $value) {
+                $row3=explode(":",$value);
+                array_push($shouyearr,$row3);
+            }
+            $this->s->assign("arr",$shouyearr);
+            $this->s->assign("pid",$row0['pid']);
             $this->s->display("template/index/shouye.html");
         }
+        function guanli(){
+            $pid=$_REQUEST['pid'];
+            $row0=$this->db->selOne("project","pid='$pid'");
+            $row1=explode(" ",$row0['project']);
+            $row2=array_slice($row1,0,count($row1)-1);
+            $shouyearr=array();
+            foreach ($row2 as $key => $value) {
+                $row3=explode(":",$value);
+                array_push($shouyearr,$row3);
+            }
+            var_dump($shouyearr);
+             $db1=new db("car");
+             $row1=$db1->selOne("*","pid=1");
+             var_dump($row1);
+           /*  foreach ($shouyearr as $key => $value) {
+              
+            } */
+            $this->s->assign("arr",$shouyearr);
+            $this->s->display("template/index/hunlifangan.html");
+        }
+        
     }
     
