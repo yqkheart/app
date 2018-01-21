@@ -91,7 +91,7 @@
                             <div class="form-group ">
                                 <label for="yam" class="control-label sr-only">验证码</label>
                                 <input type="text" class="form-control" id="yanzhengma" placeholder="验证码" name="code">
-                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=adminx&a=code&'+Math.random(0,1)" alt="">
+                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=admin&a=code&'+Math.random(0,1)" alt="">
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
                             <button type="text" id="resgiter" class="btn btn-primary btn-lg btn-block" onclick="return false">SIGN UP</button>

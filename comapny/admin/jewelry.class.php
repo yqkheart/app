@@ -40,7 +40,7 @@ class jewelry extends admin
                     <td>{$item['tell']}</td> 
                     <td>
                         <button type='button' class='btn btn-danger' id='${item['id']}'>删除</button>
-                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=jewelry&a=change&id={$item['id']}'>修改</a></button>
+                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=model&a=change&id={$item['id']}'>修改</a></button>
                     </td>
                  </tr>
                 ";
@@ -161,9 +161,9 @@ class jewelry extends admin
             $k="";
             $row=$this->db->update("name='$name',price='$price',style='$style',img='$k',place='$place',tell='$tel'","id='$id'");
             if($row==1){
-                $this->jump('修改成功','index.php?m=admin&f=jewelry&a=init');
+                $this->jump('修改成功','index.php?m=admin&f=model&a=init');
             }else{
-                $this->jump('修改失败','index.php?m=admin&f=jewelry&a=init');
+                $this->jump('修改失败','index.php?m=admin&f=model&a=init');
             }
             exit;
         }
@@ -180,7 +180,7 @@ class jewelry extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=index&f=jewelry&a=addcategory');
+                $this->jump('请上传图片','index.php?m=index&f=model&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -201,7 +201,7 @@ class jewelry extends admin
         }
         $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");
         if($row==1){
-            $this->jump('修改成功','index.php?m=admin&f=jewelry&a=init');
+            $this->jump('修改成功','index.php?m=admin&f=model&a=init');
         }else{
             echo 'bad';
         }

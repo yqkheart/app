@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-18 09:08:36
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 08:42:02
   from 'D:\quanzhan\app\comapny\template\admin\login2.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6056043f7305_30386858',
+  'unifunc' => 'content_5a61a14a530703_31551742',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7799a5b75d7d7036e9d5a45693a3e7ff1e7cff32' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\login2.php',
-      1 => 1516262867,
+      1 => 1516347721,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6056043f7305_30386858 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a61a14a530703_31551742 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -128,7 +128,7 @@ logo-dark.png" alt="Klorofil Logo"></div>
                             <div class="form-group ">
                                 <label for="yam" class="control-label sr-only">验证码</label>
                                 <input type="text" class="form-control" id="yanzhengma" placeholder="验证码" name="code">
-                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=adminx&a=code&'+Math.random(0,1)" alt="">
+                                <img src="index.php?m=admin&a=code" onclick="this.src='index.php?m=admin&a=code&'+Math.random(0,1)" alt="">
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
                             <button type="text" id="resgiter" class="btn btn-primary btn-lg btn-block" onclick="return false">SIGN UP</button>

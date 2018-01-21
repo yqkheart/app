@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 03:18:42
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 04:15:15
   from 'D:\quanzhan\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a61558255c0d7_45784076',
+  'unifunc' => 'content_5a6162c3728cf8_26987291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42eae411731eb7ba594ae03c98567ed7c2b28f42' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516328169,
+      1 => 1516329169,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a61558255c0d7_45784076 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6162c3728cf8_26987291 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -190,6 +190,24 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
                             <ul class="nav">
                                 <li><a href="index.php?m=admin&f=jewelry&a=init" class="" target="mima">内容管理</a></li>
                                 <li><a href="index.php?m=admin&f=jewelry&a=addcontent" class="" target="mima">内容添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPages33" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>话题管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPages33" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?m=admin&f=huati&a=init" class="" target="mima">话题展示</a></li>
+                                <li><a href="index.php?m=admin&f=huati&a=addhuati" class="" target="mima">话题添加</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#subPagess44" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>动态评论</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                        <div id="subPagess44" class="collapse ">
+                            <ul class="nav">
+                                <li><a href="index.php?&m=admin&f=dongtai&a=init" class="" target="mima">动态展示</a></li>
+                                <li><a href="index.php?m=admin&f=pinglun&a=init" class="" target="mima">评论展示</a></li>
                             </ul>
                         </div>
                     </li>

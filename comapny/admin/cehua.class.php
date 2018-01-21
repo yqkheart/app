@@ -110,7 +110,7 @@ class cehua extends admin
             $names=microtime(true).".".explode(".",$item)[1];
             if (is_uploaded_file($file['tmp_name'][$key])){
                 move_uploaded_file($file['tmp_name'][$key],$path."/".$names);
-                $prr.=WEB_PATH.$path."/".$names."--";
+                $prr.="app/company".$path."/".$names."--";
             }
         }
         $row=$this->db->insert('name,price,style,place,tell,img',"'$name','$price','$style','$place','$tel','$prr'");
@@ -199,7 +199,7 @@ class cehua extends admin
             $names=microtime(true).".".explode(".",$item)[1];
             if (is_uploaded_file($file['tmp_name'][$key])){
                 move_uploaded_file($file['tmp_name'][$key],$path."/".$names);
-                $prr.=WEB_PATH.$path."/".$names."--";
+                $prr.="app/company".$path."/".$names."--";
             }
         }
         $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");

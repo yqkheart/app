@@ -4,6 +4,9 @@
 * @Last Modified by:   Administrator
 * @Last Modified time: 2018-01-18 14:42:15
 */
+*{
+	font-family: "PingFang SC";
+}
 body{
 	background: #f4f4f4;
 }
