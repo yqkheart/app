@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登陆</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../src/img/lzwimg/logo.png" media="screen" />
-    <link rel="stylesheet" href="../../src/css/lzwcss/login.css">
-    <link rel="stylesheet" href="../../src/iconfont/lzeiconfont/iconfont.css">
-    <script src="../../src/js/lzwjs/jquery.js"></script>
-    <script src="../../src/js/lzwjs/rem.js"></script>
-    <script src="../../src/js/lzwjs/login.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}lzwcss/login.css">
+    <link rel="stylesheet" href="{FONT_PATH}lzeiconfont/iconfont.css">
+    <script src="{JS_PATH}lzwjs/jquery.js"></script>
+    <script src="{JS_PATH}lzwjs/rem.js"></script>
+    <script src="{JS_PATH}lzwjs/login.js"></script>
 </head>
 <body>
 <section>
@@ -26,54 +26,58 @@
 
         <!--用户头像-->
         <div class="yonghu-box">
-            <img src="../../src/img/lzwimg/yonghu_03.png" alt="">
+            <img src="{IMG_PATH}lzwimg/yonghu_03.png" alt="">
         </div>
 
         <!--登陆注册-->
         <div class="login-box">
-            <ul>
+            <ul class="login">
                 <li class="yinying"></li>
-                <li class="lo-zi active">
+                <li class="lo-zi sibian1 active">
                     
                 </li>
                 <span class="denglu">登录</span>
-                <li class="triangle_border_down active1"></li>
+                <li class="triangle_border_down  sanjiao1 active1"></li>
             </ul>
 
-            <ul>
+            <ul class="register">
                 <li class="yinying"></li>
-                <li class="lo-zi">
+                <li class="lo-zi sibian2">
                     
                 </li>
                 <span class="denglu">注册</span>
-                <li class="triangle_border_down"></li>
+                <li class="triangle_border_down sanjiao2"></li>
             </ul>
         </div>
     </section>
     <!--登陆 注册 选项卡-->
     <!--注册-->
-    <section class="footer-box box2">
+    <form class="footer-box box2" action="index.php?m=index&f=index&a=zhuce" method="post">
         <div class="xg-box">
             <div class="input">
                 <div>
-                    <img src="../../src/img/lzwimg/icon_03.png" alt="">
+                    <img src="{IMG_PATH}lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" placeholder="请输入用户名" autofocus required maxlength="10">
+                <input type="text" name="user" placeholder="请输入用户名" autofocus required maxlength="10">
             </div>
             <div class="input">
                 <div>
-                    <img src="../../src/img/lzwimg/icon_06.png" alt="">
+                    <img src="{IMG_PATH}lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" placeholder="请设置您的密码" required maxlength="16">
+                <input type="password" name="pass" placeholder="请设置您的密码" required maxlength="16">
             </div>
             <div class="input input1">
                 <div>
-                    <img src="../../src/img/lzwimg/icon_08.png" alt="">
+                    <img src="{IMG_PATH}lzwimg/icon_08.png" alt="">
                 </div>
-                <input type="password" placeholder="请重新输入密码" required maxlength="16">
+                <input type="password" name="pass1" placeholder="请重新输入密码" required maxlength="16">
             </div>
             <!--提交按钮-->
-            <button type="button" class="btn">立即注册</button>
+            <a>
+                <input type="submit" class="btn" value="立即注册">
+                 <!--<button type="submit" class="btn">立即注册</button>-->
+            </a>
+           
             <!--底部三个icon-->
             <footer>
                 <div class="icon">
@@ -87,21 +91,21 @@
                 </div>
             </footer>
         </div>
-    </section>
+    </form>
     <!--登陆-->
-    <section class="footer-box active3 box1">
+    <form class="footer-box active3 box1" action="index.php?m=index&f=index&a=check" method="post">
         <div class="xg-box">
             <div class="input">
                 <div>
-                    <img src="../../src/img/lzwimg/icon_03.png" alt="">
+                    <img src="{IMG_PATH}lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="10">
+                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="10" name="user">
             </div>
             <div class="input input2">
                 <div>
-                    <img src="../../src/img/lzwimg/icon_06.png" alt="">
+                    <img src="{IMG_PATH}lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" placeholder="请设置您的密码" required maxlength="16">
+                <input type="password" placeholder="请设置您的密码" required maxlength="16" name="pass">
                 <span>
                     <i class="iconfont icon-biyan"></i>
                 </span>
@@ -116,8 +120,9 @@
                 </div>
             </div>
             <!--提交按钮-->
-            <a href="xinxi.html">
-                <button type="button" class="btn">立即登陆</button>
+            <a>
+                <input type="submit" class="btn" value="立即登陆">
+                <!--<button type="submit" class="btn">立即登陆</button>-->
             </a>
             <!--第三方登陆-->
             <div class="sanfang">第三方账号登陆</div>
@@ -134,7 +139,7 @@
                 </div>
             </footer>
         </div>
-    </section>
+    </form>
 </section>
 
 </body>

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../src/css/jquery.range.css">
-    <link rel="stylesheet" href="../../src/css/place.css">
+    <link rel="stylesheet" href="{CSS_PATH}jquery.range.css">
+    <link rel="stylesheet" href="{CSS_PATH}place.css">
     <title>Document</title>
-    <script src="../../src/js/jquery.min.js"></script>
-    <script src="../../src/js/rem-half.js"></script>
-    <script src="../../src/js/jquery.range.js"></script>
-    <script src="../../src/js/place.js"></script>
+    <script src="{JS_PATH}jquery.min.js"></script>
+    <script src="{JS_PATH}rem-half.js"></script>
+    <script src="{JS_PATH}jquery.range.js"></script>
+    <script src="{JS_PATH}place.js"></script>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="header-left">
-                <img src="../../src/img/定制流程/date_03.png" alt="">
+                <img src="{IMG_PATH}定制流程/date_03.png" alt="">
                 <p class="first-p">
                     填写所在地及预算
                 </p>
@@ -27,14 +27,14 @@
             <div class="header-right">
                 <a href="">
                     跳过
-                    <img src="../../src/img/定制流程/date_06.png" alt="">
+                    <img src="{IMG_PATH}定制流程/date_06.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page">
             .....................................
             <span>01</span>
-            <span style="color: #F7A766;">/04</span> .....................................
+            <span style="color: #F7A766;">/ 04</span> .....................................
         </div>
     </header>
     <main>
@@ -42,14 +42,15 @@
             <div class="content">
                 <section class="top">
                     <div class="content-top-left">
-                         <img src="../../src/img/定制流程/custom_03.png" alt="">   
+                         <img src="{IMG_PATH}定制流程/custom_03.png" alt="">   
                     </div>
                     <div class="content-top-right">
                         <div class="select-city your-city">
                             <span>
-                            请选择您所在的城市
+                               <input type="hidden" class="myinput" value="北京">
+                                请选择您所在的城市
                             </span>&nbsp;&nbsp;
-                            <img src="../../src/img/定制流程/custom_06.png" alt="">
+                            <img src="{IMG_PATH}定制流程/custom_06.png" alt="">
                         </div>        
                     </div>
                 </section>
@@ -99,22 +100,23 @@
                     <div class="budget">
                         <section class="bo">
                             <div class="content-bo-left">
-                                <img src="../../src/img/定制流程/custom_21.png" alt="">
+                                <img src="{IMG_PATH}定制流程/custom_21.png" alt="">
                             </div>
                             <div class="content-bo-right">
                                 <div class="select-city select-budget">
                                     <span>
+                                        <input type="hidden" class="myinput" value="200000">
                                         请选择或者数去您的预算
                                     </span>
                                     &nbsp;
-                                    <img src="../../src/img/定制流程/custom_24.png" alt="">
+                                    <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
                                 </div>
                             </div>
                         </section>
                         <div class="shandow"></div>
                         <div class="slider">
                             <input type="hidden" class="slider-input04" value="200000" />
-                            <a href="date.html">
+                            <a >
                             <div class="sub-next ">
                                     下一步
                             </div>

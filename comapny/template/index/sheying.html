@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="../../src/js/rem-half.js"></script>
-    <link rel="stylesheet" href="../../src/css/sheying.css">
+    <script src="{JS_PATH}rem-half.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}sheying.css">
 </head>
 <body>
     <header>
         <div class="topBox">
-            <div class="backBox"><img src="../../src/img/婚礼方案/back.png" alt=""></div>
+            <div class="backBox"><img src="{IMG_PATH}婚礼方案/back.png" alt=""></div>
             <div class="hunlifangan">摄影</div>   
         </div>
         <div class="option">
@@ -20,81 +20,20 @@
         </div>
     </header>
     <div class="textBox">
+        {foreach $arr $s}
         <div class="shangjiaBoxs" style="margin-left:0.07rem;">
-            <div class="imgs"><img src="../../src/img/摄影/shangjia3.png" alt=""></div>
-            <div class="hot"><img src="../../src/img/摄影/hot.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
+            <div class="imgs"><img src="{$s['photo']}" alt=""></div>
+            <div class="huatu">{$s['name']}</div>
+            <div class="huatus">{$s['intro']}</div>
             <div class="heng"></div>
             <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
+                <div class="xing"><img src="{IMG_PATH}摄影/xing.png" alt=""></div>
+                <div class="wenzi">{$s['zan']}</div>
+                <div class="xing" style="margin-left:0.2rem;"><img src="{IMG_PATH}摄影/dingwei.png" alt=""></div>
+                <div class="wenzi">{$s['adress']}</div>
             </div>
         </div>
-        <div class="shangjiaBoxs" style="height:1.805rem;margin-right:0.07rem;">
-            <div class="imgs" style="height:1.035rem"><img src="../../src/img/摄影/shangjia1.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
-            <div class="heng"></div>
-            <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
-            </div>
-        </div>
-        <div class="shangjiaBoxs" style="height:1.805rem;margin-left:0.07rem;">
-            <div class="imgs" style="height:1.035rem"><img src="../../src/img/摄影/shangjia4.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
-            <div class="heng"></div>
-            <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
-            </div>
-        </div>
-        <div class="shangjiaBoxs" style="margin-right:0.07rem;">
-            <div class="imgs"><img src="../../src/img/摄影/shangjia5.png" alt=""></div>
-            <div class="hot"><img src="../../src/img/摄影/new.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
-            <div class="heng"></div>
-            <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
-            </div>
-        </div>
-        <div class="shangjiaBoxs" style="margin-left:0.07rem;">
-            <div class="imgs"><img src="../../src/img/摄影/shangjia6.png" alt=""></div>
-            <div class="hot"><img src="../../src/img/摄影/hot.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
-            <div class="heng"></div>
-            <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
-            </div>
-        </div>
-        <div class="shangjiaBoxs" style="height:1.805rem;margin-right:0.07rem;">
-            <div class="imgs" style="height:1.035rem"><img src="../../src/img/摄影/shangjia7.png" alt=""></div>
-            <div class="huatu">花图摄影</div>
-            <div class="huatus">大理旅拍 一对一全程...</div>
-            <div class="heng"></div>
-            <div class="zan">
-                <div class="xing"><img src="../../src/img/摄影/xing.png" alt=""></div>
-                <div class="wenzi">3420</div>
-                <div class="xing" style="margin-left:0.2rem;"><img src="../../src/img/摄影/dingwei.png" alt=""></div>
-                <div class="wenzi">南京</div>
-            </div>
-        </div>
+        {/foreach}
     </div>
 </body>
 </html>

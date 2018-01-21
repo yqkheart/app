@@ -192,7 +192,7 @@
 </html>
 <script>
     $('#exitBox').click(function () {
-        location.href="index.php?m=index&a=exits";
+        location.href="index.php?m=admin&a=exits";
     })
 </script>
 

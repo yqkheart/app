@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 04:15:15
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 10:38:45
   from 'D:\quanzhan\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6162c3728cf8_26987291',
+  'unifunc' => 'content_5a645fa5f14ea6_01120286',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42eae411731eb7ba594ae03c98567ed7c2b28f42' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516329169,
+      1 => 1516527524,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6162c3728cf8_26987291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a645fa5f14ea6_01120286 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -232,7 +232,7 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
 <?php echo '<script'; ?>
 >
     $('#exitBox').click(function () {
-        location.href="index.php?m=index&a=exits";
+        location.href="index.php?m=admin&a=exits";
     })
 <?php echo '</script'; ?>
 >

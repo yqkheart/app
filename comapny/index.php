@@ -17,7 +17,7 @@ define('LIBS_PATH',ROOT_PATH."libs/");
 define('CSS_PATH',WEB_PATH."src/css/");
 define('JS_PATH',WEB_PATH."src/js/");
 define('IMG_PATH',WEB_PATH."src/img/");
-define('FONT_PATH',WEB_PATH."src/font/");
+define('FONT_PATH',WEB_PATH."src/iconfont/");
 define('VENDOR_PATH',WEB_PATH."src/vendor/");
 define('KIND_PATH',WEB_PATH."src/kindeditor/");
 //echo KIND_PATH;
@@ -27,6 +27,8 @@ include_once LIBS_PATH."session.class.php";
 include_once LIBS_PATH."db.class.php";
 include_once LIBS_PATH."admin.class.php";
 include_once LIBS_PATH."page.class.php";
+include_once LIBS_PATH."indexmain.class.php";
+include_once LIBS_PATH."smarty/Smarty.class.php";
 
 $r=new router();
 $r->getFun();

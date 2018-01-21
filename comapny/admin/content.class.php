@@ -110,6 +110,7 @@ class content extends admin
             if (is_uploaded_file($file['tmp_name'][$key])){
                 move_uploaded_file($file['tmp_name'][$key],$path."/".$names);
                 $prr.=WEB_PATH.$path."/".$names."--";
+                $prr=mb_substr($prr,0,strlen($prr)-2);
             }
         }
         $row=$this->db->insert('name,price,intro,photo,adress',"'$name','$price','$intro','$prr','$adress'");
@@ -196,6 +197,7 @@ class content extends admin
             if (is_uploaded_file($file['tmp_name'][$key])){
                 move_uploaded_file($file['tmp_name'][$key],$path."/".$names);
                 $prr.=WEB_PATH.$path."/".$names."--";
+                $prr=mb_substr($prr,0,strlen($prr)-2);
             }
         }
         $row=$this->db->update("name='$name',price='$price',intro='$intro',photo='$prr',adress='$adress'","id='$id'");
