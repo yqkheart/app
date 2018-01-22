@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 07:13:25
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:25:31
   from 'D:\quanzhan\app\comapny\template\index\hunyan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a642f85ebe5c4_68260342',
+  'unifunc' => 'content_5a654b9bc68525_80413471',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '897857aa63f681f28f5be1d58bf886a35d019345' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\index\\hunyan.html',
-      1 => 1516515121,
+      1 => 1516587092,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a642f85ebe5c4_68260342 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a654b9bc68525_80413471 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +44,8 @@ rem-ljb.js"><?php echo '</script'; ?>
 			<div class="title">
 				<span class="pix1"></span>
 				<span class="pix2"></span>
-				<span class="tt">婚宴</span>
+				<span class="tt"><?php echo $_smarty_tpl->tpl_vars['mz']->value;?>
+</span>
 				<span class="pix3"></span>
 				<span class="pix4"></span>
 			</div>
