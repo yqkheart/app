@@ -1,14 +1,45 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 17:54:22
+  from 'C:\Users\Administrator\Desktop\app\comapny\template\index\search.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-38',
+  'unifunc' => 'content_5a64634e700114_60505939',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '17bb386e0ff7c85ad9e37b3412b5f5744749cc4b' => 
+    array (
+      0 => 'C:\\Users\\Administrator\\Desktop\\app\\comapny\\template\\index\\search.html',
+      1 => 1516528460,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a64634e700114_60505939 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="{CSS_PATH}base.css">
-    <link rel="stylesheet" href="{CSS_PATH}search.css">
-    <script src="{JS_PATH}jquery.min.js"></script>
-    <script src="{JS_PATH}rem-ljb.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+search.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem-ljb.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header class="header">
@@ -137,7 +168,8 @@
 </main>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $(function () {
         if (localStorage.history){
             var recordList = JSON.parse(localStorage.history)
@@ -217,14 +249,16 @@
                         str += `<section class="search-result">
 			<div class="search-result-top">
 				<div class="search-result-top-img">
-					<img src="{IMG_PATH}search-img/jiudian.png" alt="">
+					<img src="<?php echo IMG_PATH;?>
+search-img/jiudian.png" alt="">
 				</div>
 				<div class="background1"></div>
 				<div class="background2"></div>
 				<div class="search-result-top-right">
 					<div class="info-title">
 						<span class="title">${ data[i].name}</span>
-						<span class="img-box"><img src="{IMG_PATH}search-img/wujiaoxing.png" alt=""></span>
+						<span class="img-box"><img src="<?php echo IMG_PATH;?>
+search-img/wujiaoxing.png" alt=""></span>
 					</div>
 					<div class="line"></div>
 					<div class="desc-box">
@@ -248,16 +282,19 @@
 			</div>
 			<div class="other-info">
 				<div class="shoucang son">
-					<span class="img-box"><img src="{IMG_PATH}search-img/shoucang.png" alt=""></span>
+					<span class="img-box"><img src="<?php echo IMG_PATH;?>
+search-img/shoucang.png" alt=""></span>
 					<span class="store">收藏</span>
 					<span class="store-count">${ data[i].collection}</span>
 				</div>
 				<div class="time son">
-					<span class="img-box"><img src="{IMG_PATH}search-img/time.png" alt=""></span>
+					<span class="img-box"><img src="<?php echo IMG_PATH;?>
+search-img/time.png" alt=""></span>
 					<span class="store">8:00-10：00</span>
 				</div>
 				<div class="address son">
-					<span class="img-box"><img src="{IMG_PATH}search-img/dizhi.png" alt=""></span>
+					<span class="img-box"><img src="<?php echo IMG_PATH;?>
+search-img/dizhi.png" alt=""></span>
 					<span class="store">${ data[i].place}</span>
 					<span class="store-count">5km</span>
 				</div>
@@ -272,4 +309,6 @@
         })
 
     })
-</script>
+<?php echo '</script'; ?>
+><?php }
+}
