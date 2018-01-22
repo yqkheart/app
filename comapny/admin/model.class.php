@@ -164,7 +164,7 @@ class model extends admin
             if($row==1){
                 $this->jump('修改成功','index.php?m=admin&f=model&a=init');
             }else{
-                $this->jump('修改失败','index.php?m=admin&f=&a=init');
+                $this->jump('修改失败','index.php?m=admin&f=model&a=init');
             }
             exit;
         }
@@ -181,7 +181,7 @@ class model extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=index&f=miyue&a=addcategory');
+                $this->jump('请上传图片','index.php?m=index&f=model&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -203,7 +203,7 @@ class model extends admin
         }
         $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");
         if($row==1){
-            $this->jump('修改成功','index.php?m=admin&f=miyue&a=init');
+            $this->jump('修改成功','index.php?m=admin&f=model&a=init');
         }else{
             echo 'bad';
         }

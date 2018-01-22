@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:22:55
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:36:46
   from 'D:\quanzhan\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a654aff064734_54003813',
+  'unifunc' => 'content_5a654e3ee0b292_52074637',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e399cd11f0f5f207d3ac975d27f212522481a13' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516587773,
+      1 => 1516588473,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a654aff064734_54003813 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a654e3ee0b292_52074637 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +108,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                         </div>
                     </div>
                     <div class="dian">...........................................</div>
-                    <div class="zhu" >注：该价格为单价</div>
+                    <div class="zhu" >注：该价格为单价.</div>
                     <div class="priceBox" >￥<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
 </div>
                 </div>

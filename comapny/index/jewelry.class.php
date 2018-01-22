@@ -6,18 +6,21 @@
  * Time: 16:00
  */
 
-class sheying extends admin
+class jewelry extends admin
 {
     public $db;
     function __construct()
     {
         parent::__construct();
-        $this->db=new db('photography');
+        $this->db=new db('jewelry');
     }
     function init(){
+        header("content-type:text/html;charset=utf8");
+        $mz=$_REQUEST['mz'];
         $arr=$this->db->selAll("*");
 //        var_dump($arr);
+        $this->s->assign("mz",$mz);
         $this->s->assign("arr",$arr);
-        $this->s->display("template/index/sheying.html");
+        $this->s->display("template/index/hunyan.html");
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:25:31
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:36:45
   from 'D:\quanzhan\app\comapny\template\index\hunyan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a654b9bc68525_80413471',
+  'unifunc' => 'content_5a654e3d5315a8_48500429',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '897857aa63f681f28f5be1d58bf886a35d019345' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\index\\hunyan.html',
-      1 => 1516587092,
+      1 => 1516588166,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a654b9bc68525_80413471 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a654e3d5315a8_48500429 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +40,7 @@ rem-ljb.js"><?php echo '</script'; ?>
 <body>
 	<header class="header">
 		<div class="header-top">
-			<a href="index.php?m="><div class="fanhui"></div></a>
+			<a href="index.php?m=index&f=custom&a=shouye"><div class="fanhui"></div></a>
 			<div class="title">
 				<span class="pix1"></span>
 				<span class="pix2"></span>
