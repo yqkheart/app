@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 07:58:37
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 08:16:16
   from 'D:\quanzhan\app\comapny\template\index\sheying.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a658b9d06a239_23898436',
+  'unifunc' => 'content_5a658fc0996df4_54714878',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '355a65c57a641b7547459866096d630e68fee820' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\index\\sheying.html',
-      1 => 1516604315,
+      1 => 1516605375,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a658b9d06a239_23898436 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a658fc0996df4_54714878 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +70,7 @@ jquery.min.js"><?php echo '</script'; ?>
                     let arr="";
                     res.forEach(function (val) {
                         arr+=`
-        <div class="shangjiaBoxs" style="margin-left:0.07rem;">
+        <div class="shangjiaBoxs">
             <div class="imgs"><img src="${ val.img }" alt=""></div>
             <div class="huatu">${ val.name }</div>
             <div class="huatus">${ val.intro }</div>

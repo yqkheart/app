@@ -76,11 +76,11 @@ header{
     color: #fff;
 }
 .textBox{
-    width: 100%;
+    width: auto;
     height: auto;
     /* background: pink; */
     margin-top: 0.35rem;
-    /* padding: 0 0.12rem; */
+     padding: 0 0.07rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
