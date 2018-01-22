@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:05:01
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:19:15
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6546cdb8a198_42435962',
+  'unifunc' => 'content_5a654a232c2c04_17445251',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516586697,
+      1 => 1516587550,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6546cdb8a198_42435962 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a654a232c2c04_17445251 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,14 +57,13 @@ swiper.min.css">
             </div>
         </div>
         <div class="bottomBox">
-            <a href="search.html">
+            <a href="index.php?m=index&f=search&a=search">
                  <div class="inputBox">
                 <input type="text" class="puts">
                 <div class="sousuo"><img src="<?php echo IMG_PATH;?>
 /首页/search_搜索@2x.png" alt=""></div>
             </div>
             </a>
-           
         </div>
     </header>
     <!-- banner -->
@@ -97,7 +96,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 &mz=<?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 "><img src="<?php echo IMG_PATH;?>
 首页/<?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
-" alt=""></a>
+.png" alt=""></a>
                 <div class="textBox">
                     <div class="firstBox">
                         <div class="leftBox"><img src="<?php echo IMG_PATH;?>
