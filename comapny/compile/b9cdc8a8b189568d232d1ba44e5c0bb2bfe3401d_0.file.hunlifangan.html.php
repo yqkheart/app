@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 09:44:54
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:04:18
   from 'G:\myobject\app\comapny\template\index\hunlifangan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a646116c7e544_61030121',
+  'unifunc' => 'content_5a6546a20d3d07_37234896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cdc8a8b189568d232d1ba44e5c0bb2bfe3401d' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\hunlifangan.html',
-      1 => 1516527893,
+      1 => 1516586656,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a646116c7e544_61030121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6546a20d3d07_37234896 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,12 +68,13 @@ iscroll.js"><?php echo '</script'; ?>
             <div id="scroller">
                 <ul class="bottomBox">
                     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item', false, 'key');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_vars['item']->value) {
 ?>
                     <li>
-                        <a class="mao" href="#1">
+                        <a class="mao" href="#<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+">
                              <a><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 </a>
                         <div class="shu"></div>
@@ -93,15 +94,23 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 婚礼方案/xinxibiao.png" alt=""></div> -->
         <div class="hotel">
             <!-- 摄影师 -->
-            <div class="hotelTitle">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['xiangxi']->value, 'item', false, 'key');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_vars['item']->value) {
+?>
+            <div class="hotelTitle" id="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
+">
                 <p>WEDDINXINGHEGRAPHY</p>
-                <p>摄影师</p>
+                <p><?php echo $_smarty_tpl->tpl_vars['item']->value[0]['name'];?>
+</p>
             </div>
-            <div class="ggbox">
+            <div class="ggbox" style="margin-bottom:0.7rem;">
                 <div class="priceBox">
                     <div class="leftPrice">
                         <span style="color:#E3E3E3">￥</span>
-                        <span style="color:#FD7C71">3999</span>
+                        <span style="color:#FD7C71"><?php echo $_smarty_tpl->tpl_vars['item']->value[0]['price'];?>
+</span>
                         <span style="color:#E3E3E3">起</span>
                     </div>
                     <div class="rightXing">
@@ -111,24 +120,39 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
                 <div class="hotelImg">
                     <img src="<?php echo IMG_PATH;?>
-婚礼方案/sheying.png" alt="">
+婚礼方案/lifu.png" alt="">
                 </div>
-            
-                <div class="hotelDizhi" style="height:0.8rem">
-                    <div class="iconBoxs">
+                <div class="hotelDizhi">
+                    <div class="iconBox">
                         <img src="<?php echo IMG_PATH;?>
-婚礼方案/touxiang2.png" alt="">
+婚礼方案/dingwei.png" alt="">
                     </div>
-                    <div class="dizhis">灰灰</div>
-                    <div class="dizhiss">
-                        <span style="color:#FE7C38">造梦师</span>&nbsp;
-                        <span style="color:#CACACA">策划一流</span>
+                    <div class="dizhi"><?php echo $_smarty_tpl->tpl_vars['item']->value[0]['place'];?>
+</div>
+                </div>
+                <div class="hotelDizhi">
+                    <div class="iconBox">
+                        <img src="<?php echo IMG_PATH;?>
+婚礼方案/shijian.png" alt="">
                     </div>
+                    <div class="dizhi" style="color:#8D8E90">8:00AM-10:00PM</div>
+                </div>
+                <div class="hotelDizhi">
+                    <div class="iconBox">
+                        <img src="<?php echo IMG_PATH;?>
+婚礼方案/dianhua.png" alt="">
+                    </div>
+                    <div class="dizhi" style="color:#FE7C38"><?php echo $_smarty_tpl->tpl_vars['item']->value[0]['tell'];?>
+</div>
                 </div>
                 <div class="zixun">立即咨询</div>
             </div>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <!-- 酒店 -->
-            <div class="hotelTitle" id="1">
+           <!--  <div class="hotelTitle" id="1">
                 <p>WEDDINXINGHEGRAPHY</p>
                 <p>星河湾酒店</p>
             </div>
@@ -156,9 +180,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <div class="dizhi" style="color:#FE7C38">400-9088-345</div>
                 </div>
                 <div class="zixun">立即咨询</div>
-            </div>
+            </div> -->
             <!-- 策划师 -->
-            <div class="hotelTitle">
+            <!-- <div class="hotelTitle">
                 <p>WEDDINXINGHEGRAPHY</p>
                 <p>策划师</p>
             </div>
@@ -178,10 +202,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <div class="dizhiss"><span style="color:#FE7C38">造梦师</span>&nbsp;<span style="color:#CACACA">策划一流</span></div>
                 </div>
                 <div class="zixun">立即咨询</div>
-            </div>
+            </div> -->
             
             <!-- 婚纱 -->
-            <div class="hotelTitle">
+           <!--  <div class="hotelTitle">
                 <p>WEDDINXINGHEGRAPHY</p>
                 <p>爱睦婚纱</p>
             </div>
@@ -209,7 +233,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <div class="dizhi" style="color:#FE7C38">400-9088-345</div>
                 </div>
                 <div class="zixun">立即咨询</div>
-            </div>
+            </div> -->
         </div>  
     </div>
     <!-- table栏目 -->
@@ -218,7 +242,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="xiugai">
                 <div class="tubiao"><img src="<?php echo IMG_PATH;?>
 婚礼方案/bianji.png" alt=""></div>
-                <div class="character">修改方案</div>
+               <a href="index.php?m=index&f=custom">
+                    <div class="character">修改方案</div>
+               </a>    
             </div>
             <div class="sanjiao"></div>
         </div>
@@ -226,7 +252,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="xiugai">
                 <div class="tubiao"><img src="<?php echo IMG_PATH;?>
 婚礼方案/yuyue.png" alt=""></div>
+                <a href="index.php?m=index&f=custom&a=shouye">
                 <div class="character" style="color:#fff">预约全部</div>
+                </a>
             </div>
         </div>
     </div>

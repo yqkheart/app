@@ -100,7 +100,7 @@
                         <div class="modify modify-project">
                             <span>
                                 {foreach $mproject as $item}
-                                <li>{$item}:<input class="pro" type="text" value="{$proportion}"></li>&nbsp;
+                                <li>{$item[0]}:<input class="pro" type="text" value="{$proportion}"><input class="epro" type="hidden" value="{$item[1]}"></li>&nbsp;
                                 {/foreach}
                             </span>
                             

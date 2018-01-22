@@ -7,7 +7,7 @@ $(function(){
        
         var project="";
         $(".modify-project span li").each(function(){
-            project += $(this).text() + $(this).find(".pro").val()+" ";
+            project += $(this).text() + $(this).find(".pro").val()+":"+$(this).find(".epro").val()+" ";
         })
         console.log(place,cprice,date,style,project);
         $.ajax({

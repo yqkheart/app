@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:05:01
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 10:54:00
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6546cdb8a198_42435962',
+  'unifunc' => 'content_5a6471482ae017_33104412',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516586697,
+      1 => 1516532039,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6546cdb8a198_42435962 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6471482ae017_33104412 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,9 +93,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
             <div class="photoBox">
-                <a href="index.php?m=index&f=<?php echo $_smarty_tpl->tpl_vars['item']->value[2];?>
-&mz=<?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
-"><img src="<?php echo IMG_PATH;?>
+                <a href="hunyan.html"><img src="<?php echo IMG_PATH;?>
 首页/<?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 " alt=""></a>
                 <div class="textBox">
@@ -103,14 +101,14 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                         <div class="leftBox"><img src="<?php echo IMG_PATH;?>
 /首页/矢量智能对象@2x的副本 6.png" alt=""></div>
                         <div class="rightBox">
-                            <div class="topTitle" style="margin-left: 0.03rem;"><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
+                            <div class="topTitle"><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 </div>
-                            <div class="bottomEng" style="margin-left: 0.03rem;"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
+                            <div class="bottomEng"><span style="color:rgba(255,255,255,0.7)">priceBox</span> BANQUET</div>
                         </div>
                     </div>
                     <div class="dian">...........................................</div>
-                    <div class="zhu" >注：该价格为单价</div>
-                    <div class="priceBox" >￥<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
+                    <div class="zhu">注：该价格为每桌单价</div>
+                    <div class="priceBox">￥<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
 </div>
                 </div>
             </div>
@@ -119,11 +117,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="bottomBox">
-                <div class="xiugai" style="margin-left:14%">
-                    <a style="color: #FFB579;" href="index.php?m=index&f=custom">
-                     修改项目
-                    </a>
-                </div>
+                <div class="xiugai" style="margin-left:14%">修改项目</div>
                 <a href=""></a><div class="xiugai guanli" style="margin-right:14%;background:#FF8C2A; "> 
                     <a href="index.php?m=index&f=custom&a=guanli&pid=<?php echo $_smarty_tpl->tpl_vars['pid']->value;?>
 " style="color: #fff;">方案管理</a> 

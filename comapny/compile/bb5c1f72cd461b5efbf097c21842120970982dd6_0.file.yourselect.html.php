@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 07:50:32
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 00:51:13
   from 'G:\myobject\app\comapny\template\index\yourselect.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a61a348b882e4_73010579',
+  'unifunc' => 'content_5a653581589c49_43908199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bb5c1f72cd461b5efbf097c21842120970982dd6' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\yourselect.html',
-      1 => 1516348232,
+      1 => 1516582272,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a61a348b882e4_73010579 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a653581589c49_43908199 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,8 +152,9 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
-                                <li><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+                                <li><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 :<input class="pro" type="text" value="<?php echo $_smarty_tpl->tpl_vars['proportion']->value;?>
+"><input class="epro" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
 "></li>&nbsp;
                                 <?php
 }

@@ -3,6 +3,8 @@ $(function(){
         "#FF6E8A","#FF8164"];
     var word = ["-摄影-", "-婚宴-", "-策划-", "-礼服-", "-婚车-", "-蜜月-", "-造型-"
         , "-首饰-"];
+    var eword = ["photography", "hotel", "plan", "dress", "car", "honeymoon","modeling",
+"jewelry"];
     // console.log($("section.bottom li").length);
     // 循环  
     $("section.bottom li").each(function(index,value){
@@ -10,10 +12,12 @@ $(function(){
         $(".include-right").append($(`<li style=" display: none;"><div></div></li>`))
         // 点击循环的li里的当前li
         if ($(value).children(".zhao").hasClass("active")){
-            let oldword = word[0].substr(1, 2);
+            let oldword = word[0].substring(1, word[0].length - 1);
+            let oldeword= eword[0];
             let yusuan = "";
-            // console.log(oldword);
-            yusuan += `${oldword} <div></div>`;
+            console.log(oldword);
+            console.log(oldeword);
+            yusuan += `${oldword}<span style="display:none">--${oldeword}</span> <div></div>`;
             //          显示内容
             $(".include-right li").eq(index).html((index, value) => {
                 return yusuan;
@@ -40,7 +44,8 @@ $(function(){
                     "opacity": 0.8
                 });
                 //遮罩下方文字
-                let bottomword = word[index].substr(1, 2);
+                let bottomword = word[index].substring(1, word[index].length - 1);
+                
                 console.log(bottomword);
                 $(this).children("p").html(bottomword).css({
                     "color": "#7F8282;"
@@ -48,6 +53,7 @@ $(function(){
 
                 //点击选中到上面
                 let oldword = $(this).children("p").html()
+                
                 let yusuan = "";
                 yusuan = `<div style="display: none;"></div>`;
                 //          添加内容
@@ -79,9 +85,10 @@ $(function(){
                     "color": color[index]
                 });
                 //点击选中到上面
-                let oldword = $(this).children("p").html().substr(1, 2)
+                let oldword = $(this).children("p").html().substring(1, $(this).children("p").html().length - 1);
+                let oldeword = eword[index];
                 let yusuan = "";
-                yusuan += `${oldword} <div></div>`;
+                yusuan += `${oldword}<span style="display:none">--${oldeword}</span> <div></div>`;
                 //          添加内容
                 $(".include-right li").eq(index).html((index, value) => {
                     return yusuan;
