@@ -140,8 +140,8 @@ class car extends admin
                 $tel=$item['tell'];
             }
         }
-        $dbs=new db('photography');
-        $this->getoption($dbs,$id);
+//        $dbs=new db('photography');
+//        $this->getoption($dbs,$id);
         $this->s->assign('ctr',$this->ctr);
         $this->s->assign('name',$name);
         $this->s->assign('price',$price);
