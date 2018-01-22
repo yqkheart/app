@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:04:18
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:07:18
   from 'G:\myobject\app\comapny\template\index\hunlifangan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6546a20d3d07_37234896',
+  'unifunc' => 'content_5a655566013ee4_50456205',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cdc8a8b189568d232d1ba44e5c0bb2bfe3401d' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\hunlifangan.html',
-      1 => 1516586656,
+      1 => 1516590437,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6546a20d3d07_37234896 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a655566013ee4_50456205 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,8 +60,10 @@ iscroll.js"><?php echo '</script'; ?>
 <body onload="loaded()">
     <header>
         <div class="topBox">
-            <div class="backBox"><img src="<?php echo IMG_PATH;?>
-婚礼方案/back.png" alt=""></div>
+           <a href="index.php?m=index&f=custom&a=shouye"><div class="backBox">
+            <img src="<?php echo IMG_PATH;?>
+婚礼方案/back.png" alt="">
+        </div></a> 
             <div class="hunlifangan">婚礼方案</div>
         </div>
         <div id="wrapper">
@@ -119,8 +121,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_var
                     </div>
                 </div>
                 <div class="hotelImg">
-                    <img src="<?php echo IMG_PATH;?>
-婚礼方案/lifu.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value[0]['img'];?>
+" alt="">
                 </div>
                 <div class="hotelDizhi">
                     <div class="iconBox">

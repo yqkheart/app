@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:19:15
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:31:53
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a654a232c2c04_17445251',
+  'unifunc' => 'content_5a654d19e5cea8_85518111',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516587550,
+      1 => 1516588248,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a654a232c2c04_17445251 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a654d19e5cea8_85518111 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,20 +70,20 @@ swiper.min.css">
     <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="<?php echo IMG_PATH;?>
-/首页/banner2.png" alt=""></div>
+首页/banner2.png" alt=""></div>
           <div class="swiper-slide"><img src="<?php echo IMG_PATH;?>
-/首页/banner3.png" alt=""></div>
+首页/banner3.png" alt=""></div>
           <div class="swiper-slide"><img src="<?php echo IMG_PATH;?>
-/首页/banner4.png" alt=""></div>
+首页/banner4.png" alt=""></div>
           <div class="swiper-slide"><img src="<?php echo IMG_PATH;?>
-/首页/banner5.png" alt=""></div>
+首页/banner5.png" alt=""></div>
         </div>
         <!-- Add Pagination -->
     </div>
     <!-- 方案 -->
     <div class="fangan">
             <div class="titleBox"><img src="<?php echo IMG_PATH;?>
-/首页/biaoti.png" alt=""></div>
+首页/biaoti.png" alt=""></div>
             <input class="mypid" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['pid']->value;?>
 ">
             <?php
@@ -100,7 +100,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                 <div class="textBox">
                     <div class="firstBox">
                         <div class="leftBox"><img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x的副本 6.png" alt=""></div>
+首页/矢量智能对象@2x的副本 6.png" alt=""></div>
                         <div class="rightBox">
                             <div class="topTitle" style="margin-left: 0.03rem;"><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 </div>
@@ -108,7 +108,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                         </div>
                     </div>
                     <div class="dian">...........................................</div>
-                    <div class="zhu" >注：该价格为单价</div>
+                    <div class="zhu" >注：该价格为单价.</div>
                     <div class="priceBox" >￥<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
 </div>
                 </div>
@@ -137,7 +137,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <a href="shouye.html">
                 <div class="opp">
                     <img src="<?php echo IMG_PATH;?>
-/首页/矢量智能对象@2x.png" alt="">
+首页/矢量智能对象@2x.png" alt="">
                 </div>
                 <div class="shu"></div>
             
@@ -150,7 +150,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <a href="active.html">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
-/首页/活动@2x.png" alt="">
+首页/活动@2x.png" alt="">
                 </div>
                 <div class="shu"></div>
                 <div class="character">活动</div>
@@ -161,7 +161,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <a href="faxian.html">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
-/首页/发现@2x.png" alt="">
+首页/发现@2x.png" alt="">
             </div>
             <div class="shu"></div>
             <div class="character">发现</div>
@@ -172,7 +172,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <a href="assistant.html">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
-/首页/助手@2x.png" alt="">
+首页/助手@2x.png" alt="">
             </div>
             <div class="shu"></div>
             <div class="character">助手</div>
@@ -183,7 +183,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <a href="personal.html">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
-/首页/我们@2x.png" alt="">
+首页/我们@2x.png" alt="">
             </div>
             <div class="character">我们</div>
             </a>

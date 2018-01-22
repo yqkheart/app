@@ -127,4 +127,20 @@ $(function(){
             }
         })
     })
+    $(".jump").click(function(){
+        let myproject = $(".include-right li").text();
+        $.ajax({
+            url: "index.php?m=index&f=custom&a=getproject",
+            data: { myproject },
+            type: "post",
+            success: function (res) {
+                console.log(res);
+                if (res == 1) {
+                    location.href = "index.php?m=index&f=custom&a=manner";
+                } else if (res == 0) {
+                    location.href = "index.php?m=index&f=custom&a=manner";
+                }
+            }
+        })
+    })
 })

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 10:56:54
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:51:34
   from 'G:\myobject\app\comapny\template\index\project.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6471f6d4a3d0_27712779',
+  'unifunc' => 'content_5a6551b6a76f94_49663168',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e0cf0bf2cfadbd072aa60cb260095d5f053bb07f' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\project.html',
-      1 => 1516532213,
+      1 => 1516589494,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6471f6d4a3d0_27712779 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6551b6a76f94_49663168 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ rem-half.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
-                <a href="date.html">
+                <a href="index.php?m=index&f=custom&a=date">
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_03.png" alt="">
                 <p class="first-p">
@@ -60,7 +60,7 @@ rem-half.js"><?php echo '</script'; ?>
                 
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_06.png" alt="">

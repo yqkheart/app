@@ -25,7 +25,9 @@
 <body onload="loaded()">
     <header>
         <div class="topBox">
-            <div class="backBox"><img src="{IMG_PATH}婚礼方案/back.png" alt=""></div>
+           <a href="index.php?m=index&f=custom&a=shouye"><div class="backBox">
+            <img src="{IMG_PATH}婚礼方案/back.png" alt="">
+        </div></a> 
             <div class="hunlifangan">婚礼方案</div>
         </div>
         <div id="wrapper">
@@ -65,7 +67,7 @@
                     </div>
                 </div>
                 <div class="hotelImg">
-                    <img src="{IMG_PATH}婚礼方案/lifu.png" alt="">
+                    <img src="{$item[0]['img']}" alt="">
                 </div>
                 <div class="hotelDizhi">
                     <div class="iconBox">

@@ -130,5 +130,61 @@ $(function(){
         })
     })
 
+    $(".jump").click(function () {
+        let placeval;
+        let priceval;
+        if ($(".your-city span input").hasClass("myinput") &&
+            $(".select-budget span input").hasClass("myinput")) {
+
+            placeval = $(".your-city input").val();
+            priceval = $(".select-budget input").val();
+            console.log(placeval, priceval);
+
+        } else if ($(".your-city span input").hasClass("myinput") &&
+            $(".select-budget span").hasClass("me")) {
+
+            placeval = $(".your-city input").val();
+            priceval = $(".select-budget span").html();
+            var arr = priceval.split("--");
+            var aprice = parseInt(arr[1].slice(1)) - parseInt(arr[0].slice(1));
+            console.log(aprice);
+            priceval = aprice;
+            console.log(placeval, priceval);
+
+        } else if ($(".your-city span").hasClass("me") &&
+            $(".select-budget span input").hasClass("myinput")) {
+
+            placeval = $(".your-city span").html();
+            priceval = $(".select-budget input").val();
+            console.log(placeval, priceval);
+
+        } else if ($(".your-city span").hasClass("me") &&
+            $(".select-budget span ").hasClass("me")) {
+
+            placeval = $(".your-city span").html();
+            priceval = $(".select-budget span").html();
+            var arr = priceval.split("--");
+            var aprice = parseInt(arr[1].slice(1)) - parseInt(arr[0].slice(1));
+            console.log(aprice);
+            priceval = aprice;
+            console.log(placeval, priceval);
+
+        }
+
+        console.log(placeval, priceval);
+        $.ajax({
+            url: "index.php?m=index&f=custom&a=getplace",
+            data: { placeval, priceval },
+            type: "post",
+            success: function (res) {
+                console.log(res);
+                if (res == 1) {
+                    location.href = "index.php?m=index&f=custom&a=date";
+                } else if (res == 0) {
+                    location.href = "index.php?m=index&f=custom&a=date";
+                }
+            }
+        })
+    })
 
 })

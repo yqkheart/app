@@ -10,7 +10,7 @@ header('content-type:text/html;charset=utf8');
 
 //定义web路径
 define('WEB_PATH','http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['SCRIPT_NAME'],0,strrpos($_SERVER['SCRIPT_NAME'],'/')+1));
-//echo WEB_PATH;
+// echo WEB_PATH;
 //定义本地路径
 define('ROOT_PATH',__DIR__."/");
 define('LIBS_PATH',ROOT_PATH."libs/");

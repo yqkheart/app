@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 00:51:13
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:54:36
   from 'G:\myobject\app\comapny\template\index\yourselect.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a653581589c49_43908199',
+  'unifunc' => 'content_5a65526c6920e0_18737814',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bb5c1f72cd461b5efbf097c21842120970982dd6' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\yourselect.html',
-      1 => 1516582272,
+      1 => 1516589675,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a653581589c49_43908199 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a65526c6920e0_18737814 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ yourselect.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
-                <a href="manner.html">
+                <a href="index.php?m=index&f=custom&a=manner">
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_03.png" alt="">
                     <p class="first-p">
@@ -59,7 +59,7 @@ yourselect.js"><?php echo '</script'; ?>
                 </a>
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_06.png" alt="">
