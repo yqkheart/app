@@ -295,7 +295,7 @@ main{
     padding: 0.02rem;
 }
 .qbpl-detail .qbpl-detailsjbox{
-    width: 1rem;
+    width: 2.1rem;
     position: absolute;
     top:0;
     right:.2rem;
@@ -481,7 +481,7 @@ footer div img{
     height: 0.37rem;
 
 }
-.foot-hf input{
+.foot-hf a{
     display: block;
     width: 100%;
     height: 100%;
