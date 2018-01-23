@@ -36,7 +36,7 @@
     <section class="hot-search">
         <div class="title"></div>
         <div class="theme">
-            <a href="index.php?m=admin&f=hunyue">
+            <a href="index.php?m=index&f=hotel&mz=婚宴">
                 <div class="theme-box1">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -50,7 +50,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=admin&f=cehua">
+            <a href="index.php?m=index&f=plan&mz=策划">
                 <div class="theme-box2">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -64,7 +64,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="">
+            <a href="index.php?m=index&f=photography&mz=摄影">
                 <div class="theme-box3">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -78,7 +78,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=admin&f=lifu">
+            <a href="index.php?m=index&f=dress&mz=礼服">
                 <div class="theme-box4">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -176,7 +176,6 @@
         }
 
         $('.delete').click(function () {
-            alert(1)
             let mark=parseInt($(this).closest('li').attr('id'));
             if (localStorage.history){
                 var recordList = JSON.parse(localStorage.history)
