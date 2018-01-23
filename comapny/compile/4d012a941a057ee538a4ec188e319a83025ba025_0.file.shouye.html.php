@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:31:53
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 06:10:03
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a654d19e5cea8_85518111',
+  'unifunc' => 'content_5a66d1bb5e1495_66048062',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516588248,
+      1 => 1516687772,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a654d19e5cea8_85518111 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a66d1bb5e1495_66048062 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,7 +134,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <div class="tableBox">
         
         <div class="option" style="background:#FF8C2A">
-            <a href="shouye.html">
+            <a href="index.php?m=index&f=custom&a=shouye">
                 <div class="opp">
                     <img src="<?php echo IMG_PATH;?>
 首页/矢量智能对象@2x.png" alt="">
@@ -147,7 +147,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
         
         <div class="option">
-            <a href="active.html">
+            <a href="index.php?m=index&f=active">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
 首页/活动@2x.png" alt="">
@@ -158,7 +158,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
         </div>
         <div class="option">
-            <a href="faxian.html">
+            <a href="index.php?m=index&f=huati">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
 首页/发现@2x.png" alt="">
@@ -169,7 +169,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
         </div>
         <div class="option">
-            <a href="assistant.html">
+            <a href="index.php?m=index&f=assistant">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
 首页/助手@2x.png" alt="">
@@ -180,7 +180,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
         </div>
         <div class="option">
-            <a href="personal.html">
+            <a href="index.php?m=index&f=women">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
 首页/我们@2x.png" alt="">

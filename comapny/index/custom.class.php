@@ -6,8 +6,7 @@
             parent::__construct();
             $this->db=new db("custom");
         }
-        function init(){
-
+        function init(){ 
             $this->s->display("template/index/place.html");
         }
         function getplace(){
