@@ -3,8 +3,6 @@ $(function(){
         "#FF6E8A","#FF8164"];
     var word = ["-摄影-", "-婚宴-", "-策划-", "-礼服-", "-婚车-", "-蜜月-", "-造型-"
         , "-首饰-"];
-    var eword = ["photography", "hotel", "plan", "dress", "car", "honeymoon","modeling",
-"jewelry"];
     // console.log($("section.bottom li").length);
     // 循环  
     $("section.bottom li").each(function(index,value){
@@ -12,12 +10,10 @@ $(function(){
         $(".include-right").append($(`<li style=" display: none;"><div></div></li>`))
         // 点击循环的li里的当前li
         if ($(value).children(".zhao").hasClass("active")){
-            let oldword = word[index].substring(1, word[0].length - 1);
-            let oldeword= eword[index];
+            let oldword = word[0].substr(1, 2);
             let yusuan = "";
-            console.log(oldword);
-            console.log(oldeword);
-            yusuan += `${oldword}<span style="display:none">--${oldeword}</span> <div></div>`;
+            // console.log(oldword);
+            yusuan += `${oldword} <div></div>`;
             //          显示内容
             $(".include-right li").eq(index).html((index, value) => {
                 return yusuan;
@@ -44,8 +40,7 @@ $(function(){
                     "opacity": 0.8
                 });
                 //遮罩下方文字
-                let bottomword = word[index].substring(1, word[index].length - 1);
-                
+                let bottomword = word[index].substr(1, 2);
                 console.log(bottomword);
                 $(this).children("p").html(bottomword).css({
                     "color": "#7F8282;"
@@ -53,7 +48,6 @@ $(function(){
 
                 //点击选中到上面
                 let oldword = $(this).children("p").html()
-                
                 let yusuan = "";
                 yusuan = `<div style="display: none;"></div>`;
                 //          添加内容
@@ -85,10 +79,9 @@ $(function(){
                     "color": color[index]
                 });
                 //点击选中到上面
-                let oldword = $(this).children("p").html().substring(1, $(this).children("p").html().length - 1);
-                let oldeword = eword[index];
+                let oldword = $(this).children("p").html().substr(1, 2)
                 let yusuan = "";
-                yusuan += `${oldword}<span style="display:none">--${oldeword}</span> <div></div>`;
+                yusuan += `${oldword} <div></div>`;
                 //          添加内容
                 $(".include-right li").eq(index).html((index, value) => {
                     return yusuan;
@@ -111,29 +104,20 @@ $(function(){
 
     // 点击发送ajax
 
-    function sub(dizhi) {
-        let myproject = $(".include-right li").text();
+    $(".sub-next").click(function(){
+        let myproject=$(".include-right li").text();
         $.ajax({
-            url: "index.php?m=index&f=custom&a=getproject",
-            data: { myproject },
-            type: "post",
-            success: function (res) {
+            url:"index.php?m=index&f=custom&a=getproject",
+            data:{myproject},
+            type:"post",
+            success:function(res){
                 console.log(res);
-                if (res == 1) {
-                    location.href = dizhi;
-                } else if (res == 0) {
-                    location.href = dizhi;
+                if(res==1){
+                    location.href="index.php?m=index&f=custom&a=manner";
+                }else if(res==0){
+                    location.href = "index.php?m=index&f=custom&a=manner";
                 }
             }
         })
-    }
-    $(".sub-next").click(function(){
-        sub("index.php?m=index&f=custom&a=manner");
-    })
-    $(".jump").click(function(){
-        sub("index.php?m=index&f=custom&a=manner");
-    })
-    $(".sub-change").click(function(){
-        sub("index.php?m=index&f=custom&a=yourselect");
     })
 })

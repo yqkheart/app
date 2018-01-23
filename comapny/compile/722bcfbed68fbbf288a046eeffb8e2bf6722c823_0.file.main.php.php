@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 09:57:51
+/* Smarty version 3.1.32-dev-38, created on 2018-01-21 09:18:47
   from 'G:\myobject\app\comapny\template\admin\main.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a64641f555d28_22370932',
+  'unifunc' => 'content_5a645af74e1640_75747231',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '722bcfbed68fbbf288a046eeffb8e2bf6722c823' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\admin\\main.php',
-      1 => 1516528556,
+      1 => 1516526165,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a64641f555d28_22370932 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a645af74e1640_75747231 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -110,7 +110,11 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
     </nav>
     <!-- END NAVBAR -->
     <!-- LEFT SIDEBAR -->
+<<<<<<< HEAD
+    <div id="sidebar-nav" class="sidebar" stye="overflow: yes;">
+=======
     <div id="sidebar-nav" class="sidebar" style="overflow:auto">
+>>>>>>> 2ee34c4353e6396927a5c8d1c97aaed40753732d
         <div class="sidebar-scroll">
             <nav>
                 <ul class="nav">
@@ -232,7 +236,7 @@ logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
 <?php echo '<script'; ?>
 >
     $('#exitBox').click(function () {
-        location.href="index.php?m=admin&a=exits";
+        location.href="index.php?m=index&a=exits";
     })
 <?php echo '</script'; ?>
 >

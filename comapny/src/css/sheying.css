@@ -52,35 +52,30 @@ header{
     /* margin-top: 1%; */
     width: 45%;
     font-size: 0.16rem;
+    color: #FF8C2A;
     text-align: center;
     line-height: 0.4rem;
     margin-left: 5%;
-}
-.shangjia a{
-    color: #FF8C2A;
 }
 .hunsha{
     margin-top: 1.5%;
     height: 80%;
     width: 45%;
     font-size: 0.16rem;
+    background: #FF8C2A;
     text-align: center;
     line-height: 0.32rem;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
+    margin-right: 5%;
+    color: #fff;
     border-radius: 0.6rem;
     border:0.01rem solid rgba(255,255,255,0.5);
 }
-.active{
-    background: #FF8C2A;
-    color: #fff;
-}
 .textBox{
-    width: auto;
+    width: 100%;
     height: auto;
     /* background: pink; */
     margin-top: 0.35rem;
-     padding: 0 0.07rem;
+    /* padding: 0 0.12rem; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

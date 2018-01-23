@@ -140,8 +140,8 @@ class car extends admin
                 $tel=$item['tell'];
             }
         }
-//        $dbs=new db('photography');
-//        $this->getoption($dbs,$id);
+        $dbs=new db('photography');
+        $this->getoption($dbs,$id);
         $this->s->assign('ctr',$this->ctr);
         $this->s->assign('name',$name);
         $this->s->assign('price',$price);
@@ -184,7 +184,7 @@ class car extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=index&f=car&a=change');
+                $this->jump('请上传图片','index.php?m=index&f=cehua&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -200,14 +200,13 @@ class car extends admin
             $names=microtime(true).".".explode(".",$item)[1];
             if (is_uploaded_file($file['tmp_name'][$key])){
                 move_uploaded_file($file['tmp_name'][$key],$path."/".$names);
-                $prr.=WEB_PATH.$path."/".$names."--";
+                $prr.="WEB_PATH".$path."/".$names."--";
                 $prr=mb_substr($prr,0,strlen($prr)-2);
-
             }
         }
         $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");
         if($row==1){
-            $this->jump('修改成功','index.php?m=admin&f=car&a=init');
+            $this->jump('修改成功','index.php?m=admin&f=cehua&a=init');
         }else{
             echo 'bad';
         }

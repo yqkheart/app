@@ -45,7 +45,7 @@ header .headtj a{
 }
 header .headbox{
     margin:0 auto;
-    width: 2.2rem;
+    /*width: 2.2rem;*/
     /*background: red;*/
 }
 header .headbox div{
@@ -57,12 +57,12 @@ header .headbox div{
     font-size: 0.34rem;
 }
 header .headbox .xiaodian{
-    font-size: 0.3rem;
-    line-height: 0.85rem;
+    font-size: 0.15rem;
+    line-height: 0.9rem;
 }
 header .headbox .dadian{
-    font-size: 0.5rem;
-    line-height: 0.85rem;
+    font-size: 0.2rem;
+    line-height: 0.9rem;
 }
 
 
@@ -85,6 +85,8 @@ main .huifnr textarea{
     height:4rem;
     background: #fff;
     border:0;
+    padding-top: .1rem;
+    padding-left: 0.1rem;
 }
 main .huifnr .huifbot{
     width: 100%;
@@ -107,16 +109,27 @@ main .huifnr .huifbot{
     border-radius: 50px;
     margin-top: 20%;
     margin-left: 25%;
-
+    color:#fff;
+    font-size: 0.5rem;
+    line-height: 0.35rem;
+    text-align: center;
 }
-.huiftpscbc a{
+main .huiftpsc .huiftpscbc .file{
     display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 0.6rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.38rem;
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size: 0.15rem;
     line-height: 0.35rem;
     text-align: center;
     color:#fff;
+    border: 1px solid #ffd452;
+    background: #ffd452;
+    border-radius: 50px;
+    outline: none;
+    opacity: 0;
 }
 .huiftpscwz{
     width: 0.8rem;
@@ -145,3 +158,19 @@ main .huifnr .huifbot{
 .huifbot div.sc{
     margin-left: 0.2rem;
 }
+
+main .huifnr input{
+    position: absolute;
+    bottom: 1.5rem;
+    right:0.5rem;
+    width: 1rem;
+    border-radius: 5px;
+    height: 0.5rem;
+    background: #ffd452;
+    border: 1px solid #fff;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+}
+

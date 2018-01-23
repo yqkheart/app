@@ -312,7 +312,7 @@ div.selected-bar{
     background-size: cover ;
     border: none;
 }
-.sub-next,.sub-change{
+.sub-next{
     margin: 0.5rem auto 0;
     width: 1.9rem;
     height: 0.25rem;  
@@ -331,4 +331,3 @@ div.selected-bar{
 .sub-next a{
     color: #fff;
 }
-

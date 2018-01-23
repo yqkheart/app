@@ -208,35 +208,11 @@ section.bottom ul li .zhao{
     margin: auto;
     display: none;
 }
-section.bottom ul li:nth-child(1) .zhao{
-    border-color:#EC607A;
-}
-section.bottom ul li:nth-child(2) .zhao{
-    border-color:#FEAA5A; 
-}
-section.bottom ul li:nth-child(3) .zhao{
-    border-color:#8079F2; 
-}
-section.bottom ul li:nth-child(4) .zhao{
-    border-color:#63DD81;
-}
 section.bottom ul li .zhao.active{
     display: block;
 }
 section.bottom ul li .zhao .zhao-middel.active{
     display: block;
-}
-section.bottom ul li:nth-child(1) .zhao .zhao-middel{
-    background:#EC607A;
-}
-section.bottom ul li:nth-child(2) .zhao .zhao-middel{
-    background:#FEAA5A; 
-}
-section.bottom ul li:nth-child(3) .zhao .zhao-middel{
-    background:#8079F2; 
-}
-section.bottom ul li:nth-child(4) .zhao .zhao-middel{
-    background:#63DD81;
 }
 section.bottom ul li .zhao .zhao-middel{
     width: 90%;
@@ -250,7 +226,7 @@ section.bottom ul li .zhao .zhao-middel{
     bottom: 0;
     margin: auto;
     display: none;
-    opacity: 0.7;
+    
 }
 section.bottom ul li .duigou img{
     display: block;
@@ -279,7 +255,7 @@ section.bottom ul li:nth-child(4) .dian,section.bottom ul li:nth-child(5) .dian{
     z-index: 9999;
 
 }
-.sub-next,.sub-change{
+.sub-next{
     margin: 0.3rem auto 0;
     width: 1.9rem;
     height: 0.25rem;  
