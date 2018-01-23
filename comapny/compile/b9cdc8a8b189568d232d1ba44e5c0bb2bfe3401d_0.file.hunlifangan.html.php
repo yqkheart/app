@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 03:07:18
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 02:39:47
   from 'G:\myobject\app\comapny\template\index\hunlifangan.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a655566013ee4_50456205',
+  'unifunc' => 'content_5a66a07306dde1_87374590',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cdc8a8b189568d232d1ba44e5c0bb2bfe3401d' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\hunlifangan.html',
-      1 => 1516590437,
+      1 => 1516675162,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a655566013ee4_50456205 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a66a07306dde1_87374590 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +42,11 @@ jquery.min.js"><?php echo '</script'; ?>
  type="text/javascript" src="<?php echo JS_PATH;?>
 iscroll.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo JS_PATH;?>
+hunlifangan.js"><?php echo '</script'; ?>
+>
+    
 </head>
 <?php echo '<script'; ?>
  type="text/javascript">
@@ -58,6 +63,15 @@ iscroll.js"><?php echo '</script'; ?>
 
 </style>
 <body onload="loaded()">
+    <div id="tanchuang">
+        <section>
+            <img src="<?php echo IMG_PATH;?>
+定制流程/tanchuang.png" alt="">
+            <div id="yes"></div>
+            <div id="no"></div>
+        </section>
+        
+    </div>
     <header>
         <div class="topBox">
            <a href="index.php?m=index&f=custom&a=shouye"><div class="backBox">
@@ -147,7 +161,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_var
                     <div class="dizhi" style="color:#FE7C38"><?php echo $_smarty_tpl->tpl_vars['item']->value[0]['tell'];?>
 </div>
                 </div>
-                <div class="zixun">立即咨询</div>
+               <a href="tel:<?php echo $_smarty_tpl->tpl_vars['item']->value[0]['tell'];?>
+">
+                    <div class="zixun">立即咨询</div>
+               </a>
             </div>
             <?php
 }
@@ -254,9 +271,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="xiugai">
                 <div class="tubiao"><img src="<?php echo IMG_PATH;?>
 婚礼方案/yuyue.png" alt=""></div>
-                <a href="index.php?m=index&f=custom&a=shouye">
                 <div class="character" style="color:#fff">预约全部</div>
-                </a>
             </div>
         </div>
     </div>

@@ -1,34 +1,71 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 02:20:59
+  from 'G:\myobject\app\comapny\template\index\changeproject.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-38',
+  'unifunc' => 'content_5a669c0b127510_97407914',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2893a9f699cde30661d5a11bacc3d714961391ea' => 
+    array (
+      0 => 'G:\\myobject\\app\\comapny\\template\\index\\changeproject.html',
+      1 => 1516674041,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a669c0b127510_97407914 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}project.css">
-    <script src="{JS_PATH}jquery.min.js"></script>
-    <script src="{JS_PATH}project.js"></script>
-    <script src="{JS_PATH}rem-half.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+project.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+project.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem-half.js"><?php echo '</script'; ?>
+>
 </head>
+
 <body>
     <header>
         <div class="header">
             <div class="header-left">
                 <a href="index.php?m=index&f=custom&a=date">
-                    <img src="{IMG_PATH}定制流程/date_03.png" alt="">
-                <p class="first-p">
-                    选择定制服务项目
-                </p>
-                <p>
-                    SELECT CUSTOM SERVICE ..
-                </p>
+                    <img src="<?php echo IMG_PATH;?>
+定制流程/date_03.png" alt="">
+                    <p class="first-p">
+                        选择定制服务项目
+                    </p>
+                    <p>
+                        SELECT CUSTOM SERVICE ..
+                    </p>
                 </a>
-                
+
             </div>
             <div class="header-right">
                 <a class="jump">
                     跳过
-                    <img src="{IMG_PATH}定制流程/date_06.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+定制流程/date_06.png" alt="">
                 </a>
             </div>
         </div>
@@ -49,138 +86,156 @@
                         </span>
                     </div>
                     <div class="include-right">
-                        
-                        
+
+
                     </div>
                 </section>
                 <div class="shandow"></div>
                 <section class="bottom">
                     <ul>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project.png" alt="">
                             <p>
                                 摄影
                             </p>
                             <div class="zhao active">
                                 <div class="zhao-middel active">
-                                      <div class="duigou">
-                                          <img src="{IMG_PATH}定制流程/duigou.png" alt="">
-                                      </div>  
+                                    <div class="duigou">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="dian"></div>        
-                        </li>
-                        <li>
-                            <img src="{IMG_PATH}定制流程/project1.png" alt="">
-                            <p>
-                                婚宴
-                            </p>
-                        <div class="zhao  active">
-                            <div class="zhao-middel  active">
-                                <div class="duigou">
-                                    <img src="{IMG_PATH}定制流程/duigou.png" alt="">
-                                </div>
-                            </div>
-                        </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project2.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project1.png" alt="">
+                            <p>
+                                婚宴
+                            </p>
+                            <div class="zhao  active">
+                                <div class="zhao-middel  active">
+                                    <div class="duigou">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dian"></div>
+                        </li>
+                        <li>
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project2.png" alt="">
                             <p>
                                 策划
                             </p>
-                        <div class="zhao  active">
-                            <div class="zhao-middel  active">
-                                <div class="duigou">
-                                    <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                            <div class="zhao  active">
+                                <div class="zhao-middel  active">
+                                    <div class="duigou">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="dian"></div>
+                            <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project3.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project3.png" alt="">
                             <p>
                                 礼服
                             </p>
                             <div class="zhao  active">
                                 <div class="zhao-middel  active">
                                     <div class="duigou">
-                                        <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project4.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project4.png" alt="">
                             <p>
                                 婚车
                             </p>
                             <div class="zhao">
                                 <div class="zhao-middel">
                                     <div class="duigou">
-                                        <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project5.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project5.png" alt="">
                             <p>
                                 蜜月
                             </p>
                             <div class="zhao">
                                 <div class="zhao-middel">
                                     <div class="duigou">
-                                        <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project6.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project6.png" alt="">
                             <p>
                                 造型
                             </p>
                             <div class="zhao">
                                 <div class="zhao-middel">
                                     <div class="duigou">
-                                        <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}定制流程/project7.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+定制流程/project7.png" alt="">
                             <p>
                                 首饰
                             </p>
                             <div class="zhao">
                                 <div class="zhao-middel">
                                     <div class="duigou">
-                                        <img src="{IMG_PATH}定制流程/duigou.png" alt="">
+                                        <img src="<?php echo IMG_PATH;?>
+定制流程/duigou.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="dian"></div>
                         </li>
                         <li>
-                           
+
                         </li>
                     </ul>
-                    <a >
-                        <div class="sub-next ">
-                                下一步
+                    <a>
+                        <div class="sub-change ">
+                            确认修改
                         </div>
                     </a>
                 </section>
-    
+
             </div>
         </div>
     </main>
 </body>
-</html>
+
+</html><?php }
+}

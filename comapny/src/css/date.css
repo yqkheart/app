@@ -122,8 +122,8 @@ section.top{
 }
 .content-top-left img{
     display: block;
-    width: 0.73rem;
-    height: 0.28rem;
+    width: 0.905rem;
+    height: 0.33rem;
     position: absolute;
     bottom: 0;
     left:0;
@@ -167,7 +167,7 @@ section.bottom{
     width: 100%;
     font-size: 16px;
 }
-.btn{
+.btn,.sub-change{
     width: 1.2rem;
     height: 0.26rem;
     border-radius: 0.13rem;

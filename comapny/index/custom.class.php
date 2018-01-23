@@ -111,5 +111,18 @@
             $this->s->display("template/index/hunlifangan.html");
         }
         
+        /* 修改项目 */
+        function changeplace(){
+            $this->s->display("template/index/changeplace.html");
+        }
+        function changedate(){
+            $this->s->display("template/index/changedate.html");
+        }
+        function changemanner(){
+            $this->s->display("template/index/changemanner.html");
+        }
+        function changeproject(){
+            $this->s->display("template/index/changeproject.html");
+        }
     }
     

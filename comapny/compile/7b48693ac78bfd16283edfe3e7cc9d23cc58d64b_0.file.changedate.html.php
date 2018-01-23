@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-23 01:44:35
-  from 'G:\myobject\app\comapny\template\index\date.html' */
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 02:12:07
+  from 'G:\myobject\app\comapny\template\index\changedate.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a669383105439_59638435',
+  'unifunc' => 'content_5a6699f7b3c3f5_84289404',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'd40c63121fa04fb965782d7b387619fd6828e265' => 
+    '7b48693ac78bfd16283edfe3e7cc9d23cc58d64b' => 
     array (
-      0 => 'G:\\myobject\\app\\comapny\\template\\index\\date.html',
-      1 => 1516671874,
+      0 => 'G:\\myobject\\app\\comapny\\template\\index\\changedate.html',
+      1 => 1516673526,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a669383105439_59638435 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a6699f7b3c3f5_84289404 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -64,7 +65,7 @@ rem-half.js"><?php echo '</script'; ?>
                         WEDDING DATE ..
                     </p>
                 </a>
-                
+
             </div>
             <div class="header-right">
                 <a class="jump">
@@ -92,8 +93,7 @@ rem-half.js"><?php echo '</script'; ?>
                     <div class="content-top-right">
                         <div class="select-city your-date">
                             <span>
-                                <input type="hidden" class="mydate">
-                                请选择您的婚礼日期
+                                <input type="hidden" class="mydate"> 请选择您的婚礼日期
                             </span>
                             &nbsp;&nbsp;
                             <img src="<?php echo IMG_PATH;?>
@@ -106,19 +106,19 @@ rem-half.js"><?php echo '</script'; ?>
                     <div id="demo">
                         <div id="ca"></div>
                     </div>
-                    
-                        <a >
-                            <div class="btn">
-                                 完成 
-                            </div>
-                        </a>
+
+                    <a>
+                        <div class="sub-change">
+                            确认修改
+                        </div>
+                    </a>
                 </section>
-               
+
             </div>
         </div>
     </main>
-    
+
 </body>
-</html>
-<?php }
+
+</html><?php }
 }

@@ -12,8 +12,8 @@ $(function(){
         $(".include-right").append($(`<li style=" display: none;"><div></div></li>`))
         // 点击循环的li里的当前li
         if ($(value).children(".zhao").hasClass("active")){
-            let oldword = word[0].substring(1, word[0].length - 1);
-            let oldeword= eword[0];
+            let oldword = word[index].substring(1, word[0].length - 1);
+            let oldeword= eword[index];
             let yusuan = "";
             console.log(oldword);
             console.log(oldeword);
@@ -111,23 +111,7 @@ $(function(){
 
     // 点击发送ajax
 
-    $(".sub-next").click(function(){
-        let myproject=$(".include-right li").text();
-        $.ajax({
-            url:"index.php?m=index&f=custom&a=getproject",
-            data:{myproject},
-            type:"post",
-            success:function(res){
-                console.log(res);
-                if(res==1){
-                    location.href="index.php?m=index&f=custom&a=manner";
-                }else if(res==0){
-                    location.href = "index.php?m=index&f=custom&a=manner";
-                }
-            }
-        })
-    })
-    $(".jump").click(function(){
+    function sub(dizhi) {
         let myproject = $(".include-right li").text();
         $.ajax({
             url: "index.php?m=index&f=custom&a=getproject",
@@ -136,11 +120,20 @@ $(function(){
             success: function (res) {
                 console.log(res);
                 if (res == 1) {
-                    location.href = "index.php?m=index&f=custom&a=manner";
+                    location.href = dizhi;
                 } else if (res == 0) {
-                    location.href = "index.php?m=index&f=custom&a=manner";
+                    location.href = dizhi;
                 }
             }
         })
+    }
+    $(".sub-next").click(function(){
+        sub("index.php?m=index&f=custom&a=manner");
+    })
+    $(".jump").click(function(){
+        sub("index.php?m=index&f=custom&a=manner");
+    })
+    $(".sub-change").click(function(){
+        sub("index.php?m=index&f=custom&a=yourselect");
     })
 })
