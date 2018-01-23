@@ -54,7 +54,7 @@
       <file leaf-file-name="custom.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index/custom.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
+            <state relative-caret-position="900">
               <caret line="84" column="47" lean-forward="true" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
               <folding />
             </state>
@@ -196,12 +196,12 @@
       <workItem from="1516423447474" duration="5446000" />
       <workItem from="1516496420981" duration="14293000" />
       <workItem from="1516582255688" duration="685000" />
-      <workItem from="1516686250498" duration="436000" />
+      <workItem from="1516686250498" duration="685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20860000" />
+    <option name="totallyTimeSpent" value="21109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -561,7 +561,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index/custom.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="900">
           <caret line="84" column="47" lean-forward="true" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
           <folding />
         </state>
