@@ -22,4 +22,5 @@ class photography extends admin
         $arr=$this->db->selAll("*","pid=$pid");
         echo json_encode($arr);
     }
+
 }
