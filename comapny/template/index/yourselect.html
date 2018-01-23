@@ -14,7 +14,7 @@
     <header>
         <div class="header">
             <div class="header-left">
-                <a href="manner.html">
+                <a href="index.php?m=index&f=custom&a=manner">
                     <img src="{IMG_PATH}定制流程/date_03.png" alt="">
                     <p class="first-p">
                         您的婚礼选择 ..
@@ -25,7 +25,7 @@
                 </a>
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="{IMG_PATH}定制流程/date_06.png" alt="">
                 </a>
@@ -48,7 +48,7 @@
                     <div class="content-top-right">
                         <div class="modify">
                             <div class="modify-content modify-place">{$mycustom["place"]}</div>
-                            <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                          <a href="index.php?m=index&f=custom&a=changeplace"><img src="{IMG_PATH}定制流程/custom_24.png" alt=""></a>  
                         </div>
                     </div>
                 </section>
@@ -60,7 +60,7 @@
                     <div class="content-top-right">
                         <div class="modify">
                             <div class="modify-budget modify-cprice">{$mycustom["cprice"]}</div>
-                        <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                     <a href="index.php?m=index&f=custom&a=changeplace"><img src="{IMG_PATH}定制流程/custom_24.png" alt=""></a>   
                         </div>
                     </div>
                 </section>
@@ -72,7 +72,9 @@
                     <div class="content-top-right">
                         <div class="modify">
                             <div class="modify-date modify-date">{$mycustom["date"]}</div>
-                            <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                            <a href="index.php?m=index&f=custom&a=changedate">
+                                <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -84,7 +86,9 @@
                     <div class="content-top-right">
                         <div class="modify">
                             <div class="modify-fugu modify-style">{$mycustom["style"]}</div>
+                        <a href="index.php?m=index&f=custom&a=changemanner">
                             <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                        </a>
                         </div>
                     </div>
                 </section>
@@ -100,11 +104,13 @@
                         <div class="modify modify-project">
                             <span>
                                 {foreach $mproject as $item}
-                                <li>{$item}:<input class="pro" type="text" value="{$proportion}"></li>&nbsp;
+                                <li>{$item[0]}:<input class="pro" type="text" value="{$proportion}"><input class="epro" type="hidden" value="{$item[1]}"></li>&nbsp;
                                 {/foreach}
                             </span>
                             
-                            <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                            <a href="index.php?m=index&f=custom&a=changeproject">
+                                <img src="{IMG_PATH}定制流程/custom_24.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </section>

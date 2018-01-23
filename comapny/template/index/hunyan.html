@@ -8,15 +8,16 @@
 	<link rel="stylesheet" href="{CSS_PATH}base.css">
 	<link rel="stylesheet" href="{CSS_PATH}hunyan.css">
 	<script src="{JS_PATH}rem-ljb.js"></script>
+	<script src="{JS_PATH}jquery.min.js"></script>
 </head>
 <body>
 	<header class="header">
 		<div class="header-top">
-			<a href="index.php?m="><div class="fanhui"></div></a>
+			<a href="index.php?m=index&f=custom&a=shouye"><div class="fanhui"></div></a>
 			<div class="title">
 				<span class="pix1"></span>
 				<span class="pix2"></span>
-				<span class="tt">婚宴</span>
+				<span class="tt" id="name">{$mz}</span>
 				<span class="pix3"></span>
 				<span class="pix4"></span>
 			</div>
@@ -62,9 +63,9 @@
 			</div>
 			<div class="other-info">
 				<div class="shoucang son">
-					<span class="img-box"><img src="{IMG_PATH}search-img/shoucang.png" alt=""></span>
+					<span class="img-box coll" id="{$s['id']}"><img src="{IMG_PATH}search-img/shoucang.png" alt=""></span>
 					<span class="store">收藏</span>
-					<span class="store-count">{$s['collection']}</span>
+					<span class="store-count shu">{$s['collection']}</span>
 				</div>
 				<div class="time son">
 					<span class="img-box"><img src="{IMG_PATH}search-img/time.png" alt=""></span>
@@ -78,6 +79,26 @@
 			</div>
 		</section>
 		{/foreach}
+		<input type="hidden" value="{$engs}">
 	</main>
 </body>
 </html>
+<script>
+	$('.son').on("click",".coll",function () {
+	    let name=$('input').val();
+	    console.log(name)
+	    let id=$(this).attr("id")
+//		console.log(id)
+		let text=$(this).siblings('.shu').text();
+		text=parseInt(text)
+		text++;
+        $(this).siblings('.shu').text(text);
+        $.ajax({
+			url:`index.php?m=index&f=${ name }&a=updateColl`,
+			data:{ text:text,id:id },
+			success:function (res) {
+//				console.log(res)
+            }
+		})
+    })
+</script>

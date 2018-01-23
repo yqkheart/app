@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 02:48:39
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 01:44:35
   from 'G:\myobject\app\comapny\template\index\date.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a615c8718a871_68477050',
+  'unifunc' => 'content_5a669383105439_59638435',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd40c63121fa04fb965782d7b387619fd6828e265' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\date.html',
-      1 => 1516330096,
+      1 => 1516671874,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a615c8718a871_68477050 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a669383105439_59638435 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +54,7 @@ rem-half.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
-                <a href="place.html">
+                <a href="index.php?m=index&f=custom">
                     <img src="<?php echo IMG_PATH;?>
 /定制流程/date_03.png" alt="">
                     <p class="first-p">
@@ -67,7 +67,7 @@ rem-half.js"><?php echo '</script'; ?>
                 
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 /定制流程/date_06.png" alt="">
@@ -87,7 +87,7 @@ rem-half.js"><?php echo '</script'; ?>
                 <section class="top">
                     <div class="content-top-left">
                         <img src="<?php echo IMG_PATH;?>
-/定制流程/custom_03.png" alt="">
+/定制流程/date_11.png" alt="">
                     </div>
                     <div class="content-top-right">
                         <div class="select-city your-date">

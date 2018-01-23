@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-22 02:37:15
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 08:34:25
   from 'G:\myobject\app\comapny\template\index\search.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a654e5b439697_57270200',
+  'unifunc' => 'content_5a66f3910a8dc0_79240143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7f95d5a2e32a3715e8e9f5778f6b64cb4b431f99' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\search.html',
-      1 => 1516587028,
+      1 => 1516686402,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a654e5b439697_57270200 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a66f3910a8dc0_79240143 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +44,7 @@ rem-ljb.js"><?php echo '</script'; ?>
 <body>
 <header class="header">
     <div class="header-top">
-        <a class="back">
+        <a class="back" href="index.php?m=index&f=custom&a=shouye">
             <div class="fanhui"></div>
         </a>
         <div class="title">
@@ -206,9 +206,7 @@ rem-ljb.js"><?php echo '</script'; ?>
             }
             $('.history-list').html(brr);
         }
-        $('.back').click(function () {
-            history.go(-1);
-        })
+
         $('.delete').click(function () {
             alert(1)
             let mark=parseInt($(this).closest('li').attr('id'));

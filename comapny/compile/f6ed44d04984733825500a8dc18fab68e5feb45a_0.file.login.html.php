@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-23 04:59:16
+/* Smarty version 3.1.32-dev-38, created on 2018-01-19 10:02:15
   from 'C:\wamp64\www\php\app\comapny\template\index\login.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a66c124cc2a80_99066574',
+  'unifunc' => 'content_5a61c22720d145_40022518',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f6ed44d04984733825500a8dc18fab68e5feb45a' => 
     array (
       0 => 'C:\\wamp64\\www\\php\\app\\comapny\\template\\index\\login.html',
-      1 => 1516669313,
+      1 => 1516356129,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a66c124cc2a80_99066574 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a61c22720d145_40022518 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -94,21 +94,21 @@ lzwimg/yonghu_03.png" alt="">
                     <img src="<?php echo IMG_PATH;?>
 lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" name="user" placeholder="请输入用户名" autofocus required maxlength="11">
+                <input type="text" name="user" placeholder="请输入用户名" autofocus required maxlength="10">
             </div>
             <div class="input">
                 <div>
                     <img src="<?php echo IMG_PATH;?>
 lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" name="pass" placeholder="请设置您的密码" required maxlength="16" minlength="6">
+                <input type="password" name="pass" placeholder="请设置您的密码" required maxlength="16">
             </div>
             <div class="input input1">
                 <div>
                     <img src="<?php echo IMG_PATH;?>
 lzwimg/icon_08.png" alt="">
                 </div>
-                <input type="password" name="pass1" placeholder="请重新输入密码" required maxlength="16" minlength="6">
+                <input type="password" name="pass1" placeholder="请重新输入密码" required maxlength="16">
             </div>
             <!--提交按钮-->
             <a>
@@ -138,14 +138,14 @@ lzwimg/icon_08.png" alt="">
                     <img src="<?php echo IMG_PATH;?>
 lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="11" name="user">
+                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="10" name="user">
             </div>
             <div class="input input2">
                 <div>
                     <img src="<?php echo IMG_PATH;?>
 lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" id="pass" placeholder="请输入您的密码" required maxlength="16" name="pass">
+                <input type="password" placeholder="请设置您的密码" required maxlength="16" name="pass">
                 <span>
                     <i class="iconfont icon-biyan"></i>
                 </span>
@@ -183,17 +183,5 @@ lzwimg/icon_06.png" alt="">
 </section>
 
 </body>
-</html>
-<?php echo '<script'; ?>
->
-    $(function(){
-        $(".icon-biyan").mousedown(function(){
-            $("#pass").attr("type", "text");
-        });
-        $(".icon-biyan").mouseup(function(){
-            $("#pass").attr("type", "password");
-        });
-    });
-<?php echo '</script'; ?>
-><?php }
+</html><?php }
 }

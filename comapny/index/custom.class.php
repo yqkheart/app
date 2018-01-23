@@ -6,7 +6,8 @@
             parent::__construct();
             $this->db=new db("custom");
         }
-        function init(){ 
+        function init(){
+
             $this->s->display("template/index/place.html");
         }
         function getplace(){
@@ -48,12 +49,17 @@
             $mproject=array_slice(explode(" ",$mycustom['project']),0,$mlength);
             $proportion=ceil(1/$mlength*$mycustom['cprice']);
             $arr=array();
+            $brr=array();
             foreach ($mproject as $key => $value) {
-                $a=explode(":",$value);
-                array_push($arr,$a[0]);
+                if(strpos($value,":")==true){
+                    $a=explode(":",$value);
+                }else if (strpos($value,"--")==true) {
+                    $a=explode("--",$value);
+                }
+                array_push($arr,$a);
             }
             $this->s->assign("proportion",$proportion);
-            $this->s->assign("mproject",$arr);
+            $this->s->assign("mproject",$arr); 
             $this->s->assign("mycustom",$mycustom);
             $this->s->display("template/index/yourselect.html");
         }
@@ -82,7 +88,7 @@
         }
         function guanli(){
             $pid=$_REQUEST['pid'];
-            $row0=$this->db->selOne("project","pid='$pid'");
+            $row0=$this->db->selOne("project,style","pid='$pid'");
             $row1=explode(" ",$row0['project']);
             $row2=array_slice($row1,0,count($row1)-1);
             $shouyearr=array();
@@ -90,16 +96,33 @@
                 $row3=explode(":",$value);
                 array_push($shouyearr,$row3);
             }
-            var_dump($shouyearr);
-             $db1=new db("car");
-             $row1=$db1->selOne("*","pid=1");
-             var_dump($row1);
-           /*  foreach ($shouyearr as $key => $value) {
-              
-            } */
+            $xiangxi=array();
+            foreach ($shouyearr as $key => $value) {
+                
+                $a="db";
+                $d=$a.strval($key);
+                $d=new db("$value[2]");
+                $row="row".strval($key);
+                $row=$d->selAll("*","price < $value[1] or style = '{$row0['style']}'  ");
+                array_push($xiangxi,$row);
+            }
+            $this->s->assign("xiangxi",$xiangxi);
             $this->s->assign("arr",$shouyearr);
             $this->s->display("template/index/hunlifangan.html");
         }
         
+        /* 修改项目 */
+        function changeplace(){
+            $this->s->display("template/index/changeplace.html");
+        }
+        function changedate(){
+            $this->s->display("template/index/changedate.html");
+        }
+        function changemanner(){
+            $this->s->display("template/index/changemanner.html");
+        }
+        function changeproject(){
+            $this->s->display("template/index/changeproject.html");
+        }
     }
     

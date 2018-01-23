@@ -13,6 +13,6 @@ class indexmain
     function jump($mess,$url){
         $this->s->assign("mess",$mess);
         $this->s->assign("url",$url);
-        $this->s->display("template/index/errory.html");
+        $this->s->display("template/admin/tiaozhuan.html");
     }
 }

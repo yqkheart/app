@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 07:13:50
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 01:40:11
   from 'D:\quanzhan\app\comapny\template\index\place.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a642f9e7c2350_63759180',
+  'unifunc' => 'content_5a66846bbc1588_89368959',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '25257471c260987d597c212bd28950775dcbc8c8' => 
     array (
       0 => 'D:\\quanzhan\\app\\comapny\\template\\index\\place.html',
-      1 => 1516514813,
+      1 => 1516592805,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a642f9e7c2350_63759180 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a66846bbc1588_89368959 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +53,9 @@ place.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
+                <a href="">
+
+                </a>
                 <img src="<?php echo IMG_PATH;?>
 定制流程/date_03.png" alt="">
                 <p class="first-p">
@@ -63,7 +66,7 @@ place.js"><?php echo '</script'; ?>
                 </p>
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_06.png" alt="">

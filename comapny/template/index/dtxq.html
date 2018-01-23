@@ -6,14 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>动态详情</title>
-    <link rel="stylesheet" href="{CSS_PATH}wkdtxq.css">
-    <script src="{JS_PATH}wkjquery.js"></script>
-    <script src="{JS_PATH}wkrem.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="{IMG_PATH}logo.png" media="screen" />
+    <link rel="stylesheet" href="../../src/css/wkdtxq.css">
+    <script src="../../src/js/wkjquery.js"></script>
+    <script src="../../src/js/wkrem.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../../src/img/logo.png" media="screen" />
 </head>
 <body>
 <header>
-    <div class="head-fh"><a href="index.php?m=index&f=huati">&lt;</a></div>
+    <div class="head-fh"><a href="faxian.html">&lt;</a></div>
     <div class="head-wz">动态详情</div>
 </header>
 <main>
@@ -24,8 +24,8 @@
                 </div>
             </div>
             <div class="zxfbnc">
-                <div class="zxfbnc-nc">{$arr["dtname"]}</div>
-                <div class="zxfbnc-sj">{$arr["dttime"]}</div>
+                <div class="zxfbnc-nc">维多利亚</div>
+                <div class="zxfbnc-sj">2017012.26 8:00</div>
             </div>
             <div class="zxfbdd">
                 <a href="">关注</a>
@@ -34,26 +34,28 @@
         <div class="zxfb-main">
             <div class="zxfb-mainwz">
                 <p>
-                    {$arr["dtnr"]}
+                    婚礼已过，2017缘定今生，图中主持人表情亮了，哈哈，感谢婚约的特别定制！
                 </p>
             </div>
             <div class="zxfb-maintp">
-                {foreach $imgres as $img}
                 <div class="zxfb-mainimg">
-                    <img src="{$img}" alt="">
+                    <img src="../../src/img/zxfbtp01.png" alt="">
                 </div>
-                {/foreach}
+                <div class="zxfb-mainimg">
+                    <img src="../../src/img/zxfbtp01.png" alt="">
+                </div>
             </div>
             <div class="zxfb-dian">
                 &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
                 &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
-
+                &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
+                &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
             </div>
             <div class="zxfb-bot">
                 <div class="zxfbdd-img">
-                    <img src="{IMG_PATH}zxfbhg.png" alt="">
+                    <img src="../../src/img/zxfbhg.png" alt="">
                 </div>
-                <div class="zxfbdd-wz">{$arr["dtdd"]}</div>
+                <div class="zxfbdd-wz">南京市</div>
             </div>
 
         </div>
@@ -64,10 +66,9 @@
     <div class="qbpl-title">
         <div class="qbpl-titlewz">全部评论</div>
         <div class="qbpl-titletp">
-            <img src="{IMG_PATH}qbpl0.png" alt="">
+            <img src="../../src/img/qbpl0.png" alt="">
         </div>
     </div>
-    {foreach $plarr as $pl}
     <div class="qbpl-detail">
         <div class="qbpl-detailtx">
 
@@ -75,83 +76,82 @@
         <div class="qbpl-detailnr">
              <div class="plnrwz">
                  <p>
-                     {$pl["plnr"]}
+                     太好看了吧！！！这是谁家场地啊？我想要你的方案，楼主！
                  </p>
              </div>
             <div class="plnrtp">
-                {foreach $plimgarr as $img}
                 <div class="plnrtp1">
-                    <img src="{$img}" alt="">
+                    <img src="../../src/img/plimg01.png" alt="">
                 </div>
-                {/foreach}
-                <!--<div class="plnrtp1">-->
-                    <!--<img src="{IMG_PATH}plimg01.png" alt="">-->
-                <!--</div>-->
+                <div class="plnrtp1">
+                    <img src="../../src/img/plimg01.png" alt="">
+                </div>
             </div>
         </div>
         <div class="qbpl-detailsjbox">
             <div class="qbpl-detailsj">
 
             </div>
-            <span>{$pl["pltime"]}</span>
+            <span>5小时前</span>
         </div>
 
         <div class="qbpl-detaildz">
-            <span>{$pl["pldzcount"]}</span>
+            <span>520</span>
         </div>
         <div class="qbpl-detailpl">
-            <span>{$pl["plhfcount"]}</span>
+            <span>520</span>
         </div>
         <div class="zxfb-dian">
             &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
             &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
+            &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot; &middot;
+            &middot; &middot;
         </div>
     </div>
-    {/foreach}
-    <!--<div class="qbplhf-detail">-->
-        <!--<div class="qbplhf-detailtx">-->
+    <div class="qbplhf-detail">
+        <div class="qbplhf-detailtx">
 
-        <!--</div>-->
-        <!--<div class="qbplhf-detailnr">-->
-            <!--<div class="plhfnrwz">-->
-                <!--<p>-->
-                    <!--太好看了吧！！！这是谁家场地啊？我想要你的方案，楼主！-->
-                <!--</p>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="qbplhf-detailsjbox">-->
-            <!--<div class="qbplhf-detailsj">-->
+        </div>
+        <div class="qbplhf-detailnr">
+            <div class="plhfnrwz">
+                <p>
+                    太好看了吧！！！这是谁家场地啊？我想要你的方案，楼主！
+                </p>
+            </div>
+        </div>
+        <div class="qbplhf-detailsjbox">
+            <div class="qbplhf-detailsj">
 
-            <!--</div>-->
-            <!--<span>5小时前</span>-->
-        <!--</div>-->
+            </div>
+            <span>5小时前</span>
+        </div>
 
-        <!--<div class="qbplhf-detaildz">-->
-            <!--<span>520</span>-->
-        <!--</div>-->
-        <!--<div class="qbplhf-detailpl">-->
-            <!--<span>520</span>-->
-        <!--</div>-->
-    <!--</div>-->
+        <div class="qbplhf-detaildz">
+            <span>520</span>
+        </div>
+        <div class="qbplhf-detailpl">
+            <span>520</span>
+        </div>
+    </div>
 </div>
 <footer>
    <div class="foot-bq">
-       <img src="{IMG_PATH}bq0.png" alt="">
+       <img src="../../src/img/bq0.png" alt="">
    </div>
     <div class="foot-hf">
         <!--<input type="text">-->
-        <a href="index.php?m=index&f=huati&a=addpinglun&id={$arr['id']}"></a>
+        <a href="pl.html"></a>
     </div>
     <div class="foot-dz">
-        <a href=""><img src="{IMG_PATH}zxfb-dz.png" alt=""></a>
+        <a href=""><img src="../../src/img/zxfb-dz.png" alt=""></a>
         <span>852</span>
     </div>
     <div class="foot-sc">
-        <a href=""><img src="{IMG_PATH}zxfb-sc.png" alt=""></a>
+        <a href=""><img src="../../src/img/zxfb-sc.png" alt=""></a>
         <span>852</span>
     </div>
     <div class="foot-fx">
-        <a href=""><img src="{IMG_PATH}zxfb-fx.png" alt=""></a>
+        <a href=""><img src="../../src/img/zxfb-fx.png" alt=""></a>
         <span>852</span>
     </div>
 

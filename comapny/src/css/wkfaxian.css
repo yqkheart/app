@@ -12,9 +12,8 @@ header{
 }
 header .headbox{
     margin:0 auto;
-    /*width: 2.3rem;*/
+    width: 2.2rem;
     /*background: red;*/
-    height: 100%;
 }
 header .headbox div{
     float:left;
@@ -25,14 +24,12 @@ header .headbox div{
     font-size: 0.34rem;
 }
 header .headbox .xiaodian{
-    font-size: 0.15rem;
-    line-height: 0.9rem;
-    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.85rem;
 }
 header .headbox .dadian{
-    font-size: 0.2rem;
-    line-height: 0.9rem;
-    text-align: center;
+    font-size: 0.5rem;
+    line-height: 0.85rem;
 }
 /*热门话题开始*/
 .rmht{
@@ -62,7 +59,7 @@ header .headbox .dadian{
     color:#ff8c2a;
 }
 .rmtitle-yy{
-    width: 4.8rem;
+    width: 5rem;
     float:right;
     line-height: 0.18rem;
     margin-top: 0.08rem;
@@ -104,7 +101,7 @@ header .headbox .dadian{
 .rmxx{
     position: absolute;
     top:1.85rem;
-    left:2.6rem;
+    left:2.5rem;
     font-size: 0.25rem;
     color:#ff8c2a;
     overflow: hidden;
@@ -126,12 +123,6 @@ header .headbox .dadian{
     width: 4rem;
     height: 100%;
     border-radius: 0.1rem;
-    overflow: hidden;
-}
-.rmlbt .swiper-container .swiper-slide img{
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 .rmlbt .swiper-container .red-slide{
     background: #ca4040;
@@ -178,7 +169,6 @@ header .headbox .dadian{
 .zxfb{
     width: 100%;
     height: 100%;
-    margin-bottom: 1rem;
     /*padding:0 0.24rem;*/
 }
 .zxfb-title{
@@ -428,7 +418,6 @@ header .headbox .dadian{
 .tableBox{
     width: 100%;
     height: 1rem;
-
     background: #fff;
     position: fixed;
     bottom: 0;

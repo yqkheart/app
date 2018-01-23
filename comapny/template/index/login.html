@@ -58,19 +58,19 @@
                 <div>
                     <img src="{IMG_PATH}lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" name="user" placeholder="请输入用户名" autofocus required maxlength="11">
+                <input type="text" name="user" placeholder="请输入用户名" autofocus required maxlength="10">
             </div>
             <div class="input">
                 <div>
                     <img src="{IMG_PATH}lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" name="pass" placeholder="请设置您的密码" required maxlength="16" minlength="6">
+                <input type="password" name="pass" placeholder="请设置您的密码" required maxlength="16">
             </div>
             <div class="input input1">
                 <div>
                     <img src="{IMG_PATH}lzwimg/icon_08.png" alt="">
                 </div>
-                <input type="password" name="pass1" placeholder="请重新输入密码" required maxlength="16" minlength="6">
+                <input type="password" name="pass1" placeholder="请重新输入密码" required maxlength="16">
             </div>
             <!--提交按钮-->
             <a>
@@ -99,13 +99,13 @@
                 <div>
                     <img src="{IMG_PATH}lzwimg/icon_03.png" alt="">
                 </div>
-                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="11" name="user">
+                <input type="text" placeholder="请输入您的账号/手机号" autofocus required maxlength="10" name="user">
             </div>
             <div class="input input2">
                 <div>
                     <img src="{IMG_PATH}lzwimg/icon_06.png" alt="">
                 </div>
-                <input type="password" id="pass" placeholder="请输入您的密码" required maxlength="16" name="pass">
+                <input type="password" placeholder="请设置您的密码" required maxlength="16" name="pass">
                 <span>
                     <i class="iconfont icon-biyan"></i>
                 </span>
@@ -144,13 +144,3 @@
 
 </body>
 </html>
-<script>
-    $(function(){
-        $(".icon-biyan").mousedown(function(){
-            $("#pass").attr("type", "text");
-        });
-        $(".icon-biyan").mouseup(function(){
-            $("#pass").attr("type", "password");
-        });
-    });
-</script>

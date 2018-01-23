@@ -22,30 +22,39 @@ $(function(){
         }
     });
 
-    $("div.btn").click(function(){
+    function sub(dizhi){
         var d = new Date();
         d.setDate(d.getDate());
         var m = d.getMonth() + 1;
         let da = d.getFullYear() + '-' + m + '-' + d.getDate();
         var date;
         // console.log(da); 
-        if ($(".your-date span input").hasClass("mydate")){
-            date=da;
-        }else{
+        if ($(".your-date span input").hasClass("mydate")) {
+            date = da;
+        } else {
             date = $(".your-date span").html()
-            
+
         }
         $.ajax({
-            url:"index.php?m=index&f=custom&a=getdate",
-            data:{date},
-            type:"post",
-            success:function(res){
-                if(res==1){
-                    location.href="index.php?m=index&f=custom&a=project";
-                }else if(res==0){
-                    location.href = "index.php?m=index&f=custom&a=project";
+            url: "index.php?m=index&f=custom&a=getdate",
+            data: { date },
+            type: "post",
+            success: function (res) {
+                if (res == 1) {
+                    location.href = dizhi;
+                } else if (res == 0) {
+                    location.href = dizhi;
                 }
             }
         })
+    }
+    $("div.btn").click(function(){
+        sub("index.php?m=index&f=custom&a=project");
+    })
+    $(".jump").click(function(){
+        sub("index.php?m=index&f=custom&a=project");
+    })
+    $(".sub-change").click(function () {
+        sub("index.php?m=index&f=custom&a=yourselect");
     })
 })

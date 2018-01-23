@@ -2,14 +2,14 @@
 * @Author: Administrator
 * @Date:   2017-09-30 11:46:45
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-01 18:05:53
+* @Last Modified time: 2018-01-22 15:23:06
 */
 
 *{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-family:"PingFang";
+	font-family:"PingFang SC";
 }
 a{
 	text-decoration: none;

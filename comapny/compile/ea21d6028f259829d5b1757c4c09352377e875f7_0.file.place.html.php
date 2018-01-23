@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.32-dev-38, created on 2018-01-23 06:58:15
-=======
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 02:04:00
->>>>>>> cb53805f1d0164caf4be67b83373df71b8d99f0b
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 00:39:22
   from 'G:\myobject\app\comapny\template\index\place.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-<<<<<<< HEAD
-  'unifunc' => 'content_5a66dd07699fd2_75496069',
-=======
-  'unifunc' => 'content_5a615210ea9256_71118430',
->>>>>>> cb53805f1d0164caf4be67b83373df71b8d99f0b
+  'unifunc' => 'content_5a66843a8d52b3_42313293',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ea21d6028f259829d5b1757c4c09352377e875f7' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\place.html',
-<<<<<<< HEAD
-      1 => 1516690694,
-=======
-      1 => 1516327431,
->>>>>>> cb53805f1d0164caf4be67b83373df71b8d99f0b
+      1 => 1516606324,
       2 => 'file',
     ),
   ),
@@ -32,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5a66dd07699fd2_75496069 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5a615210ea9256_71118430 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> cb53805f1d0164caf4be67b83373df71b8d99f0b
+function content_5a66843a8d52b3_42313293 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,24 +53,20 @@ place.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
-<<<<<<< HEAD
-               <!--  <a href="index.php?m=index&a=addxinxi&zhanghao<?php echo $_smarty_tpl->tpl_vars['zhanghao']->value;?>
-" >
-                    <img src="<?php echo IMG_PATH;?>
-=======
+                <a href="">
+
+                </a>
                 <img src="<?php echo IMG_PATH;?>
->>>>>>> cb53805f1d0164caf4be67b83373df71b8d99f0b
 定制流程/date_03.png" alt="">
-                </a> -->
-                <p class="first-p" style="margin-left: 0.02rem;">
+                <p class="first-p">
                     填写所在地及预算
                 </p>
-                <p style="margin-left: 0.02rem;">
+                <p>
                     BASIC INFORMATION ..
                 </p>
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_06.png" alt="">

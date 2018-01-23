@@ -6,20 +6,29 @@ $(function () {
         $(".sub-style").html(res);
     })
 
+    function sub(dizhi) {
+        var style = $(".sub-style").text();
+        $.ajax({
+            url: "index.php?m=index&f=custom&a=getmanner",
+            data: { style },
+            type: "post",
+            success: function (res) {
+                console.log(res);
+                if (res == 1) {
+                    location.href = dizhi;
+                } else if (res == 0) {
+                    location.href = dizhi;
+                }
+            }
+        })
+    }
     $(".sub-next1").click(function(){
-       var style=$(".sub-style").text();
-       $.ajax({
-           url:"index.php?m=index&f=custom&a=getmanner",
-           data:{style},
-           type:"post",
-           success:function(res){
-               console.log(res);
-               if(res==1){
-                location.href="index.php?m=index&f=custom&a=yourselect";
-               }else if(res==0){
-                   location.href = "index.php?m=index&f=custom&a=yourselect";
-               }
-           }
-       })
+        sub("index.php?m=index&f=custom&a=yourselect");
+    })
+    $(".jump").click(function(){
+        sub("index.php?m=index&f=custom&a=yourselect");
+    })
+    $(".sub-change").click(function(){
+        sub("index.php?m=index&f=custom&a=yourselect");
     })
 })

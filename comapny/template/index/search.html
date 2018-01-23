@@ -13,7 +13,7 @@
 <body>
 <header class="header">
     <div class="header-top">
-        <a class="back">
+        <a class="back" href="index.php?m=index&f=custom&a=shouye">
             <div class="fanhui"></div>
         </a>
         <div class="title">
@@ -174,9 +174,7 @@
             }
             $('.history-list').html(brr);
         }
-        $('.back').click(function () {
-            history.go(-1);
-        })
+
         $('.delete').click(function () {
             alert(1)
             let mark=parseInt($(this).closest('li').attr('id'));

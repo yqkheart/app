@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-19 07:50:32
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 02:20:58
   from 'G:\myobject\app\comapny\template\index\yourselect.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a61a348b882e4_73010579',
+  'unifunc' => 'content_5a669c0a154d17_06740439',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bb5c1f72cd461b5efbf097c21842120970982dd6' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\yourselect.html',
-      1 => 1516348232,
+      1 => 1516673986,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a61a348b882e4_73010579 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a669c0a154d17_06740439 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ yourselect.js"><?php echo '</script'; ?>
     <header>
         <div class="header">
             <div class="header-left">
-                <a href="manner.html">
+                <a href="index.php?m=index&f=custom&a=manner">
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_03.png" alt="">
                     <p class="first-p">
@@ -59,7 +59,7 @@ yourselect.js"><?php echo '</script'; ?>
                 </a>
             </div>
             <div class="header-right">
-                <a href="">
+                <a class="jump">
                     跳过
                     <img src="<?php echo IMG_PATH;?>
 定制流程/date_06.png" alt="">
@@ -86,8 +86,8 @@ yourselect.js"><?php echo '</script'; ?>
                         <div class="modify">
                             <div class="modify-content modify-place"><?php echo $_smarty_tpl->tpl_vars['mycustom']->value["place"];?>
 </div>
-                            <img src="<?php echo IMG_PATH;?>
-定制流程/custom_24.png" alt="">
+                          <a href="index.php?m=index&f=custom&a=changeplace"><img src="<?php echo IMG_PATH;?>
+定制流程/custom_24.png" alt=""></a>  
                         </div>
                     </div>
                 </section>
@@ -101,8 +101,8 @@ yourselect.js"><?php echo '</script'; ?>
                         <div class="modify">
                             <div class="modify-budget modify-cprice"><?php echo $_smarty_tpl->tpl_vars['mycustom']->value["cprice"];?>
 </div>
-                        <img src="<?php echo IMG_PATH;?>
-定制流程/custom_24.png" alt="">
+                     <a href="index.php?m=index&f=custom&a=changeplace"><img src="<?php echo IMG_PATH;?>
+定制流程/custom_24.png" alt=""></a>   
                         </div>
                     </div>
                 </section>
@@ -116,8 +116,10 @@ yourselect.js"><?php echo '</script'; ?>
                         <div class="modify">
                             <div class="modify-date modify-date"><?php echo $_smarty_tpl->tpl_vars['mycustom']->value["date"];?>
 </div>
-                            <img src="<?php echo IMG_PATH;?>
+                            <a href="index.php?m=index&f=custom&a=changedate">
+                                <img src="<?php echo IMG_PATH;?>
 定制流程/custom_24.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -131,8 +133,10 @@ yourselect.js"><?php echo '</script'; ?>
                         <div class="modify">
                             <div class="modify-fugu modify-style"><?php echo $_smarty_tpl->tpl_vars['mycustom']->value["style"];?>
 </div>
+                        <a href="index.php?m=index&f=custom&a=changemanner">
                             <img src="<?php echo IMG_PATH;?>
 定制流程/custom_24.png" alt="">
+                        </a>
                         </div>
                     </div>
                 </section>
@@ -152,8 +156,9 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
-                                <li><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
+                                <li><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
 :<input class="pro" type="text" value="<?php echo $_smarty_tpl->tpl_vars['proportion']->value;?>
+"><input class="epro" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
 "></li>&nbsp;
                                 <?php
 }
@@ -161,8 +166,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </span>
                             
-                            <img src="<?php echo IMG_PATH;?>
+                            <a href="index.php?m=index&f=custom&a=changeproject">
+                                <img src="<?php echo IMG_PATH;?>
 定制流程/custom_24.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </section>
