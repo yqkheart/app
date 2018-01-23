@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-23 08:34:25
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 09:09:25
   from 'G:\myobject\app\comapny\template\index\search.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a66f3910a8dc0_79240143',
+  'unifunc' => 'content_5a66fbc57935c4_44800335',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7f95d5a2e32a3715e8e9f5778f6b64cb4b431f99' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\search.html',
-      1 => 1516686402,
+      1 => 1516698557,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a66f3910a8dc0_79240143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a66fbc57935c4_44800335 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +67,7 @@ rem-ljb.js"><?php echo '</script'; ?>
     <section class="hot-search">
         <div class="title"></div>
         <div class="theme">
-            <a href="index.php?m=admin&f=hunyue">
+            <a href="index.php?m=index&f=hotel&mz=婚宴">
                 <div class="theme-box1">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -81,7 +81,7 @@ rem-ljb.js"><?php echo '</script'; ?>
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=admin&f=cehua">
+            <a href="index.php?m=index&f=plan&mz=策划">
                 <div class="theme-box2">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -95,7 +95,7 @@ rem-ljb.js"><?php echo '</script'; ?>
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="">
+            <a href="index.php?m=index&f=photography&mz=摄影">
                 <div class="theme-box3">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -109,7 +109,7 @@ rem-ljb.js"><?php echo '</script'; ?>
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=admin&f=lifu">
+            <a href="index.php?m=index&f=dress&mz=礼服">
                 <div class="theme-box4">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
