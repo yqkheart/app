@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 09:59:58
+/* Smarty version 3.1.32-dev-38, created on 2018-01-18 07:57:53
   from 'G:\myobject\app\comapny\template\admin\changepass.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a64649e9b6d47_90756057',
+  'unifunc' => 'content_5a605381de4be9_51725413',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9c7ae714f3e4497a2b0796f8e9fb616ba9f108e' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\admin\\changepass.php',
-      1 => 1516528556,
+      1 => 1516256713,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a64649e9b6d47_90756057 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a605381de4be9_51725413 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<?php
 ';?>/**
  * Created by PhpStorm.
@@ -140,7 +140,7 @@ jquery.validate.min.js"><?php echo '</script'; ?>
         },
         submitHandler:function () {
             $.ajax({
-                url:"index.php?m=admin&a=updatepass",
+                url:"index.php?m=index&a=updatepass",
                 type:"post",
                 data:$("#boxs").serialize(),
                 success:function (res) {

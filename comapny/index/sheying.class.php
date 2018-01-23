@@ -6,18 +6,18 @@
  * Time: 16:00
  */
 
-class hotel extends admin
+class sheying extends admin
 {
     public $db;
     function __construct()
     {
         parent::__construct();
-        $this->db=new db('hotel');
+        $this->db=new db('photography');
     }
     function init(){
         $arr=$this->db->selAll("*");
 //        var_dump($arr);
         $this->s->assign("arr",$arr);
-        $this->s->display("template/index/hunyan.html");
+        $this->s->display("template/index/sheying.html");
     }
 }

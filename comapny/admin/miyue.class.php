@@ -40,7 +40,7 @@ class miyue extends admin
                     <td>{$item['tell']}</td> 
                     <td>
                         <button type='button' class='btn btn-danger' id='${item['id']}'>删除</button>
-                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=miyue&a=change&id={$item['id']}'>修改</a></button>
+                        <button type='button' class='btn btn-primary'><a href='index.php?m=admin&f=car&a=change&id={$item['id']}'>修改</a></button>
                     </td>
                  </tr>
                 ";
@@ -94,7 +94,7 @@ class miyue extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=admin&f=miyue&a=addcontent');
+                $this->jump('请上传图片','index.php?m=admin&f=miyue&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -181,7 +181,7 @@ class miyue extends admin
         $brr=$file['type'];
         foreach ($brr as $key=>$item){
             if (!in_array($item,$type)){
-                $this->jump('请上传图片','index.php?m=index&f=car&a=change');
+                $this->jump('请上传图片','index.php?m=index&f=car&a=addcategory');
                 include_once "template/admin/tiaozhuan.html";
                 exit();
             }
@@ -203,7 +203,7 @@ class miyue extends admin
         }
         $row=$this->db->update("name='$name',price='$price',style='$style',img='$prr',place='$place',tell='$tel'","id='$id'");
         if($row==1){
-            $this->jump('修改成功','index.php?m=admin&f=miyue&a=init');
+            $this->jump('修改成功','index.php?m=admin&f=car&a=init');
         }else{
             echo 'bad';
         }

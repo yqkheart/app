@@ -13,7 +13,7 @@
 <body>
 <header class="header">
     <div class="header-top">
-        <a class="back" href="index.php?m=index&f=custom&a=shouye">
+        <a class="back">
             <div class="fanhui"></div>
         </a>
         <div class="title">
@@ -36,7 +36,7 @@
     <section class="hot-search">
         <div class="title"></div>
         <div class="theme">
-            <a href="index.php?m=index&f=hotel&mz=婚宴">
+            <a href="index.php?m=admin&f=hunyue">
                 <div class="theme-box1">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -50,7 +50,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=index&f=plan&mz=策划">
+            <a href="index.php?m=admin&f=cehua">
                 <div class="theme-box2">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -64,7 +64,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=index&f=photography&mz=摄影">
+            <a href="">
                 <div class="theme-box3">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -78,7 +78,7 @@
                     <div class="line"></div>
                 </div>
             </a>
-            <a href="index.php?m=index&f=dress&mz=礼服">
+            <a href="index.php?m=admin&f=lifu">
                 <div class="theme-box4">
                     <div class="theme-icon"></div>
                     <div class="theme-word">
@@ -174,8 +174,11 @@
             }
             $('.history-list').html(brr);
         }
-
+        $('.back').click(function () {
+            history.go(-1);
+        })
         $('.delete').click(function () {
+            alert(1)
             let mark=parseInt($(this).closest('li').attr('id'));
             if (localStorage.history){
                 var recordList = JSON.parse(localStorage.history)

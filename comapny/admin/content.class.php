@@ -26,7 +26,7 @@ class content extends admin
         $arr=$this->db->selAll('*');
         if ($arr){
             foreach ($arr as $item){
-                $img=explode("--","{$item['img']}")[0];
+                $img=explode("--","{$item['photo']}")[0];
                 $title=mb_substr($item['intro'],0,10,'utf8');
                 $this->brr.="
                   <tr>
@@ -36,7 +36,7 @@ class content extends admin
                     <td>{$item['intro']}</td>
                     <td>{$img}</td>    
                     <td>{$item['zan']}</td>
-                    <td>{$item['place']}</td>
+                    <td>{$item['adress']}</td>
                     <td>{$item['collect']}</td>        
                     <td>
                         <button type='button' class='btn btn-danger' id='${item['id']}'>删除</button>
@@ -72,11 +72,11 @@ class content extends admin
         $file=$_FILES['file'];
         if ($file['size'][0]==0){
             $k="";
-            $row=$this->db->insert('name,price,intro,img,place',"'$name','$price','$intro','$k','$adress'");
+            $row=$this->db->insert('name,price,intro,photo,adress',"'$name','$price','$intro','$k','$adress'");
             if($row==1){
-                $this->jump('添加成功','index.php?m=admin&f=content&a=init');
+                $this->jump('添加成功','index.php?m=admin&f=category&a=init');
             }else{
-                $this->jump('添加失败','index.php?m=admin&f=content&a=init');
+                $this->jump('添加失败','index.php?m=admin&f=category&a=init');
             }
             exit;
         }
@@ -113,7 +113,7 @@ class content extends admin
                 $prr=mb_substr($prr,0,strlen($prr)-2);
             }
         }
-        $row=$this->db->insert('name,price,intro,img,place',"'$name','$price','$intro','$prr','$adress'");
+        $row=$this->db->insert('name,price,intro,photo,adress',"'$name','$price','$intro','$prr','$adress'");
         if($row==1){
             $this->jump('添加成功','index.php?m=admin&f=content&a=init');
         }else{
@@ -135,7 +135,7 @@ class content extends admin
                 $name=$item['name'];
                 $price=$item['price'];
                 $intro=$item['intro'];
-                $adress=$item['place'];
+                $adress=$item['adress'];
             }
         }
         $dbs=new db('photography');
@@ -159,7 +159,7 @@ class content extends admin
         $file=$_FILES['file'];
         if ($file['size'][0]==0){
             $k="";
-            $row=$this->db->update("name='$name',price='$price',intro='$intro',img='$k',place='$adress'","id='$id'");
+            $row=$this->db->update("name='$name',price='$price',intro='$intro',photo='$k',adress='$adress'","id='$id'");
             if($row==1){
                 $this->jump('修改成功','index.php?m=admin&f=content&a=init');
             }else{
@@ -200,7 +200,7 @@ class content extends admin
                 $prr=mb_substr($prr,0,strlen($prr)-2);
             }
         }
-        $row=$this->db->update("name='$name',price='$price',intro='$intro',img='$prr',place='$adress'","id='$id'");
+        $row=$this->db->update("name='$name',price='$price',intro='$intro',photo='$prr',adress='$adress'","id='$id'");
         if($row==1){
             $this->jump('修改成功','index.php?m=admin&f=content&a=init');
         }else{

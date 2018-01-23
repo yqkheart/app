@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-21 09:04:01
-  from 'G:\myobject\app\comapny\template\admin\tiaozhuan.html' */
+/* Smarty version 3.1.32-dev-38, created on 2018-01-22 10:35:05
+  from 'C:\wamp64\www\php\app\comapny\template\index\errory.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a6457811024e2_31570799',
+  'unifunc' => 'content_5a65be59df6d15_87248354',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '32f77a1a5b6f1431a74abf3a87bfebdde5be458a' => 
+    '0bde771cb175d10a478f17082b6b54c547de3488' => 
     array (
-      0 => 'G:\\myobject\\app\\comapny\\template\\admin\\tiaozhuan.html',
-      1 => 1516525358,
+      0 => 'C:\\wamp64\\www\\php\\app\\comapny\\template\\index\\errory.html',
+      1 => 1516617303,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a6457811024e2_31570799 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a65be59df6d15_87248354 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <?php echo '<script'; ?>
- src="../../src/js/lzwjs/rem.js"><?php echo '</script'; ?>
+ src="<?php echo JS_PATH;?>
+lzwjs/rem.js"><?php echo '</script'; ?>
 >
 </head>
 <style>
@@ -97,7 +98,8 @@ function content_5a6457811024e2_31570799 (Smarty_Internal_Template $_smarty_tpl)
         height: 100%;
         /*background: #F3F5F8;*/
         /*background: red;*/
-        background: url("../../src/img/lzwimg/mess.png") no-repeat center;
+        background: url("<?php echo IMG_PATH;?>
+lzwimg/mess.png") no-repeat center;
         background-size: cover;
     }
     .zhao{
@@ -164,7 +166,8 @@ function content_5a6457811024e2_31570799 (Smarty_Internal_Template $_smarty_tpl)
 <div class="beijing">
     <div class="zhao"></div>
     <div class="box">
-        <img src="../../src/img/lzwimg/errory_03.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+lzwimg/errory_03.png" alt="">
         <h2 class="topBox"><?php echo $_smarty_tpl->tpl_vars['mess']->value;?>
 </h2>
         <span class="color">SORRY, THE NUMBER YOU ENTERED DOSE NOT EXIST</span>
@@ -198,7 +201,7 @@ function content_5a6457811024e2_31570799 (Smarty_Internal_Template $_smarty_tpl)
     // },1000)
 
     var zi=document.querySelector('.zi');
-    var a=document.querySelector("a")
+    var a=document.querySelector("a");
     // console.log(zi,a);
     zi.onclick=function () {
         location.href=a.href;

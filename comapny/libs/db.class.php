@@ -46,6 +46,7 @@ class db{
     //更新
     public function update($shezhi,$where){
         $sql="update ".$this->table." set ".$shezhi." where ".$where;
+//        var_dump($sql);
         $this->db->query($sql);
         return $this->db->affected_rows;
     }

@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 05:17:01
+  from 'C:\wamp64\www\php\app\comapny\template\index\assistant.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-38',
+  'unifunc' => 'content_5a66c54d8586b4_90309016',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '96fb0822e9de455050535baccb27d1be2d30b38e' => 
+    array (
+      0 => 'C:\\wamp64\\www\\php\\app\\comapny\\template\\index\\assistant.html',
+      1 => 1516684611,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a66c54d8586b4_90309016 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +29,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="{JS_PATH}rem.js"></script>
-    <link rel="stylesheet" href="{CSS_PATH}assistant.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+assistant.css">
 </head>
 <body>
 <section>
@@ -26,23 +53,28 @@
         <div class="whitebox">
         <div class="singel border_xy">
             <div class="over">
-            <img src="{IMG_PATH}wximg/single_jnr.png" alt=""></div>
+            <img src="<?php echo IMG_PATH;?>
+wximg/single_jnr.png" alt=""></div>
         </div>
             <div class="singel border_xy">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_jrtx.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_jrtx.png" alt=""></div>
             </div>
             <div class="singel border_x">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_xgys.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_xgys.png" alt=""></div>
             </div>
             <div class="singel border_xy">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_cylp.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_cylp.png" alt=""></div>
             </div>
             <div class="singel border_xy jiao_xin">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_zmxc.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_zmxc.png" alt=""></div>
                 <div class="ass_xin1 ass_xin"></div>
                 <div class="ass_xin2 ass_xin"></div>
                 <div class="ass_xin3 ass_xin"></div>
@@ -51,19 +83,23 @@
             </div>
             <div class="singel border_x">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_hllc.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_hllc.png" alt=""></div>
             </div>
             <div class="singel border_y">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_zfq.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_zfq.png" alt=""></div>
             </div>
             <div class="singel border_y">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_jxgl.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_jxgl.png" alt=""></div>
             </div>
             <div class="singel">
                 <div class="over">
-                <img src="{IMG_PATH}wximg/single_hdjr.png" alt=""></div>
+                <img src="<?php echo IMG_PATH;?>
+wximg/single_hdjr.png" alt=""></div>
             </div>
 
 
@@ -77,7 +113,8 @@
     <div class="option" >
         <a href="index.php?m=index&f=shouye">
             <div class="opp">
-                <img src="{IMG_PATH}wximg/dingzhihui.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+wximg/dingzhihui.png" alt="">
             </div>
             <div class="shu"></div>
 
@@ -89,7 +126,8 @@
     <div class="option" >
         <a href="index.php?m=index&f=active">
             <div class="opp">
-                <img src="{IMG_PATH}wximg/huodonghui.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+wximg/huodonghui.png" alt="">
             </div>
             <div class="shu"></div>
             <div class="character">活动</div>
@@ -99,7 +137,8 @@
     <div class="option">
         <a href="index.php?m=index&f=huati">
             <div class="opp">
-                <img src="{IMG_PATH}wximg/faxianhui.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+wximg/faxianhui.png" alt="">
             </div>
             <div class="shu"></div>
             <div class="character">发现</div>
@@ -109,7 +148,8 @@
     <div class="option" style="background:#FF8C2A">
         <a href="index.php?m=index&f=assistant">
             <div class="opp">
-                <img src="{IMG_PATH}wximg/zhushoubai.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+wximg/zhushoubai.png" alt="">
             </div>
             <div class="shu"></div>
             <div class="character" style="color:#fff">助手</div>
@@ -119,7 +159,8 @@
     <div class="option">
         <a href="index.php?m=index&f=women">
             <div class="opp">
-                <img src="{IMG_PATH}wximg/womenhui.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+wximg/womenhui.png" alt="">
             </div>
             <div class="character">我们</div>
         </a>
@@ -128,4 +169,5 @@
 </div>
 
 </body>
-</html>
+</html><?php }
+}
