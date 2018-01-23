@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-38, created on 2018-01-23 08:32:05
+/* Smarty version 3.1.32-dev-38, created on 2018-01-23 10:21:02
   from 'G:\myobject\app\comapny\template\index\shouye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-38',
-  'unifunc' => 'content_5a66f305a15377_11124856',
+  'unifunc' => 'content_5a670c8e918652_26229271',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d012a941a057ee538a4ec188e319a83025ba025' => 
     array (
       0 => 'G:\\myobject\\app\\comapny\\template\\index\\shouye.html',
-      1 => 1516696315,
+      1 => 1516702771,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a66f305a15377_11124856 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a670c8e918652_26229271 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,7 +180,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
         </div>
         <div class="option">
-            <a href="personal.htmlindex.php?m=index&f=women">
+            <a href="index.php?m=index&f=women">
                 <div class="opp">
                 <img src="<?php echo IMG_PATH;?>
 首页/我们@2x.png" alt="">
@@ -192,7 +192,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 </body>
 </html>
-<!-- Swiper JS -->
+<!-- Swiper js -->
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 jquery.min.js"><?php echo '</script'; ?>
