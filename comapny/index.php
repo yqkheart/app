@@ -29,6 +29,7 @@ include_once LIBS_PATH."admin.class.php";
 include_once LIBS_PATH."page.class.php";
 include_once LIBS_PATH."indexmain.class.php";
 include_once LIBS_PATH."smarty/Smarty.class.php";
+include_once LIBS_PATH."wkindexmain.php";
 
 $r=new router();
 $r->getFun();

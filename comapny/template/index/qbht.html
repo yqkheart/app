@@ -6,77 +6,79 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>全部话题</title>
-    <link rel="stylesheet" href="../../src/css/wkqbht.css">
-    <script src="../../src/js/wkjquery.js"></script>
-    <script src="../../src/js/wkrem.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="../../src/img/logo.png" media="screen" />
+    <link rel="stylesheet" href="{CSS_PATH}wkqbht.css">
+    <script src="{JS_PATH}wkjquery.js"></script>
+    <script src="{JS_PATH}wkrem.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{IMG_PATH}logo.png" media="screen" />
 </head>
 <body>
 <header>
-    <div class="head-fh"><a href="faxian.html">&lt;</a></div>
+    <div class="head-fh"><a href="index.php?m=index&f=huati">&lt;</a></div>
     <div class="head-wz">全部话题</div>
 </header>
 <section class="qbht">
+    {foreach $arr as $key=>$iteam}
     <div class="qbht-detail">
         <div class="qbhtyy"></div>
-        <img src="../../src/img/qbht01.png" alt="">
+        <img src="{$imgarr[$key]}" alt="">
         <div class="qbht-wz">
-           <div class="qbzt-title">最具创意的婚纱</div>
+           <div class="qbzt-title">{$iteam["htname"]}</div>
             <a class="qbht-dz" href="">
                 <div class="qbht-dzimg">
-                    <img src="../../src/img/zxfb-dz.png" alt="">
+                    <img src="{IMG_PATH}zxfb-dz.png" alt="">
                 </div>
 
-                <span>200</span>
+                <span>{$iteam["htdzcounts"]}</span>
             </a>
             <a class="qbht-sc" href="">
                 <div class="qbht-scimg">
-                    <img src="../../src/img/zxfb-sc.png" alt="">
+                    <img src="{IMG_PATH}zxfb-sc.png" alt="">
                 </div>
-                <span>200</span>
+                <span>{$iteam["htsccounts"]}</span>
             </a>
         </div>
     </div>
-    <div class="qbht-detail">
-        <div class="qbhtyy"></div>
-        <img src="../../src/img/qbht01.png" alt="">
-        <div class="qbht-wz">
-            <div class="qbzt-title">最具创意的婚纱</div>
-            <a class="qbht-dz" href="">
-                <div class="qbht-dzimg">
-                    <img src="../../src/img/zxfb-dz.png" alt="">
-                </div>
+    {/foreach}
+    <!--<div class="qbht-detail">-->
+        <!--<div class="qbhtyy"></div>-->
+        <!--<img src="{IMG_PATH}qbht01.png" alt="">-->
+        <!--<div class="qbht-wz">-->
+            <!--<div class="qbzt-title">最具创意的婚纱</div>-->
+            <!--<a class="qbht-dz" href="">-->
+                <!--<div class="qbht-dzimg">-->
+                    <!--<img src="{IMG_PATH}zxfb-dz.png" alt="">-->
+                <!--</div>-->
 
-                <span>200</span>
-            </a>
-            <a class="qbht-sc" href="">
-                <div class="qbht-scimg">
-                    <img src="../../src/img/zxfb-sc.png" alt="">
-                </div>
-                <span>200</span>
-            </a>
-        </div>
-    </div>
-    <div class="qbht-detail">
-        <div class="qbhtyy"></div>
-        <img src="../../src/img/qbht01.png" alt="">
-        <div class="qbht-wz">
-            <div class="qbzt-title">最具创意的婚纱</div>
-            <a class="qbht-dz" href="">
-                <div class="qbht-dzimg">
-                    <img src="../../src/img/zxfb-dz.png" alt="">
-                </div>
+                <!--<span>200</span>-->
+            <!--</a>-->
+            <!--<a class="qbht-sc" href="">-->
+                <!--<div class="qbht-scimg">-->
+                    <!--<img src="{IMG_PATH}zxfb-sc.png" alt="">-->
+                <!--</div>-->
+                <!--<span>200</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="qbht-detail">-->
+        <!--<div class="qbhtyy"></div>-->
+        <!--<img src="{IMG_PATH}qbht01.png" alt="">-->
+        <!--<div class="qbht-wz">-->
+            <!--<div class="qbzt-title">最具创意的婚纱</div>-->
+            <!--<a class="qbht-dz" href="">-->
+                <!--<div class="qbht-dzimg">-->
+                    <!--<img src="{IMG_PATH}zxfb-dz.png" alt="">-->
+                <!--</div>-->
 
-                <span>200</span>
-            </a>
-            <a class="qbht-sc" href="">
-                <div class="qbht-scimg">
-                    <img src="../../src/img/zxfb-sc.png" alt="">
-                </div>
-                <span>200</span>
-            </a>
-        </div>
-    </div>
+                <!--<span>200</span>-->
+            <!--</a>-->
+            <!--<a class="qbht-sc" href="">-->
+                <!--<div class="qbht-scimg">-->
+                    <!--<img src="{IMG_PATH}zxfb-sc.png" alt="">-->
+                <!--</div>-->
+                <!--<span>200</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
 </section>
 </body>
 </html>
